@@ -56,11 +56,11 @@ export default function MobileDrawer() {
         <DrawerOverlay />
         <DrawerContent borderTopLeftRadius={20} borderBottomLeftRadius={20}>
           <DrawerHeader display='flex' justifyContent='end'>
-          <IconButton aria-label='Search database' icon={<CloseIcon />} />
+          <IconButton aria-label='Search database' icon={<CloseIcon />} onClick={onClose} bg="white"/>
           </DrawerHeader>
-          <Center width='full' height='full'  mt='-2rem'>
+          <Center width='full' height='full'  mt='-3rem'>
             <DrawerBody borderTopRadius="md">
-              <Stack gap={4} className="qs-smb" float="left" ml='1rem'>
+              <Stack gap={3} className="qs-smb" float="left" ml='1rem'>
                 <Link path={PATH.home}>UX/UI</Link>
                 <Link path={PATH.uxui}>Coding</Link>
                 <Link path={PATH.resume}>Contact</Link>

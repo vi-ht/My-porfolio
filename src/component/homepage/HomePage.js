@@ -3,14 +3,16 @@ import "./../../css/font.css";
 //import component
 import IntroContent from "./IntroContent";
 import Quote from "./Quote";
+import ProjectList from "./ProjectList";
 //-----------------------
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
 export default function HomePage() {
   return (
     <Box w='100%'>
-      <IntroContent/>
+      <IntroContent />
       <Quote/>
+      <ProjectList/>
     </Box>
   );
 }

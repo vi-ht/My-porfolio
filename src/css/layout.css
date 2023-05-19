@@ -72,3 +72,10 @@
 .quote-content::before{
     content: ";
 } */
+/* ProjectList.js */
+.line{
+    width: 170px;
+    height: 4px;
+    background-color: #FB797F;
+    border-radius: 15px;
+}

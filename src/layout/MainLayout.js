@@ -9,7 +9,7 @@ export default function MainLayout() {
       <Header />
       <MobileHeader />
       <Box
-        minW={{
+        w={{
           base: "98%", //0px
           sm: "98%", // 480px
           md: "90%", // 768px
@@ -17,6 +17,7 @@ export default function MainLayout() {
           xl: "80%", // 1280px
           "2xl": "90rem", //1536px
         }}
+        h="100vh"
         p={4}
       >
         <Outlet />

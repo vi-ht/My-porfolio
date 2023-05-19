@@ -1,6 +1,6 @@
 //import css
 import "./../../css/font.css";
-import "./../../css/layout.css"
+import "./../../css/layout.css";
 //import image
 import wavehand from "../../asset/icon/twemojiwavinghand.png";
 import scroll from "../../asset/icon/openmojiscroll.png";
@@ -29,16 +29,7 @@ const TextTemplate = ({ children, container }) => (
 export default function IntroContent() {
   return (
     <>
-      <Flex
-        justifyContent="start"
-        direction="column"
-        position="absolute"
-        bottom="7%"
-        width='90%'
-      >
-        {/* <Text fontSize={{ base: "24px", md: "40px", lg: "56px" }}>
-        This is responsive text
-      </Text> */}
+      <Flex justify="end" direction="column" h="77vh" wrap="nowrap">
         <Text
           fontSize={{
             base: "55px", //0px
@@ -65,12 +56,15 @@ export default function IntroContent() {
           <span className="highlight qs-b">Front-end web development</span> and
           <span className="highlight qs-b"> UX/UI Design</span>.
         </TextTemplate>
-        <TextTemplate container >
-          <span className="vi">Scroll down to see my work.{" "}</span>
+        <TextTemplate container>
+          <span className="vi">Scroll down to see my work. </span>
           {/* <img src={scroll} alt="scroll" className="scroll" /> */}
         </TextTemplate>
       </Flex>
-      <img src={bgImage} alt="wave-hand" className="bg" />
+      <div className="bg">
+        <img src={bgImage} alt="wave-hand" style={{objectFit: "cover", width:"100%", height:"100%", objectPosition: "70% 100%"}} />
+      </div>
+      {/* <img src={bgImage} alt="wave-hand" className="bg" /> */}
     </>
   );
 }

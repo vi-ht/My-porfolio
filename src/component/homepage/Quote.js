@@ -11,7 +11,7 @@ export default function Quote() {
       // backgroundImage={bg}
       w="100%"
       h="100vh"
-      mt="85vh"
+      mt="5vh"
     >
       <Text
         fontSize={{
@@ -27,8 +27,6 @@ export default function Quote() {
           md: "45px", // 768px
           xl: "50px", // 1280px
         }}
-        // fontSize='30px'
-        // lineHeight='50px'
         className="qs-m"
         w={{
           base: "300px", //0px
