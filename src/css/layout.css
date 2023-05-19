@@ -66,9 +66,9 @@
     position: absolute;
     top: -5px
 }
-.quote-content::after{
+/* .quote-content::after{
     content: "Read this: ";
 }
 .quote-content::before{
     content: ";
-}
+} */
