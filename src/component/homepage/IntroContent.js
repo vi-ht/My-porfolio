@@ -15,8 +15,12 @@ const TextTemplate = ({ children, container }) => (
     }}
     className={container ? "container" : "qs-m"}
     lineHeight={{
-      base: "40ypx", //0px
+      base: "40px", //0px
       lg: "40px", // 992px
+    }}
+    mt={{
+      base: "0.8rem", //0px
+      lg: "0", // 992px
     }}
   >
     {children}
@@ -30,13 +34,14 @@ export default function IntroContent() {
         direction="column"
         position="absolute"
         bottom="7%"
+        width='90%'
       >
         {/* <Text fontSize={{ base: "24px", md: "40px", lg: "56px" }}>
         This is responsive text
       </Text> */}
         <Text
           fontSize={{
-            base: "50px", //0px
+            base: "55px", //0px
             sm: "60px", // 480px
             md: "70px", // 768px
             lg: "90px", // 992px

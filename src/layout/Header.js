@@ -42,9 +42,9 @@ export default function Header() {
   });
   return (
     <Flex
-      minW={{
-        base: "100%", //0px
-        sm: "100%", // 480px
+      w={{
+        base: "98%", //0px
+        sm: "98%", // 480px
         md: "90%", // 768px
         lg: "85%", // 992px
         xl: "80%", // 1280px

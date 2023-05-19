@@ -14,21 +14,21 @@ export default function Quote() {
       mt="85vh"
     >
       <Text
-        // fontSize={{
-        //   base: "23px", //0px
-        //   sm: "23px", // 480px
-        //   md: "27px", // 768px
-        //   lg: "27px", // 992px
-        //   xl: "30px", // 1280px
-        //   "2xl": "30px", //1536px
-        // }}
-        // lineHeight={{
-        //   base: "30px", //0px
-        //   md: "40px", // 768px
-        //   xl: "50px", // 1280px
-        // }}
-        fontSize='30px'
-        lineHeight='50px'
+        fontSize={{
+          base: "23px", //0px
+          sm: "23px", // 480px
+          md: "27px", // 768px
+          lg: "27px", // 992px
+          xl: "30px", // 1280px
+          "2xl": "30px", //1536px
+        }}
+        lineHeight={{
+          base: "40px", //0px
+          md: "45px", // 768px
+          xl: "50px", // 1280px
+        }}
+        // fontSize='30px'
+        // lineHeight='50px'
         className="qs-m"
         w={{
           base: "300px", //0px
@@ -41,11 +41,12 @@ export default function Quote() {
         textAlign="center"
         position="relative"
       >
-        {/* <span className="quote-content">UI/UX self-learning process has many difficulties and obstacles for a
-        newbie like me, but I know that{" "}</span> */}
+        <span className="quote-content"></span>
+        "UI/UX self-learning process has many difficulties and obstacles for a
+        newbie like me, but I know that{" "}
         <span className="highlight qs-b">persistence</span> and{" "}
         <span className="highlight qs-b">responsibility</span> for my goal are
-        the prerequisite factor for pursuing a big dream
+        the prerequisite factor for pursuing a big dream."
       </Text>
       <img src={bg} alt="wave-hand " className="bg-2nd" />
     </Center>
