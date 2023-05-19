@@ -10,12 +10,12 @@ import { Text, Flex, Box } from "@chakra-ui/react";
 const TextTemplate = ({ children, container }) => (
   <Text
     fontSize={{
-      base: "16px", //0px
+      base: "20px", //0px
       lg: "20px", // 992px
     }}
     className={container ? "container" : "qs-m"}
     lineHeight={{
-      base: "30px", //0px
+      base: "40ypx", //0px
       lg: "40px", // 992px
     }}
   >
@@ -29,7 +29,7 @@ export default function IntroContent() {
         justifyContent="start"
         direction="column"
         position="absolute"
-        bottom="5rem"
+        bottom="7%"
       >
         {/* <Text fontSize={{ base: "24px", md: "40px", lg: "56px" }}>
         This is responsive text
