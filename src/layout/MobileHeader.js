@@ -12,7 +12,7 @@ export default function MobileHeader() {
   return (
     <Flex
       minW={{
-        base: "100%", //0px
+        base: "94%", //0px
         sm: "100%", // 480px
         md: "90%", // 768px
         lg: "85%", // 992px
@@ -29,8 +29,10 @@ export default function MobileHeader() {
       }}
       mt={5}
       alignItems="center"
+      position="absolute"
+      zIndex={5}
     >
-      <Box p="4">
+      <Box>
         <Text fontSize="4xl" fontWeight={700} className="qs-b main-color">
           Thanh Vi
         </Text>

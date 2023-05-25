@@ -14,13 +14,13 @@ const Link = ({ path, children }) => {
   return (
     <>
       <NavLink
+        fontSize= "16px"
         to={path}
         className={({ isActive }) =>
           isActive ? "qs-b active-link" : "qs-m link"
         }
         style={({ isActive }) => {
           return {
-            fontSize: "20px",
             color: isActive ? "#FB797F" : "black",
           };
         }}
@@ -60,9 +60,11 @@ export default function Header() {
       }}
       mt={5}
       alignItems="center"
+      position="absolute"
+      zIndex={5}
     >
-      <Box p="4">
-        <Text fontSize="4xl" fontWeight={700} className="qs-b main-color">
+      <Box >
+        <Text fontSize="3xl" fontWeight={700} className="qs-b main-color">
           Thanh Vi
         </Text>
       </Box>
