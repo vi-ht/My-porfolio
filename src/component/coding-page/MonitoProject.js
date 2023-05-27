@@ -1,6 +1,8 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+//import layout
+import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import Monito from "../../asset/image/Monito-mockups.png";
 //import chakra UI component
@@ -19,46 +21,11 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function MonitoProject() {
     return (
-        <Center
-            w="full"
-            bg="rgba(255,228,130,0.25)"
-            // backgroundImage={bg}
-            // backgroundPosition="center"
-            // backgroundRepeat="no-repeat"
-            bgSize="100%"
-        >
-            <Center
-                w={{
-                    base: "90%", //0px
-                    sm: "94%", // 480px
-                    md: "90%", // 768px
-                    lg: "85%", // 992px
-                    xl: "80%", // 1280px
-                    "2xl": "90rem", //1536px
-                }}
-            >
-                <Flex
-                    w="full"
-                    alignItems="center"
-                    justify="center"
-                    direction="column"
-                    mt={{
-                        base: "75px", //0px
-                        sm: "90px", // 480px
-                        md: "100px", // 768px
-                        lg: "130px", // 992px
-                        xl: "150px", // 1280px
-                    }}
-                    mb={{
-                        base: "75px", //0px
-                        sm: "90px", // 480px
-                        md: "100px", // 768px
-                        lg: "130px", // 992px
-                        xl: "150px", // 1280px
-                    }}
-                >
-                    <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
-                        <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
+        <BgColorLayout bgColor="rgba(225,228,130,0.25)">
+            <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
+                <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
+                    <Center w="full" h="full">
+                        <Box>
                             <Text
                                 fontSize="25px"
                                 className="qs-b"
@@ -67,7 +34,7 @@ export default function MonitoProject() {
                                 MONITO
                             </Text>
                             <Text fontSize="16px" className="qs-b" mb="8px">
-                                (Responsive web)
+                                (Responsive web - MPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
                                 Monito is an e-commerce website that sells pets
@@ -84,10 +51,8 @@ export default function MonitoProject() {
                                 My responsibility:
                             </Text>
                             <UnorderedList>
-                                <ListItem>
-                                    Analyze design templates and code for
-                                    responsiveness.
-                                </ListItem>
+                                <ListItem>Analyze design templates.</ListItem>
+                                <ListItem>Code for responsiveness.</ListItem>
                             </UnorderedList>
                             <Text
                                 fontSize="16px"
@@ -146,20 +111,20 @@ export default function MonitoProject() {
                                     Go to Monito website
                                 </a>
                             </Button>
-                        </GridItem>
-                        <GridItem
-                            colSpan={{ base: 12, lg: 7 }}
-                            colStart={{ base: 1, lg: 6 }}
-                        >
-                            <img
-                                src={Monito}
-                                alt="Monito Mockups"
-                                style={{ width: "100%" }}
-                            ></img>
-                        </GridItem>
-                    </Grid>
-                </Flex>
-            </Center>
-        </Center>
+                        </Box>
+                    </Center>
+                </GridItem>
+                <GridItem
+                    colSpan={{ base: 12, lg: 7 }}
+                    colStart={{ base: 1, lg: 6 }}
+                >
+                    <img
+                        src={Monito}
+                        alt="Monito Mockups"
+                        style={{ width: "100%" }}
+                    ></img>
+                </GridItem>
+            </Grid>
+        </BgColorLayout>
     );
 }

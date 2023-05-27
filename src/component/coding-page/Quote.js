@@ -12,11 +12,6 @@ export default function Quote() {
         <Center
             w="full"
             position="relative"
-            // bg="gray.100"
-            // backgroundImage={Thesis}
-            // backgroundPosition="100% 85%"
-            // backgroundRepeat="no-repeat"
-            // bgSize="100%"
         >
             <Center
                 w={{

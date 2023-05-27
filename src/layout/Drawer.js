@@ -26,7 +26,7 @@ const Link = ({ path, children }) => {
       <NavLink
         to={path}
         className={({ isActive }) =>
-          isActive ? "qs-b active-link" : "qs-m link"
+          isActive ? "qs-b" : "qs-m"
         }
         style={({ isActive }) => {
           return {
@@ -51,6 +51,7 @@ export default function MobileDrawer() {
         bg="white"
         icon={<HamburgerIcon w={30} h={30} color="#FB797F" />}
         onClick={onOpen}
+        position="relative" left="15px"
       />
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen} >
         <DrawerOverlay />
@@ -62,8 +63,8 @@ export default function MobileDrawer() {
             <DrawerBody borderTopRadius="md">
               <Stack gap={3} className="qs-smb" float="left" ml='1rem'>
                 <Link path={PATH.home}>UX/UI</Link>
-                <Link path={PATH.uxui}>Coding</Link>
-                <Link path={PATH.resume}>Contact</Link>
+                <Link path={PATH.coding}>Coding</Link>
+                <Link path={PATH.about}>Contact</Link>
                 <Link path={PATH.resume}>My Resume</Link>
               </Stack>
             </DrawerBody>

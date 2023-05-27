@@ -18,6 +18,11 @@
     src: url(./../asset/Font/Quicksand-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: qs-light;
+    src: url(./../asset/Font/Quicksand-Light.ttf);
+}
+
 * {
     font-family: qs-regular;
 }
@@ -32,4 +37,7 @@
 }
 .qs-m {
     font-family: qs-medium;
+}
+.qs-l {
+    font-family: qs-light;
 }

@@ -2,6 +2,6 @@ export const PATH = {
     home: "/",
     uxui: "/ux-ui",
     coding: "/coding",
-    contact: "/contact",
+    about: "/about-me",
     resume: "/resume",
 }

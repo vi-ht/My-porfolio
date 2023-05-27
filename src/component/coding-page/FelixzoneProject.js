@@ -60,11 +60,11 @@ export default function FelixzoneProject() {
                 >
                     <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
                         <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
-                            <Text fontSize="25px" className="qs-b">
-                                FELIXZONE
+                            <Text fontSize="25px" className="qs-b" mt={{ base: 0, lg: "-30px" }}>
+                                FELIXZONE - Graduation Thesis
                             </Text>
                             <Text fontSize="16px" className="qs-b" mb="8px">
-                                (Responsive web)
+                                (Responsive web - SPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
                                 Felix Zone is a model booking platform with the
@@ -77,7 +77,20 @@ export default function FelixzoneProject() {
                                 mt="5px"
                                 mb="5px"
                             >
-                                My responsibility:
+                                FelixZone Project includes:
+                            </Text>
+                            <UnorderedList>
+                                <ListItem>FelixZone Lading-page</ListItem>
+                                <ListItem>FelixZone Web admin</ListItem>
+                                <ListItem>FelixZone Mobile app</ListItem>
+                            </UnorderedList>
+                            <Text
+                                fontSize="16px"
+                                className="qs-smb main-color"
+                                mt="5px"
+                                mb="5px"
+                            >
+                                My responsibility in team:
                             </Text>
                             <UnorderedList>
                                 <ListItem>
@@ -106,14 +119,14 @@ export default function FelixzoneProject() {
                                         fontSize="14px"
                                     >
                                         {" "}
-                                        FelixZone's Slide{" "}
+                                        FelixZone's final slide{" "}
                                         <ExternalLinkIcon mx="2px" />
                                     </Link>
                                     {/* <a target="_blank" href="">
                     View SRS
                 </a> */}
                                 </ListItem>
-                                <ListItem>Communicate with customers.</ListItem>
+                                <ListItem>Collect and analyze client requirements</ListItem>
                                 <ListItem>
                                     UI design in the final stages of the
                                     project.

@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import HomePage from "../component/homepage/HomePage";
 import CodingPage from "../component/coding-page/CodingPage";
 import MainLayout from "../layout/MainLayout";
+import AboutMePage from "../component/aboutme-page/AboutMePage";
 export default function Router() {
   const route = useRoutes([
     {
@@ -9,9 +10,8 @@ export default function Router() {
       element: <MainLayout/>,
       children: [
         { index: true, element: <HomePage/> },
-        { path: "ux-ui", element: <CodingPage/> },
-        { path: "coding", element: <></> },
-        { path: "contact", element: <></> },
+        { path: "coding", element: <CodingPage/> },
+        { path: "about-me", element: <AboutMePage></AboutMePage> },
         { path: "resume", element: <></> },
       ],
     },

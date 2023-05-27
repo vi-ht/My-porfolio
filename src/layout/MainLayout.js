@@ -5,7 +5,7 @@ import { Box, Flex, Center } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 export default function MainLayout() {
   return (
-    <Container maxW="100vw" h="100vh" centerContent p="0">
+    <Container maxW="100vw" h="100vh" centerContent p="0" position="relative">
       <Header />
       <MobileHeader />
       <Center
