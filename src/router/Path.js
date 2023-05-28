@@ -4,4 +4,5 @@ export const PATH = {
     coding: "/coding",
     about: "/about-me",
     resume: "/resume",
-}
+    cinema: "/cinema-food-stall",
+};

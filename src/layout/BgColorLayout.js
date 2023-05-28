@@ -4,7 +4,7 @@ import "./../css/font.css";
 //import chakra UI component
 import { Center, Flex } from "@chakra-ui/react";
 //----------------------------------------------------------
-export default function BgColorLayout({ bgColor, children, page }) {
+export default function BgColorLayout({ bgColor, children, page, mainPage }) {
     return (
         <Center w="full" bg={bgColor} bgSize="100%" mainPage>
             <Center
@@ -19,8 +19,8 @@ export default function BgColorLayout({ bgColor, children, page }) {
             >
                 <Flex
                     w="full"
-                    alignItems="center"
-                    justify="center"
+                    alignItems={mainPage ? "flex-start" : "center"}
+                    justify={mainPage ? "flex-start" : "center"}
                     direction="column"
                     mt={
                         !page

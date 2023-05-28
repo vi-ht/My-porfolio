@@ -21,7 +21,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function MonitoProject() {
     return (
-        <BgColorLayout bgColor="rgba(225,228,130,0.25)">
+        <BgColorLayout bgColor="rgba(255,228,130,0.25)">
             <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
                 <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
                     <Center w="full" h="full">

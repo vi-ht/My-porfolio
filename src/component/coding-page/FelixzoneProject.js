@@ -1,6 +1,8 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+//import layout
+import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import Felix from "../../asset/image/Felix-mockups.png";
 import bg from "../../asset/image/pink-bg.png";
@@ -20,47 +22,16 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function FelixzoneProject() {
     return (
-        <Center
-            w="full"
-            bg="rgba(255,215,218,0.5)"
-            // backgroundImage={bg}
-            // backgroundPosition="center"
-            // backgroundRepeat="no-repeat"
-            bgSize="100%"
-        >
-            <Center
-                w={{
-                    base: "90%", //0px
-                    sm: "94%", // 480px
-                    md: "90%", // 768px
-                    lg: "85%", // 992px
-                    xl: "80%", // 1280px
-                    "2xl": "90rem", //1536px
-                }}
-            >
-                <Flex
-                    w="full"
-                    alignItems="center"
-                    justify="center"
-                    direction="column"
-                    mt={{
-                        base: "75px", //0px
-                        sm: "90px", // 480px
-                        md: "100px", // 768px
-                        lg: "130px", // 992px
-                        xl: "150px", // 1280px
-                    }}
-                    mb={{
-                        base: "75px", //0px
-                        sm: "90px", // 480px
-                        md: "100px", // 768px
-                        lg: "130px", // 992px
-                        xl: "150px", // 1280px
-                    }}
-                >
-                    <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
-                        <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
-                            <Text fontSize="25px" className="qs-b" mt={{ base: 0, lg: "-30px" }}>
+        <BgColorLayout bgColor="rgba(255,215,218,0.5)">
+            <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
+                <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
+                    <Center w="full" h="full">
+                        <Box>
+                            <Text
+                                fontSize="25px"
+                                className="qs-b"
+                                mt={{ base: 0, lg: "-30px" }}
+                            >
                                 FELIXZONE - Graduation Thesis
                             </Text>
                             <Text fontSize="16px" className="qs-b" mb="8px">
@@ -126,7 +97,9 @@ export default function FelixzoneProject() {
                     View SRS
                 </a> */}
                                 </ListItem>
-                                <ListItem>Collect and analyze client requirements</ListItem>
+                                <ListItem>
+                                    Collect and analyze client requirements
+                                </ListItem>
                                 <ListItem>
                                     UI design in the final stages of the
                                     project.
@@ -161,20 +134,20 @@ export default function FelixzoneProject() {
                                     Go to Felixzone web site
                                 </a>
                             </Button>
-                        </GridItem>
-                        <GridItem
-                            colSpan={{ base: 12, lg: 7 }}
-                            colStart={{ base: 1, lg: 6 }}
-                        >
-                            <img
-                                src={Felix}
-                                alt="FelixZone Mockups"
-                                style={{ width: "100%" }}
-                            ></img>
-                        </GridItem>
-                    </Grid>
-                </Flex>
-            </Center>
-        </Center>
+                        </Box>
+                    </Center>
+                </GridItem>
+                <GridItem
+                    colSpan={{ base: 12, lg: 7 }}
+                    colStart={{ base: 1, lg: 6 }}
+                >
+                    <img
+                        src={Felix}
+                        alt="FelixZone Mockups"
+                        style={{ width: "100%" }}
+                    ></img>
+                </GridItem>
+            </Grid>
+        </BgColorLayout>
     );
 }

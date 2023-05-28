@@ -26,6 +26,13 @@
 .container {
     position: relative;
 }
+.card-line{
+    width: 150px;
+    height: 2px;
+    background-color: gray;
+    margin-top: 15px;
+    border: 50%
+}
 
 .bg {
     position: absolute;
