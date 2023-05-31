@@ -4,6 +4,8 @@ import CodingPage from "../component/coding-page/CodingPage";
 import MainLayout from "../layout/MainLayout";
 import AboutMePage from "../component/aboutme-page/AboutMePage";
 import CinnemaFoodStall from "../component/homepage/CinemaFoodStall";
+import AuraMobile from "../component/homepage/AuraMobile";
+import Cogibannay from "../component/homepage/Cogibannay";
 export default function Router() {
     const route = useRoutes([
         {
@@ -20,6 +22,18 @@ export default function Router() {
                 {
                     path: "cinema-food-stall",
                     element: <CinnemaFoodStall></CinnemaFoodStall>,
+                },
+                {
+                    path: "aura-ios",
+                    element: <AuraMobile></AuraMobile>,
+                },
+                {
+                    path: "co-gi-ban-nay",
+                    element: <Cogibannay></Cogibannay>,
+                },
+                {
+                    path: "aura-web",
+                    element: <></>,
                 },
             ],
         },

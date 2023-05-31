@@ -4,6 +4,7 @@ import "./../../css/font.css";
 import IntroContent from "./IntroContent";
 import Quote from "./Quote";
 import ProjectList from "./ProjectList";
+import Footer from "../../layout/Footer";
 //-----------------------
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
@@ -13,6 +14,7 @@ export default function HomePage() {
       <IntroContent />
       <Quote/>
       <ProjectList/>
+      <Footer mt="-4rem"/>
     </Box>
   );
 }

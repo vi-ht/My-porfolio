@@ -1,8 +1,11 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+//import hook
+import { useEffect, useLayoutEffect } from "react";
 //import component
 import IntroContent from "./IntroContent";
+import Footer from "../../layout/Footer";
 import Quote from "./Quote";
 import MonitoProject from "./MonitoProject";
 import MainContent from "./MainContent";
@@ -25,6 +28,7 @@ export default function CodingPage() {
             <MonitoProject />
             <MYBProject />
             <NatureProject />
+            <Footer mt={10}/>
         </Box>
     );
 }

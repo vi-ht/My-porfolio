@@ -5,4 +5,7 @@ export const PATH = {
     about: "/about-me",
     resume: "/resume",
     cinema: "/cinema-food-stall",
+    auraIOS: "/aura-ios",
+    cogibannay: "/co-gi-ban-nay",
+    auraWeb: "/aura-web",
 };

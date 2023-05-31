@@ -5,21 +5,23 @@ import "./../../css/layout.css";
 import cinema from "../../asset/image/CinnemaFoodStall.png";
 import auraMobile from "../../asset/image/Aura-mobile-thumbnail.png";
 import cogibanay from "../../asset/image/Cogibannay.png";
-import auraDesk from "./../../asset/image/CodingBg.png";
+import auraDesk from "./../../asset/image/Aura.png";
 //import components
 import ProjectCard from "./ProjectCard";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 // import chakra components
 import { Text, Grid } from "@chakra-ui/react";
+import { PATH } from "../../router/Path";
 const data = [
     {
         type: "MOBILE APP DESIGN (Androi)",
-        name: "Cinema food stalls",
+        name: "CINEMA FOOD STALLS",
         des: `This is case study of "Cinema food stalls" - a snack-ordering app for a movie theater chains. It's also a practical exercises of "Google UX design" course.`,
         img: `${cinema}`,
         span: "6",
         start: "1",
+        path: `${PATH.cinema}`
     },
     {
         type: "MOBILE APP DESIGN (IOS)",
@@ -28,14 +30,16 @@ const data = [
         img: `${auraMobile}`,
         span: "6",
         start: "7",
+        path: `${PATH.auraIOS}`
     },
     {
         type: "WEB RESPONSIVE DESIGN",
-        name: "Cinema food stalls",
+        name: "AURA - THE AURA OF BEAUTY",
         des: "A snack-ordering app for a movie theater chains",
-        img: `${auraMobile}`,
+        img: `${auraDesk}`,
         span: "6",
         start: "1",
+        path: `${PATH.auraWeb}`
     },
     {
         type: "UX RESEARCH",
@@ -44,6 +48,7 @@ const data = [
         img: `${cogibanay}`,
         span: "6",
         start: "7",
+        path: `${PATH.cogibannay}`
     },
 ];
 export default function ProjectList() {
@@ -73,6 +78,7 @@ export default function ProjectList() {
                         des={item.des}
                         type={item.type}
                         img={item.img}
+                        path={item.path}
                     />
                 ))}
             </Grid>

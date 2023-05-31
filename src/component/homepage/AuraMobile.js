@@ -13,9 +13,16 @@ import {
     VStack,
     GridItem,
 } from "@chakra-ui/react";
-import bg1 from "./../../asset/image/Cinema-part1.png";
-import bg2 from "./../../asset/image/Cinema-part2.png";
-import bg3 from "./../../asset/image/Cinema-part3.png";
+import bg1 from "./../../asset/image/AuraProjectPart1.png";
+import bg2 from "./../../asset/image/AuraProjectPart2.png";
+import bg3 from "./../../asset/image/AuraProjectPart3.png";
+import bg4 from "./../../asset/image/AuraProjectPart4.png";
+import bg5 from "./../../asset/image/AuraProjectPart5.png";
+import bg6 from "./../../asset/image/AuraProjectPart6.png";
+import bg7 from "./../../asset/image/AuraProjectPart7.png";
+import bg8 from "./../../asset/image/AuraProjectPart8.png";
+import bg9 from "./../../asset/image/AuraProjectPart9.png";
+import bg10 from "./../../asset/image/AuraProjectPart10.png";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -27,28 +34,28 @@ import { Link } from "react-router-dom";
 import { PATH } from "../../router/Path";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 //-----------------------------------------------------------
-export default function CinnemaFoodStall({}) {
+export default function AuraMobile({}) {
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-        document.getElementById("cinemaContent").style.display = "none";
+        document.getElementById("content").style.display = "none";
     });
     useEffect(() => {
-        window.scrollTo(0, 0);
         const timeout = setTimeout(() => {
-            document.getElementById("loading1").style.display = "none";
-            document.getElementById("cinemaContent").style.display = "block";
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
         }, 3500);
         //
         return () => {
             clearTimeout(timeout);
         };
     });
+
     return (
         <Box w="full" mt="13vh">
-            <Center w="full" h="87vh" id="loading1">
+            <Center w="full" h="87vh" id="loading">
                 <CircularProgress isIndeterminate color="#FB797F" />
             </Center>
-            <Box id="cinemaContent">
+            <Box id="content">
                 <Center>
                     <Flex
                         w={{
@@ -72,19 +79,23 @@ export default function CinnemaFoodStall({}) {
                         alignItems="center"
                     >
                         <Box>
-                            <Breadcrumb mb={3}>
+                            <Breadcrumb mb={2}>
                                 <BreadcrumbItem>
                                     <Link to={PATH.home}>
                                         <BreadcrumbLink href="#">
-                                            UX/UI
+                                        UX/UI
                                         </BreadcrumbLink>
                                     </Link>
                                 </BreadcrumbItem>
 
                                 <BreadcrumbItem>
-                                    <Link to={PATH.auraIOS}>
-                                        <BreadcrumbLink href="#">
-                                            Cinema Food Stalls Project
+                                    <Link to={PATH.cinema}>
+                                        <BreadcrumbLink
+                                            href="#"
+                                            color="#FB797F"
+                                            className="qs-smb"
+                                        >
+                                            Aura Project (IOS version)
                                         </BreadcrumbLink>
                                     </Link>
                                 </BreadcrumbItem>
@@ -92,22 +103,72 @@ export default function CinnemaFoodStall({}) {
                         </Box>
                     </Flex>
                 </Center>
-
                 <img
                     src={bg1}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
+                <img
+                    src={bg2}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                        marginTop: "5rem",
+                    }}
+                ></img>
+                <img
+                    src={bg3}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+                <img
+                    src={bg4}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+                <img
+                    src={bg5}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+                <img
+                    src={bg6}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+                <img
+                    src={bg7}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+
                 <iframe
                     style={{
                         border: "1px solid rgba(0, 0, 0, 0.1)",
                         width: "100%",
                         height: "100vh",
                     }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLHSKC75DIIbThNBi0D153P%2FCinema-food-stalls%3Ftype%3Ddesign%26node-id%3D1-4563%26scaling%3Dscale-down%26page-id%3D1%253A2103%26starting-point-node-id%3D1%253A4563"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUrJ4ZK1KyfZf0PDNdsGqes%2FAura%3Ftype%3Ddesign%26node-id%3D484-8608%26scaling%3Dscale-down%26page-id%3D484%253A8336%26starting-point-node-id%3D484%253A8608"
                     allowfullscreen
                 ></iframe>
                 <img
-                    src={bg2}
+                    src={bg8}
+                    style={{
+                        width: "100%",
+                        marginBottom: "1rem",
+                    }}
+                ></img>
+                <img
+                    src={bg9}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
                 <iframe
@@ -116,11 +177,11 @@ export default function CinnemaFoodStall({}) {
                         width: "100%",
                         height: "100vh",
                     }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLHSKC75DIIbThNBi0D153P%2FCinema-food-stalls%3Ftype%3Ddesign%26node-id%3D25-6126%26scaling%3Dscale-down%26page-id%3D1%253A2104%26starting-point-node-id%3D25%253A6126"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUrJ4ZK1KyfZf0PDNdsGqes%2FAura%3Ftype%3Ddesign%26node-id%3D264-6096%26scaling%3Dscale-down%26page-id%3D235%253A976%26starting-point-node-id%3D264%253A6096"
                     allowfullscreen
                 ></iframe>
                 <img
-                    src={bg3}
+                    src={bg10}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
             </Box>
