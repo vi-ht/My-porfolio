@@ -2,6 +2,7 @@
 import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/aboutme-page.css";
+import "./../../css/animate.css";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
@@ -160,6 +161,7 @@ export default function AboutMePage() {
                 mt={{ base: 8, sm: 6, lg: 0 }}
             >
                 <GridItem
+                    id="abme-left"
                     colSpan={{ base: 12, lg: 6 }}
                     colStart={1}
                     w="full"
@@ -184,6 +186,7 @@ export default function AboutMePage() {
                 <GridItem
                     colSpan={{ base: 12, lg: 6 }}
                     colStart={{ base: 1, lg: 7 }}
+                    id="abme-right"
                 >
                     <Center w="full" h="full">
                         <Box>

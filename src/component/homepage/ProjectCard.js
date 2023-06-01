@@ -17,7 +17,7 @@ import { PATH } from "../../router/Path";
 //-----------------------------------------------------------
 export default function ProjectCard({ span, start, name, type, des, img, path }) {
     return (
-        <GridItem colSpan={{ base: 12, lg: 6 }} mb={5}>
+        <GridItem colSpan={span} mb={5}>
             <Link to={path}>
                 <img
                     src={img}

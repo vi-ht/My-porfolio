@@ -1,6 +1,7 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/layout.css";
+import "./../../css/animate.css"
 //import layout
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
@@ -32,7 +33,7 @@ export default function IntroContent() {
     return (
         <BgImageLayout bg={bgImage} pos="70% 100%" mainPage>
             <Box w="full" h="full" position="relative">
-                <Box position="absolute" bottom="3rem">
+                <Box position="absolute" bottom="3rem" id="intro">
                     <Text
                         fontSize={{
                             base: "55px", //0px

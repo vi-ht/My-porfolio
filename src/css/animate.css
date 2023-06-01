@@ -1,0 +1,51 @@
+#intro {
+    animation-duration: 0.7s;
+    animation-name: intro-anim;
+    animation-delay: 0;
+    animation-timing-function: "ease-in";
+}
+
+@keyframes intro-anim {
+    0% {
+        transform: translate(0, 70px);
+    }
+
+    90% {
+        transform: translate(0, -10px);
+    }
+
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
+#abme-left {
+    animation-duration: 1.2s;
+    animation-name: abme-left;
+    animation-delay: 0;
+    animation-timing-function: "ease-in";
+}
+
+#abme-right{
+    animation-duration: 1.2s;
+    animation-name: abme-right;
+    animation-delay: 0;
+    animation-timing-function: "ease-in";
+}
+
+@keyframes abme-left {
+    0% {
+        transform: translate(-50px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes abme-right {
+    0% {
+        transform: translate(50px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

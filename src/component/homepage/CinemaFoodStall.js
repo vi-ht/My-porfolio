@@ -3,6 +3,8 @@ import "./../../css/font.css";
 import "./../../css/layout.css";
 //import hook
 import { useEffect, useLayoutEffect } from "react";
+import Footer from "../../layout/Footer";
+import ViewMore from "./Viewmore";
 // import chakra components
 import {
     Text,
@@ -16,6 +18,11 @@ import {
 import bg1 from "./../../asset/image/Cinema-part1.png";
 import bg2 from "./../../asset/image/Cinema-part2.png";
 import bg3 from "./../../asset/image/Cinema-part3.png";
+import bg4 from "./../../asset/image/Cinema-part4.png";
+import bg5 from "./../../asset/image/Cinema-part5.png";
+import bg6 from "./../../asset/image/Cinema-part6.png";
+import bg7 from "./../../asset/image/Cinema-part7.png";
+import bg8 from "./../../asset/image/Cinema-part8.png";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -83,7 +90,11 @@ export default function CinnemaFoodStall({}) {
 
                                 <BreadcrumbItem>
                                     <Link to={PATH.auraIOS}>
-                                        <BreadcrumbLink href="#">
+                                        <BreadcrumbLink
+                                            href="#"
+                                            color="#FB797F"
+                                            className="qs-smb"
+                                        >
                                             Cinema Food Stalls Project
                                         </BreadcrumbLink>
                                     </Link>
@@ -95,7 +106,23 @@ export default function CinnemaFoodStall({}) {
 
                 <img
                     src={bg1}
-                    style={{ width: "100%", marginBottom: "1rem" }}
+                    style={{ width: "100%"}}
+                ></img>
+                <img
+                    src={bg2}
+                    style={{ width: "100%" }}
+                ></img>
+                <img
+                    src={bg3}
+                    style={{ width: "100%"}}
+                ></img>
+                <img
+                    src={bg4}
+                    style={{ width: "100%"}}
+                ></img>
+                <img
+                    src={bg5}
+                    style={{ width: "100%"}}
                 ></img>
                 <iframe
                     style={{
@@ -107,8 +134,12 @@ export default function CinnemaFoodStall({}) {
                     allowfullscreen
                 ></iframe>
                 <img
-                    src={bg2}
-                    style={{ width: "100%", marginBottom: "1rem" }}
+                    src={bg6}
+                    style={{ width: "100%"}}
+                ></img>
+                <img
+                    src={bg7}
+                    style={{ width: "100%"}}
                 ></img>
                 <iframe
                     style={{
@@ -120,9 +151,11 @@ export default function CinnemaFoodStall({}) {
                     allowfullscreen
                 ></iframe>
                 <img
-                    src={bg3}
+                    src={bg8}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
+                <ViewMore id={1} />
+                <Footer mt={8} />
             </Box>
         </Box>
     );

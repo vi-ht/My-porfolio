@@ -3,6 +3,7 @@ import "./../../css/font.css";
 import "./../../css/layout.css";
 //import hook
 import { useEffect, useLayoutEffect } from "react";
+import Footer from "../../layout/Footer";
 // import chakra components
 import {
     Text,
@@ -23,16 +24,12 @@ import bg7 from "./../../asset/image/AuraProjectPart7.png";
 import bg8 from "./../../asset/image/AuraProjectPart8.png";
 import bg9 from "./../../asset/image/AuraProjectPart9.png";
 import bg10 from "./../../asset/image/AuraProjectPart10.png";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbSeparator,
-} from "@chakra-ui/react";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 //import React-router-dom
 import { Link } from "react-router-dom";
 import { PATH } from "../../router/Path";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
+import ViewMore from "./Viewmore";
 //-----------------------------------------------------------
 export default function AuraMobile({}) {
     useLayoutEffect(() => {
@@ -83,7 +80,7 @@ export default function AuraMobile({}) {
                                 <BreadcrumbItem>
                                     <Link to={PATH.home}>
                                         <BreadcrumbLink href="#">
-                                        UX/UI
+                                            UX/UI
                                         </BreadcrumbLink>
                                     </Link>
                                 </BreadcrumbItem>
@@ -184,6 +181,8 @@ export default function AuraMobile({}) {
                     src={bg10}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
+                <ViewMore id={2}/>
+                <Footer mt={10}/>
             </Box>
         </Box>
     );
