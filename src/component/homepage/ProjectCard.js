@@ -1,6 +1,7 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/layout.css";
+import "./../../css/animate.css"
 // import chakra components
 import {
     Text,
@@ -17,7 +18,7 @@ import { PATH } from "../../router/Path";
 //-----------------------------------------------------------
 export default function ProjectCard({ span, start, name, type, des, img, path }) {
     return (
-        <GridItem colSpan={span} mb={5}>
+        <GridItem colSpan={span} mb={5} className="card-container">
             <Link to={path}>
                 <img
                     src={img}

@@ -3,18 +3,17 @@ import "./../../css/font.css";
 import "./../../css/layout.css";
 //import hook
 import { useEffect, useLayoutEffect } from "react";
-//import hook
-import { useTitle } from "../../customHook/useTitle";
+import { useTitle } from "./../../customHook/useTitle";
 //import component
+import BreadcrumbComp from "./Breadcrumb";
 import Footer from "../../layout/Footer";
 import ViewMore from "./Viewmore";
-import BreadcrumbComp from "./Breadcrumb";
 // import chakra components
-import { Box, Center, CircularProgress } from "@chakra-ui/react";
+import { Box, GridItem, Center, CircularProgress } from "@chakra-ui/react";
 //import image
-import bg1 from "./../../asset/image/AuraProjectPart1.png";
-import bg2 from "./../../asset/image/AuraProjectPart2.png";
-import bg3 from "./../../asset/image/AuraProjectPart3.png";
+import bg1 from "./../../asset/image/AuraWebPart1.png";
+import bg2 from "./../../asset/image/AuraWebPart2.png";
+import bg3 from "./../../asset/image/AuraWebPart3.png";
 import bg4 from "./../../asset/image/AuraProjectPart4.png";
 import bg5 from "./../../asset/image/AuraProjectPart5.png";
 import bg6 from "./../../asset/image/AuraProjectPart6.png";
@@ -22,13 +21,12 @@ import bg7 from "./../../asset/image/AuraProjectPart7.png";
 import bg8 from "./../../asset/image/AuraProjectPart8.png";
 import bg9 from "./../../asset/image/AuraProjectPart9.png";
 import bg10 from "./../../asset/image/AuraProjectPart10.png";
-import {} from "@chakra-ui/react";
 //import React-router-dom
 import { PATH } from "../../router/Path";
 
 //-----------------------------------------------------------
-export default function AuraMobile({}) {
-    useTitle(`Aura Project (IOS version) | Thanh Vi's portfolio`);
+export default function AuraWeb({}) {
+    useTitle(`Aura Project (Web responsive version) | Thanh Vi's portfolio`);
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
         document.getElementById("content").style.display = "none";
@@ -43,32 +41,27 @@ export default function AuraMobile({}) {
             clearTimeout(timeout);
         };
     });
-
     return (
         <Box w="full" mt="13vh">
             <Center w="full" h="87vh" id="loading">
                 <CircularProgress isIndeterminate color="#FB797F" />
             </Center>
             <Box id="content">
-                <BreadcrumbComp projectName="Aura Project (IOS version)" path={PATH.auraIOS}/>
-                <img
-                    src={bg1}
-                    style={{ width: "100%", marginBottom: "1rem" }}
-                ></img>
+                <BreadcrumbComp
+                    projectName="Aura Project (Web responsive version)"
+                    path={PATH.auraWeb}
+                />
+                <img src={bg1} style={{ width: "100%" }}></img>
                 <img
                     src={bg2}
                     style={{
                         width: "100%",
-                        marginBottom: "1rem",
-                        marginTop: "5rem",
+                        // marginTop: "5rem",
                     }}
                 ></img>
                 <img
                     src={bg3}
-                    style={{
-                        width: "100%",
-                        marginBottom: "1rem",
-                    }}
+                    style={{width: "100%"}}
                 ></img>
                 <img
                     src={bg4}
@@ -132,7 +125,7 @@ export default function AuraMobile({}) {
                     src={bg10}
                     style={{ width: "100%", marginBottom: "1rem" }}
                 ></img>
-                <ViewMore id={2} />
+                <ViewMore id={3} />
                 <Footer mt={10} />
             </Box>
         </Box>

@@ -1,29 +1,46 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+import "./../../css/animate.css";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
+//import custom hook
+import { useAnim } from "./../../customHook/useAnim";
 //import image
 import Monito from "../../asset/image/Monito-mockups.png";
 //import chakra UI component
-import { Grid, GridItem, Box, Text, Center, Flex } from "@chakra-ui/react";
 import {
-    List,
+    Grid,
+    GridItem,
+    Box,
+    Text,
+    Center,
     ListItem,
-    ListIcon,
-    OrderedList,
     UnorderedList,
+    Button,
+    Link,
 } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+//import chakra UI icon
 import { LinkIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function MonitoProject() {
+    useAnim(
+        "monito-container",
+        "monito-left",
+        "monito-right",
+        "project-left",
+        "project-right"
+    );
     return (
-        <BgColorLayout bgColor="rgba(255,228,130,0.25)">
+        <BgColorLayout bgColor="rgba(255,228,130,0.25)" id="monito-container">
             <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
-                <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
+                <GridItem
+                    colSpan={{ base: 12, lg: 5 }}
+                    colStart={1}
+                    transform="translate(-30px,0)"
+                    id="monito-left"
+                >
                     <Center w="full" h="full">
                         <Box>
                             <Text
@@ -117,6 +134,8 @@ export default function MonitoProject() {
                 <GridItem
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 6 }}
+                    transform="translate(30px,0)"
+                    id="monito-right"
                 >
                     <img
                         src={Monito}

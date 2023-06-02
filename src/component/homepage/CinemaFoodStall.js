@@ -3,18 +3,14 @@ import "./../../css/font.css";
 import "./../../css/layout.css";
 //import hook
 import { useEffect, useLayoutEffect } from "react";
+import { useTitle } from "./../../customHook/useTitle";
+//import component
 import Footer from "../../layout/Footer";
 import ViewMore from "./Viewmore";
+import BreadcrumbComp from "./Breadcrumb";
 // import chakra components
-import {
-    Text,
-    Box,
-    Container,
-    Flex,
-    Center,
-    VStack,
-    GridItem,
-} from "@chakra-ui/react";
+import { Box, Center, CircularProgress } from "@chakra-ui/react";
+//import image
 import bg1 from "./../../asset/image/Cinema-part1.png";
 import bg2 from "./../../asset/image/Cinema-part2.png";
 import bg3 from "./../../asset/image/Cinema-part3.png";
@@ -23,18 +19,11 @@ import bg5 from "./../../asset/image/Cinema-part5.png";
 import bg6 from "./../../asset/image/Cinema-part6.png";
 import bg7 from "./../../asset/image/Cinema-part7.png";
 import bg8 from "./../../asset/image/Cinema-part8.png";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbSeparator,
-} from "@chakra-ui/react";
 //import React-router-dom
-import { Link } from "react-router-dom";
 import { PATH } from "../../router/Path";
-import { CircularProgress, CircularProgressLabel } from "@chakra-ui/react";
 //-----------------------------------------------------------
 export default function CinnemaFoodStall({}) {
+    useTitle(`Cinema Food Stalls Project | Thanh Vi's portfolio`);
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
         document.getElementById("cinemaContent").style.display = "none";
@@ -56,74 +45,15 @@ export default function CinnemaFoodStall({}) {
                 <CircularProgress isIndeterminate color="#FB797F" />
             </Center>
             <Box id="cinemaContent">
-                <Center>
-                    <Flex
-                        w={{
-                            base: "90%", //0px
-                            sm: "94%", // 480px
-                            md: "86%", // 768px
-                            lg: "94%", // 992px
-                            xl: "80%", // 1280px
-                            "2xl": "80rem", //1536px
-                        }}
-                        display={{
-                            base: "none", //0px
-                            sm: "none", // 480px
-                            md: "none", // 768px
-                            lg: "flex", // 992px
-                            xl: "flex", // 1280px
-                            "2xl": "flex", //1536px
-                        }}
-                        mt={2}
-                        mb={2}
-                        alignItems="center"
-                    >
-                        <Box>
-                            <Breadcrumb mb={3}>
-                                <BreadcrumbItem>
-                                    <Link to={PATH.home}>
-                                        <BreadcrumbLink href="#">
-                                            UX/UI
-                                        </BreadcrumbLink>
-                                    </Link>
-                                </BreadcrumbItem>
-
-                                <BreadcrumbItem>
-                                    <Link to={PATH.auraIOS}>
-                                        <BreadcrumbLink
-                                            href="#"
-                                            color="#FB797F"
-                                            className="qs-smb"
-                                        >
-                                            Cinema Food Stalls Project
-                                        </BreadcrumbLink>
-                                    </Link>
-                                </BreadcrumbItem>
-                            </Breadcrumb>
-                        </Box>
-                    </Flex>
-                </Center>
-
-                <img
-                    src={bg1}
-                    style={{ width: "100%"}}
-                ></img>
-                <img
-                    src={bg2}
-                    style={{ width: "100%" }}
-                ></img>
-                <img
-                    src={bg3}
-                    style={{ width: "100%"}}
-                ></img>
-                <img
-                    src={bg4}
-                    style={{ width: "100%"}}
-                ></img>
-                <img
-                    src={bg5}
-                    style={{ width: "100%"}}
-                ></img>
+                <BreadcrumbComp
+                    projectName="Cinema Food Stalls Project"
+                    path={PATH.cinema}
+                />
+                <img src={bg1} style={{ width: "100%" }}></img>
+                <img src={bg2} style={{ width: "100%" }}></img>
+                <img src={bg3} style={{ width: "100%" }}></img>
+                <img src={bg4} style={{ width: "100%" }}></img>
+                <img src={bg5} style={{ width: "100%" }}></img>
                 <iframe
                     style={{
                         border: "1px solid rgba(0, 0, 0, 0.1)",
@@ -133,14 +63,8 @@ export default function CinnemaFoodStall({}) {
                     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLHSKC75DIIbThNBi0D153P%2FCinema-food-stalls%3Ftype%3Ddesign%26node-id%3D1-4563%26scaling%3Dscale-down%26page-id%3D1%253A2103%26starting-point-node-id%3D1%253A4563"
                     allowfullscreen
                 ></iframe>
-                <img
-                    src={bg6}
-                    style={{ width: "100%"}}
-                ></img>
-                <img
-                    src={bg7}
-                    style={{ width: "100%"}}
-                ></img>
+                <img src={bg6} style={{ width: "100%" }}></img>
+                <img src={bg7} style={{ width: "100%" }}></img>
                 <iframe
                     style={{
                         border: "1px solid rgba(0, 0, 0, 0.1)",

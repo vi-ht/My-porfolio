@@ -4,6 +4,7 @@ import { useLayoutEffect, useEffect } from "react";
 import "./../css/font.css";
 import "./../css/Color.css";
 import "./../css/layout.css";
+import "./../css/animate.css";
 // import chakraUI components
 import { HStack, Text, Box, Flex, Spacer, Center } from "@chakra-ui/react";
 // import react-router-dom
@@ -91,6 +92,12 @@ export default function Header() {
                             fontSize="3xl"
                             fontWeight={700}
                             className="qs-b main-color"
+                            sx={{
+                                transition: "0.5s"
+                            }}
+                            _hover={{
+                                color: "black"
+                            }}
                         >
                             Thanh Vi
                         </Text>

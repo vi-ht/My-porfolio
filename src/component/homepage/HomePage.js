@@ -1,5 +1,7 @@
 //import css
 import "./../../css/font.css";
+//import hook
+import { useTitle } from "./../../customHook/useTitle";
 //import component
 import IntroContent from "./IntroContent";
 import Quote from "./Quote";
@@ -9,6 +11,7 @@ import Footer from "../../layout/Footer";
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
 export default function HomePage() {
+  useTitle(`UX/UI | Thanh Vi's portfolio`);
   return (
     <Box w='100%'>
       <IntroContent />

@@ -33,7 +33,7 @@ export default function IntroContent() {
     return (
         <BgImageLayout bg={bgImage} pos="70% 100%" mainPage>
             <Box w="full" h="full" position="relative">
-                <Box position="absolute" bottom="3rem" id="intro">
+                <Box position="absolute" bottom="3rem" className="intro">
                     <Text
                         fontSize={{
                             base: "55px", //0px

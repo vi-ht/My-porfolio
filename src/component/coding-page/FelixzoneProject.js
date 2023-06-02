@@ -1,30 +1,46 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+import "./../../css/animate.css";
+//import custom hook
+import { useAnim } from "./../../customHook/useAnim";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import Felix from "../../asset/image/Felix-mockups.png";
-import bg from "../../asset/image/pink-bg.png";
 //import chakra UI component
-import { Grid, GridItem, Box, Text, Center, Flex } from "@chakra-ui/react";
 import {
-    List,
+    Grid,
+    GridItem,
+    Box,
+    Text,
+    Center,
     ListItem,
-    ListIcon,
-    OrderedList,
     UnorderedList,
+    Button,
+    Link,
 } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+//import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function FelixzoneProject() {
+    useAnim(
+        "felix-container",
+        "felix-left",
+        "felix-right",
+        "project-left",
+        "project-right"
+    );
     return (
-        <BgColorLayout bgColor="rgba(255,215,218,0.5)">
+        <BgColorLayout bgColor="rgba(255,215,218,0.5)" id="felix-container">
             <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
-                <GridItem colSpan={{ base: 12, lg: 5 }} colStart={1}>
+                <GridItem
+                    colSpan={{ base: 12, lg: 5 }}
+                    colStart={1}
+                    transform="translate(-30px,0)"
+                    id="felix-left"
+                >
                     <Center w="full" h="full">
                         <Box>
                             <Text
@@ -140,6 +156,8 @@ export default function FelixzoneProject() {
                 <GridItem
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 6 }}
+                    transform="translate(30px,0)"
+                    id="felix-right"
                 >
                     <img
                         src={Felix}

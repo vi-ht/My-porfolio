@@ -26,7 +26,7 @@ const Link = ({ path, children }) => {
       <NavLink
         to={path}
         className={({ isActive }) =>
-          isActive ? "qs-b" : "qs-m"
+          isActive ? "qs-b mobile-link" : "qs-m mobile-link"
         }
         style={({ isActive }) => {
           return {

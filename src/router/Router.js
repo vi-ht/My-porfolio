@@ -6,6 +6,7 @@ import AboutMePage from "../component/aboutme-page/AboutMePage";
 import CinnemaFoodStall from "../component/homepage/CinemaFoodStall";
 import AuraMobile from "../component/homepage/AuraMobile";
 import Cogibannay from "../component/homepage/Cogibannay";
+import AuraWeb from "../component/homepage/AuraWeb";
 export default function Router() {
     const route = useRoutes([
         {
@@ -33,7 +34,7 @@ export default function Router() {
                 },
                 {
                     path: "aura-web",
-                    element: <></>,
+                    element: <AuraWeb></AuraWeb>,
                 },
             ],
         },

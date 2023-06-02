@@ -4,9 +4,15 @@ import "./../css/font.css";
 //import chakra UI component
 import { Center, Flex } from "@chakra-ui/react";
 //----------------------------------------------------------
-export default function BgColorLayout({ bgColor, children, page, mainPage }) {
+export default function BgColorLayout({
+    bgColor,
+    children,
+    page,
+    mainPage,
+    id,
+}) {
     return (
-        <Center w="full" bg={bgColor} bgSize="100%" mainPage>
+        <Center w="full" bg={bgColor} bgSize="100%" mainPage id={id ? id : ""}>
             <Center
                 w={{
                     base: "90%", //0px
@@ -36,7 +42,7 @@ export default function BgColorLayout({ bgColor, children, page, mainPage }) {
                                   md: "100px", // 768px
                                   lg: "100px", // 992px
                                   xl: "110px", // 1280px
-                                  "2xl": "80px"
+                                  "2xl": "80px",
                               }
                     }
                     mb={

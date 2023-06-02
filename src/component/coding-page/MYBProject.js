@@ -5,28 +5,39 @@ import "./../../css/Color.css";
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import MYB from "../../asset/image/MYB-mockups.png";
+//import custom hook
+import { useAnim } from "./../../customHook/useAnim";
 //import chakra UI component
-import { Grid, GridItem, Box, Text, Center, Flex } from "@chakra-ui/react";
 import {
-    List,
     ListItem,
-    ListIcon,
-    OrderedList,
     UnorderedList,
+    Button,
+    Grid,
+    GridItem,
+    Text,
+    Link,
 } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+//import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 export default function MYBProject() {
+    useAnim(
+        "myb-container",
+        "myb-left",
+        "myb-right",
+        "project-left",
+        "project-right"
+    );
     const color = "#5243c2";
     return (
-        <BgColorLayout bgColor="rgba(219,197,233,0.19)">
+        <BgColorLayout bgColor="rgba(219,197,233,0.19)" id="myb-container">
             <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
                 <GridItem
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 1 }}
+                    transform="translate(-30px,0)"
+                    id="myb-left"
                 >
                     <img
                         src={MYB}
@@ -37,6 +48,8 @@ export default function MYBProject() {
                 <GridItem
                     colSpan={{ base: 12, lg: 5 }}
                     colStart={{ base: 1, lg: 8 }}
+                    transform="translate(30px,0)"
+                    id="myb-right"
                 >
                     <Text fontSize="25px" className="qs-b">
                         MYB - MAKE YOUR BURGER
@@ -113,7 +126,11 @@ export default function MYBProject() {
                         className="bg-main-color white-color"
                         bg={color}
                     >
-                        <a href="https://vi-ht.github.io/MYB-Website/" target="_blank" style={{fontSize:"14px"}}>
+                        <a
+                            href="https://vi-ht.github.io/MYB-Website/"
+                            target="_blank"
+                            style={{ fontSize: "14px" }}
+                        >
                             Go to MYB website
                         </a>
                     </Button>

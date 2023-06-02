@@ -3,6 +3,7 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 //import hook
 import { useEffect, useLayoutEffect } from "react";
+import { useTitle } from "./../../customHook/useTitle";
 //import component
 import IntroContent from "./IntroContent";
 import Footer from "../../layout/Footer";
@@ -18,6 +19,7 @@ import { Box } from "@chakra-ui/react";
 //------------------------------------------
 
 export default function CodingPage() {
+    useTitle(`Coding | Thanh Vi's portfolio`);
     return (
         <Box width="full">
             <IntroContent />

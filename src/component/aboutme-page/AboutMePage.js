@@ -3,6 +3,9 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/aboutme-page.css";
 import "./../../css/animate.css";
+//import Hook
+import { useEffect } from "react";
+import { useTitle } from "./../../customHook/useTitle";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
@@ -17,34 +20,25 @@ import {
     Center,
     Flex,
     HStack,
-} from "@chakra-ui/react";
-
-import { IconButton } from "@chakra-ui/react";
-import { useToast } from "@chakra-ui/react";
-import { Icon } from "@iconify/react";
-import { Divider } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
-import { LinkIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/react";
-import {
-    ExternalLinkIcon,
-    CopyIcon,
-    CheckCircleIcon,
-    ArrowDownIcon,
-} from "@chakra-ui/icons";
-import { Tooltip } from "@chakra-ui/react";
-import { CloseButton } from "@chakra-ui/react";
-import {
+    IconButton,
+    useToast,
+    CloseButton,
     Popover,
     PopoverTrigger,
-    PopoverContent,
-    PopoverHeader,
     PopoverBody,
-    PopoverFooter,
+    PopoverContent,
     PopoverArrow,
     PopoverCloseButton,
-    PopoverAnchor,
+    Button,
+    Link,
 } from "@chakra-ui/react";
+// import Iconify icon
+import { Icon } from "@iconify/react";
+// import chakra icon
+import { CopyIcon } from "@chakra-ui/icons";
+import { CheckCircleIcon } from "@chakra-ui/icons";
+import { ArrowDownIcon } from "@chakra-ui/icons";
+import { LinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 const TextTemplate = ({ children, container }) => (
     <Text
@@ -151,7 +145,7 @@ const CustomTooltipIcon = ({ pos, iconName, label, w }) => {
 };
 
 export default function AboutMePage() {
-    const color = "#198754";
+    useTitle(`About Me | Thanh Vi's portfolio`);
     return (
         <BgColorLayout bgColor="white" page>
             <Grid
@@ -161,15 +155,18 @@ export default function AboutMePage() {
                 mt={{ base: 8, sm: 6, lg: 0 }}
             >
                 <GridItem
+                    transform="translate(-30px,0)"
                     id="abme-left"
                     colSpan={{ base: 12, lg: 6 }}
                     colStart={1}
                     w="full"
                     mb={{ base: 2, sm: 4, md: 5, lg: 0 }}
-                    
                 >
                     <Center w="full" h="full">
-                        <Box w="full" h={{ base: "100%", xl: "96%", "2xl": "85%" }}>
+                        <Box
+                            w="full"
+                            h={{ base: "100%", xl: "96%", "2xl": "85%" }}
+                        >
                             <img
                                 src={Avatar}
                                 alt="Thanh Vi's image"
@@ -186,7 +183,8 @@ export default function AboutMePage() {
                 <GridItem
                     colSpan={{ base: 12, lg: 6 }}
                     colStart={{ base: 1, lg: 7 }}
-                    id="abme-right"
+                    transform="translate(30px,0)"
+                    id="abme-right"                  
                 >
                     <Center w="full" h="full">
                         <Box>

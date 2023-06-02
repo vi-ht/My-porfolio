@@ -59,6 +59,12 @@ export default function MobileHeader() {
                             fontSize="4xl"
                             fontWeight={700}
                             className="qs-b main-color"
+                            sx={{
+                                transition: "0.5s",
+                            }}
+                            _hover={{
+                                color: "black",
+                            }}
                         >
                             Thanh Vi
                         </Text>
