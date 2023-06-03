@@ -17,14 +17,14 @@ export default function MainContent() {
         const pos = document.getElementById("personal-project").offsetTop;
         const func = () => {
             if (
-                window.scrollY > pos - 50 &&
+                window.scrollY > pos - 150 &&
                 !document
                     .getElementById("personal-content")
-                    .classList.contains("intro")
+                    .classList.contains("intro-main")
             ) {
                 document
                     .getElementById("personal-content")
-                    .classList.add("intro");
+                    .classList.add("intro-main");
             }
         };
         window.addEventListener("scroll", func);
@@ -34,7 +34,7 @@ export default function MainContent() {
     });
     return (
         <BgImageLayout bg={bg} pos="70% 100%" id="personal-project">
-            <Center display="flex" flexDirection="column" id="personal-content">
+            <Center display="flex" flexDirection="column" id="personal-content" transform="translate(0px,30px)">
                 <img
                     src={icon}
                     alt="wave-hand"

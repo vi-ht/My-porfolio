@@ -4,6 +4,7 @@
     animation-name: intro-anim;
     animation-delay: 0.2s;
     animation-timing-function: "ease-in";
+    
 }
 
 @keyframes intro-anim {
@@ -13,6 +14,23 @@
 
     100% {
         transform: translate(0, 0px);
+    }
+}
+.intro-main {
+    animation-duration: 0.7s;
+    animation-name: intro-anim-main;
+    animation-delay: 0.2s;
+    animation-timing-function: "ease-in";
+    animation-fill-mode: forwards;
+}
+
+@keyframes intro-anim-main {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    100% {
+        transform: translate(0, -30px);
     }
 }
 

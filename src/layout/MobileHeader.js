@@ -56,7 +56,7 @@ export default function MobileHeader() {
                 <Box>
                     <Link to={PATH.home}>
                         <Text
-                            fontSize="4xl"
+                            fontSize={{base: "2xl", lg:"4xl"}}
                             fontWeight={700}
                             className="qs-b main-color"
                             sx={{

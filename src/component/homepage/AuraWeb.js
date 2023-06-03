@@ -14,10 +14,10 @@ import { Box, GridItem, Center, CircularProgress } from "@chakra-ui/react";
 import bg1 from "./../../asset/image/AuraWebPart1.png";
 import bg2 from "./../../asset/image/AuraWebPart2.png";
 import bg3 from "./../../asset/image/AuraWebPart3.png";
-import bg4 from "./../../asset/image/AuraProjectPart4.png";
-import bg5 from "./../../asset/image/AuraProjectPart5.png";
-import bg6 from "./../../asset/image/AuraProjectPart6.png";
-import bg7 from "./../../asset/image/AuraProjectPart7.png";
+import bg4 from "./../../asset/image/AuraWebPart4.png";
+import bg5 from "./../../asset/image/AuraWebPart5.png";
+import bg6 from "./../../asset/image/AuraWebPart6.png";
+import bg7 from "./../../asset/image/AuraWebPart7.png";
 import bg8 from "./../../asset/image/AuraProjectPart8.png";
 import bg9 from "./../../asset/image/AuraProjectPart9.png";
 import bg10 from "./../../asset/image/AuraProjectPart10.png";
@@ -59,31 +59,34 @@ export default function AuraWeb({}) {
                         // marginTop: "5rem",
                     }}
                 ></img>
-                <img
-                    src={bg3}
-                    style={{width: "100%"}}
-                ></img>
+                <img src={bg3} style={{ width: "100%" }}></img>
                 <img
                     src={bg4}
                     style={{
                         width: "100%",
-                        marginBottom: "1rem",
                     }}
                 ></img>
                 <img
                     src={bg5}
                     style={{
                         width: "100%",
-                        marginBottom: "1rem",
                     }}
                 ></img>
                 <img
                     src={bg6}
                     style={{
                         width: "100%",
-                        marginBottom: "1rem",
                     }}
                 ></img>
+                <iframe
+                    style={{
+                        border: "1px solid rgba(0, 0, 0, 0.1)",
+                        width: "100%",
+                        height: "100vh",
+                    }}
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FUrJ4ZK1KyfZf0PDNdsGqes%2FAura%3Ftype%3Ddesign%26node-id%3D54%253A303%26t%3DNdCvcjbLfiR1ng78-1"
+                    allowfullscreen
+                ></iframe>
                 <img
                     src={bg7}
                     style={{
@@ -91,16 +94,16 @@ export default function AuraWeb({}) {
                         marginBottom: "1rem",
                     }}
                 ></img>
-
                 <iframe
                     style={{
                         border: "1px solid rgba(0, 0, 0, 0.1)",
                         width: "100%",
                         height: "100vh",
                     }}
-                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUrJ4ZK1KyfZf0PDNdsGqes%2FAura%3Ftype%3Ddesign%26node-id%3D484-8608%26scaling%3Dscale-down%26page-id%3D484%253A8336%26starting-point-node-id%3D484%253A8608"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUrJ4ZK1KyfZf0PDNdsGqes%2FAura%3Ftype%3Ddesign%26node-id%3D80-4617%26scaling%3Dscale-down-width%26page-id%3D54%253A303%26starting-point-node-id%3D54%253A871"
                     allowfullscreen
                 ></iframe>
+            
                 <img
                     src={bg8}
                     style={{
