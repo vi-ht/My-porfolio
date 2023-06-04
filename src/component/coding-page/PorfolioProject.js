@@ -60,8 +60,7 @@ export default function PorfolioProject() {
                                 (Responsive web - SPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
-                                This is a website designed and coded by me for
-                                the purpose of showcasing all my projects.
+                            This is a portfolio website designed and coded by me for the purpose of showcasing all my UI/UX and coding projects.
                             </Text>
                             <Text
                                 fontSize="16px"
@@ -95,7 +94,7 @@ export default function PorfolioProject() {
                                 mt="5px"
                                 mb="5px"
                             >
-                                Design tool
+                                Design tool:
                             </Text>
                             <UnorderedList>
                                 <ListItem>Figma</ListItem>
@@ -112,7 +111,7 @@ export default function PorfolioProject() {
                                 bg="#FB797F"
                             >
                                 <a
-                                    href="https://www.figma.com/file/4i2smvXZHPUp1hSyO1bU3G/MY-PORTFOLIO?type=design&node-id=0%3A1&t=VKM2xxaZ0Oibwr7Z-1"
+                                    href="https://www.figma.com/proto/4i2smvXZHPUp1hSyO1bU3G/MY-PORTFOLIO?type=design&node-id=4-63&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A24"
                                     target="_blank"
                                 >
                                     View mockups on Figma

@@ -117,7 +117,7 @@ export default function FelixzoneProject() {
                                     Collect and analyze client requirements
                                 </ListItem>
                                 <ListItem>
-                                    UI design in the final stages of the
+                                    Using Figma to design UI in the final stages of the
                                     project.
                                 </ListItem>
                             </UnorderedList>

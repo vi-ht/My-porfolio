@@ -37,7 +37,7 @@ export default function AuraMobile({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("content").style.display = "block";
-        }, 3500);
+        }, 2500);
         //
         return () => {
             clearTimeout(timeout);

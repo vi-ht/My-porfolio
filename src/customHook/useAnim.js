@@ -4,7 +4,7 @@ const useAnim = (parent, childLeft, childRight, animLeft, animRight) => {
         const pos = document.getElementById(parent).offsetTop;
         const func = () => {
             if (
-                window.scrollY > pos - 200 &&
+                window.scrollY > pos - 150 &&
                 !document
                     .getElementById(childLeft)
                     .classList.contains(animLeft) &&

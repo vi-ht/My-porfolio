@@ -13,7 +13,7 @@ import { Text, Center } from "@chakra-ui/react";
 export default function IntroContent() {
     return (
         <BgImageLayout bg={bg} pos="100% 80%">
-            <Center display='flex' flexDirection="column" className="intro">
+            <Center display="flex" flexDirection="column" className="intro">
                 <img
                     src={star}
                     alt="wave-hand"
@@ -48,8 +48,9 @@ export default function IntroContent() {
                     }}
                     textAlign="center"
                 >
-                    This is a project me and a group of friends worked together
-                    to build a website for the Felixzone company.
+                    This is my graduation thesis at FPT University, I and a
+                    group of friends worked together to build a website for the
+                    Felixzone company.
                 </Text>
             </Center>
         </BgImageLayout>
