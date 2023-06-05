@@ -23,6 +23,9 @@ import {
 //import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+//import React-router-dom
+import { NavLink } from "react-router-dom";
+import { PATH } from "./../../router/Path";
 //----------------------------------------------------------
 export default function Resume() {
     // useAnim(
@@ -79,10 +82,9 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Portfolio
                         </Text>
+                        <NavLink to={PATH.home}>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
-                                href="https://drive.google.com/file/d/1pWrmkSRRytzqMdwu12CVV23p8uOyLAwc/view?usp=sharing"
-                                isExternal
                                 color="#FB797F"
                                 fontWeight="bold"
                                 fontSize="16px"
@@ -92,6 +94,7 @@ export default function Resume() {
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text>
+                        </NavLink>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Address
                         </Text>
@@ -366,9 +369,9 @@ export default function Resume() {
                             Completed 7 courses and passed 3 UX/UI design
                             project (Mobile, Web responsive).
                         </Text>
+                        <NavLink to={PATH.home}>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
-                                href="https://pofolio.onrender.com"
                                 isExternal
                                 color="#FB797F"
                                 fontWeight="bold"
@@ -379,6 +382,7 @@ export default function Resume() {
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text>
+                        </NavLink>
                         <Text
                             fontSize="16px"
                             className="qs-smb"
@@ -406,19 +410,21 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <Link
-                                href="https://pofolio.onrender.com/coding"
-                                isExternal
-                                color="#FB797F"
-                                fontWeight="bold"
-                                fontSize="16px"
-                            >
-                                {" "}
-                                View my coding projects{"   "}
-                                <ExternalLinkIcon mx="2px" />
-                            </Link>
-                        </Text>
+                        <NavLink to={PATH.coding}>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                <Link
+                                    color="#FB797F"
+                                    fontWeight="bold"
+                                    fontSize="16px"
+                                    isExternal={false}
+                                >
+                                    {" "}
+                                    View my coding projects{"   "}
+                                    <ExternalLinkIcon mx="2px" />
+                                </Link>
+                            </Text>
+                        </NavLink>
+
                         <Text
                             fontSize="16px"
                             className="qs-smb"
@@ -514,7 +520,7 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                        <Text fontSize="16px" className="qs-smb" mb="10px">
                             {"Technical".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -541,7 +547,7 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Fetch API
                         </Text>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                        <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
                             {"UI Frame work".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -565,7 +571,7 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                        <Text fontSize="16px" className="qs-smb" mb="10px">
                             {"UX/UI".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -586,7 +592,7 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Accessibility UX
                         </Text>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                        <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
                             {"Design tools".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -661,7 +667,7 @@ export default function Resume() {
                             margin: "10px 0 20px 0",
                         }}
                     ></div>
-                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                    <Text fontSize="16px" className="qs-smb" mb="10px">
                         {"Technical".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
@@ -688,7 +694,7 @@ export default function Resume() {
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Fetch API
                     </Text>
-                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                    <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
                         {"UI Frame work".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
@@ -718,7 +724,7 @@ export default function Resume() {
                             margin: "10px 0 20px 0",
                         }}
                     ></div>
-                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                    <Text fontSize="16px" className="qs-smb" mb="10px">
                         {"UX/UI".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
@@ -739,7 +745,7 @@ export default function Resume() {
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Accessibility UX
                     </Text>
-                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                    <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
                         {"Design tools".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">

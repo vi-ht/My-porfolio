@@ -13,7 +13,7 @@ import { Text, Center } from "@chakra-ui/react";
 export default function IntroContent() {
     return (
         <BgImageLayout bg={bg} pos="100% 80%">
-            <Center display="flex" flexDirection="column" className="intro">
+            <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)">
                 <img
                     src={star}
                     alt="wave-hand"

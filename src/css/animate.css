@@ -2,15 +2,13 @@
 .intro {
     animation-duration: 0.7s;
     animation-name: intro-anim;
-    animation-delay: 0.2s;
+    animation-delay: 0s;
     animation-timing-function: "ease-in";
+    animation-fill-mode: forwards;
     
 }
 
 @keyframes intro-anim {
-    0% {
-        transform: translate(0, 50px);
-    }
 
     100% {
         transform: translate(0, 0px);
@@ -38,7 +36,7 @@
 #abme-left {
     animation-duration: 0.7s;
     animation-name: abme-left;
-    animation-delay: 0.2s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-timing-function: "ease-in";
 }
@@ -46,7 +44,7 @@
 #abme-right {
     animation-duration: 0.7s;
     animation-name: abme-right;
-    animation-delay: 0.2s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     animation-timing-function: "ease-in";
 }

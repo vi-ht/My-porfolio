@@ -33,7 +33,7 @@ export default function IntroContent() {
     return (
         <BgImageLayout bg={bgImage} pos="70% 100%" mainPage>
             <Box w="full" h="full" position="relative">
-                <Box position="absolute" bottom="3rem" className="intro">
+                <Box position="absolute" bottom="3rem" className="intro" transform="translate(0px,50px)">
                     <Text
                         fontSize={{
                             base: "55px", //0px
@@ -80,9 +80,4 @@ export default function IntroContent() {
             </Box>
         </BgImageLayout>
     );
-}
-{
-    /* <div className="bg">
-        <img src={} alt="wave-hand" style={{objectFit: "cover", width:"100%", height:"100%", objectPosition: }} />
-      </div> */
 }
