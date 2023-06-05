@@ -7,6 +7,7 @@ import CinnemaFoodStall from "../component/homepage/CinemaFoodStall";
 import AuraMobile from "../component/homepage/AuraMobile";
 import Cogibannay from "../component/homepage/Cogibannay";
 import AuraWeb from "../component/homepage/AuraWeb";
+import Resume from "../component/resume-page/Resume";
 export default function Router() {
     const route = useRoutes([
         {
@@ -19,7 +20,7 @@ export default function Router() {
                 },
                 { path: "coding", element: <CodingPage /> },
                 { path: "about-me", element: <AboutMePage></AboutMePage> },
-                { path: "resume", element: <></> },
+                { path: "resume", element: <Resume></Resume> },
                 {
                     path: "cinema-food-stall",
                     element: <CinnemaFoodStall></CinnemaFoodStall>,

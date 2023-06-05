@@ -39,6 +39,9 @@ import { CopyIcon } from "@chakra-ui/icons";
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import { LinkIcon } from "@chakra-ui/icons";
+//import React-router-dom
+import { NavLink } from "react-router-dom";
+import { PATH } from "./../../router/Path";
 //----------------------------------------------------------
 const TextTemplate = ({ children, container }) => (
     <Text
@@ -184,7 +187,7 @@ export default function AboutMePage() {
                     colSpan={{ base: 12, lg: 6 }}
                     colStart={{ base: 1, lg: 7 }}
                     transform="translate(30px,0)"
-                    id="abme-right"                  
+                    id="abme-right"
                 >
                     <Center w="full" h="full">
                         <Box>
@@ -272,23 +275,25 @@ export default function AboutMePage() {
                                 gap={3.5}
                                 mt="20px"
                             >
-                                <Button
-                                    leftIcon={<LinkIcon />}
-                                    variant="solid"
-                                    fontSize="16px"
-                                    _hover={{
-                                        background: "black",
-                                    }}
-                                    className="bg-main-color white-color"
-                                    bg="#FB797F"
-                                >
-                                    <a
-                                        href="https://vi-ht.github.io/Custom-Bootstrap/"
-                                        target="_blank"
+                                <NavLink to={PATH.resume}>
+                                    <Button
+                                        leftIcon={<LinkIcon />}
+                                        variant="solid"
+                                        fontSize="16px"
+                                        _hover={{
+                                            background: "black",
+                                        }}
+                                        className="bg-main-color white-color"
+                                        bg="#FB797F"
                                     >
-                                        View my CV
-                                    </a>
-                                </Button>
+                                        <a
+                                            href="https://vi-ht.github.io/Custom-Bootstrap/"
+                                            target="_blank"
+                                        >
+                                            View my CV
+                                        </a>
+                                    </Button>
+                                </NavLink>
                                 <Text
                                     fontSize="27px"
                                     className="qs-l"

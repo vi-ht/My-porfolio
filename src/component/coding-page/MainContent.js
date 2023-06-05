@@ -34,7 +34,12 @@ export default function MainContent() {
     });
     return (
         <BgImageLayout bg={bg} pos="70% 100%" id="personal-project">
-            <Center display="flex" flexDirection="column" id="personal-content" transform="translate(0px,30px)">
+            <Center
+                display="flex"
+                flexDirection="column"
+                id="personal-content"
+                transform="translate(0px,30px)"
+            >
                 <img
                     src={icon}
                     alt="wave-hand"
@@ -69,9 +74,9 @@ export default function MainContent() {
                     }}
                     textAlign="center"
                 >
-                    These are the web designs I found from Figma community of
-                    other designers. and I used it to build a real website for
-                    the purpose of filling out my portfolio.
+                    These are web design templates I found from the Figma
+                    community of UX/UI designers, and I used them to build a
+                    real website for the purpose of filling out my portfolio.
                 </Text>
             </Center>
         </BgImageLayout>
