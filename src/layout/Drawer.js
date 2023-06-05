@@ -80,7 +80,7 @@ export default function MobileDrawer() {
                             >
                                 <Link path={PATH.home}>UX/UI</Link>
                                 <Link path={PATH.coding}>Coding</Link>
-                                <Link path={PATH.about}>Contact</Link>
+                                <Link path={PATH.about}>About Me</Link>
                                 <Link path={PATH.resume}>My Resume</Link>
                             </Stack>
                         </DrawerBody>

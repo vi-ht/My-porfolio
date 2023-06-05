@@ -429,7 +429,7 @@ export default function Resume() {
                             fontSize="16px"
                             className="qs-smb"
                             mb="8px"
-                            mt="30px"
+                            mt="15px"
                         >
                             FPT SOFTWARE{" "}
                         </Text>

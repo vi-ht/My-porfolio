@@ -49,8 +49,8 @@ export default function MobileHeader() {
                     xl: "none", // 1280px
                     "2xl": "none", //1536px
                 }}
-                mt={3}
-                mb={1}
+                mt={2}
+                mb={-1}
                 alignItems="center"
             >
                 <Box>

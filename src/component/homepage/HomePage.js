@@ -17,7 +17,7 @@ export default function HomePage() {
       <IntroContent />
       <Quote/>
       <ProjectList/>
-      <Footer mt="-4rem"/>
+      <Footer mt={{base: "-2rem", lg: "-4rem"}}/>
     </Box>
   );
 }
