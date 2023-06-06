@@ -242,10 +242,10 @@ export default function AboutMePage() {
                             </Text>
                             <Text fontSize="16px" className="qs-r" mt="17px">
                                 Besides programming, I'm also interested in
-                                UX/UI design. Not only that, the UX/UI industry
-                                is related to web front-end programming - which
-                                I'm really passionate about. Therefore, I
-                                decided to self-learning about UX/UI.
+                                UX/UI design because it is related to web
+                                front-end programming - which I'm really
+                                passionate about. That’s the reason why I
+                                decided to learn about UX/UI design.
                             </Text>
                             <Text fontSize="16px" className="qs-r" mt="17px">
                                 The world grows every second so{" "}
