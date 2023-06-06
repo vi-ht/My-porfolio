@@ -92,7 +92,7 @@ export default function FelixzoneProject() {
                                         isExternal
                                         color="black"
                                         fontWeight="bold"
-                                        fontSize="14px"
+                                        fontSize="16px"
                                     >
                                         {" "}
                                         FelixZone's SRS{"   "}
@@ -103,7 +103,7 @@ export default function FelixzoneProject() {
                                         isExternal
                                         color="black"
                                         fontWeight="bold"
-                                        fontSize="14px"
+                                        fontSize="16px"
                                     >
                                         {" "}
                                         FelixZone's final slide{" "}

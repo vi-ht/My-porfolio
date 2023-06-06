@@ -135,7 +135,7 @@ export default function Footer({mt}) {
                     w="270px"
                     pos="bottom"
                 />
-                <CustomIcon link="" iconName="basil:linkedin-solid" />
+                <CustomIcon link="https://www.linkedin.com/in/huynh-thi-thanh-vi-bbb51a18b/" iconName="basil:linkedin-solid" />
                 <CustomTooltipIcon
                     iconName="basil:phone-solid"
                     label="0377793371"

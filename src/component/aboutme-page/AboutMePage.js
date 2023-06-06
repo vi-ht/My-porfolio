@@ -332,7 +332,7 @@ export default function AboutMePage() {
                                         pos="bottom"
                                     />
                                     <CustomIcon
-                                        link=""
+                                        link="https://www.linkedin.com/in/huynh-thi-thanh-vi-bbb51a18b/"
                                         iconName="basil:linkedin-solid"
                                     />
                                     <CustomTooltipIcon

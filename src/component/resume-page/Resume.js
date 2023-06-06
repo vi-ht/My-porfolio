@@ -743,7 +743,7 @@ export default function Resume() {
                         Prototyping
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Accessibility UX
+                        Accessibility
                     </Text>
                     <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
                         {"Design tools".toUpperCase()}
