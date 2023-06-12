@@ -116,9 +116,9 @@ const CustomTooltipIcon = ({ pos, iconName, label, w }) => {
         </Popover>
     );
 };
-export default function Footer({mt}) {
+export default function Footer({mt, position, top}) {
     return (
-        <Center w="full" mb={10} mt={mt}>
+        <Center w="full" mb={10} mt={mt} position={position? position: "static"} top={top?top:0}>
             <HStack gap={3}>
                 <CustomIcon
                     link="https://www.facebook.com/thanhviihuynh/"

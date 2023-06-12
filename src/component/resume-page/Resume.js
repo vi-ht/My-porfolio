@@ -6,6 +6,7 @@ import "./../../css/animate.css";
 import { useAnim } from "./../../customHook/useAnim";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
+import Footer from "../../layout/Footer";
 //import image
 import Felix from "../../asset/image/Felix-mockups.png";
 //import chakra UI component
@@ -83,17 +84,17 @@ export default function Resume() {
                             Portfolio
                         </Text>
                         <NavLink to={PATH.home}>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <Link
-                                color="#FB797F"
-                                fontWeight="bold"
-                                fontSize="16px"
-                            >
-                                {" "}
-                                Thanh Vi's portfolio{"   "}
-                                <ExternalLinkIcon mx="2px" />
-                            </Link>
-                        </Text>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                <Link
+                                    color="#FB797F"
+                                    fontWeight="bold"
+                                    fontSize="16px"
+                                >
+                                    {" "}
+                                    Thanh Vi's portfolio{"   "}
+                                    <ExternalLinkIcon mx="2px" />
+                                </Link>
+                            </Text>
                         </NavLink>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Address
@@ -349,7 +350,7 @@ export default function Resume() {
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <span className="qs-m">Certificate of merit:</span>{" "}
-                            4 times is awarded honorable student of semester.
+                            4 times is awarded "Honorable Student Of Semester".
                         </Text>
                         <Text
                             fontSize="16px"
@@ -369,25 +370,37 @@ export default function Resume() {
                             Completed 7 courses and passed 3 UX/UI design
                             project (Mobile, Web responsive).
                         </Text>
-                        <NavLink to={PATH.home}>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
                                 isExternal
-                                color="#FB797F"
-                                fontWeight="bold"
+                                color="black"
                                 fontSize="16px"
+                                href="https://coursera.org/share/4b51eb39296614846a01b2f892552a14"
                             >
                                 {" "}
-                                View my UI/UX projects{"   "}
+                                Google UX Design certificate{"   "}
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text>
+                        <NavLink to={PATH.home}>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                <Link
+                                    isExternal
+                                    color="#FB797F"
+                                    fontWeight="bold"
+                                    fontSize="16px"
+                                >
+                                    {" "}
+                                    View my UI/UX projects{"   "}
+                                    <ExternalLinkIcon mx="2px" />
+                                </Link>
+                            </Text>
                         </NavLink>
                         <Text
                             fontSize="16px"
                             className="qs-smb"
                             mb="8px"
-                            mt="25px"
+                            mt="33px"
                         >
                             {"Introduction to Web Accessibility (WCAG)".toUpperCase()}{" "}
                             <span className="qs-r">| Online course in Edx</span>
@@ -398,7 +411,7 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Complete this course with a score of 90/100%.
                         </Text>
-                        <Text fontSize="30px" className="qs-b" mt="30px">
+                        <Text fontSize="30px" className="qs-b" mt="35px">
                             EXPERIENCE
                         </Text>
                         <div
@@ -524,22 +537,19 @@ export default function Resume() {
                             {"Technical".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            HTML / CSS
+                            HTML5
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            SASS
+                            CSS3 (responsive, animate)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            JS
+                            SASS / SCSS
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            ReactJS
+                            Cutting Figma design / PSD to HTML
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            JQuery
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Cutting PSD/Figma design to HTML
+                            JS (DOM) / JQuery
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             GitHub
@@ -547,8 +557,16 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Fetch API
                         </Text>
-                        <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
-                            {"UI Frame work".toUpperCase()}
+                        <Text
+                            fontSize="16px"
+                            className="qs-smb"
+                            mb="10px"
+                            mt="15px"
+                        >
+                            {"UI Framework".toUpperCase()}
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            ReactJS
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Bootstrap
@@ -592,7 +610,12 @@ export default function Resume() {
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Accessibility UX
                         </Text>
-                        <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
+                        <Text
+                            fontSize="16px"
+                            className="qs-smb"
+                            mb="10px"
+                            mt="15px"
+                        >
                             {"Design tools".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -671,22 +694,19 @@ export default function Resume() {
                         {"Technical".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        HTML / CSS
+                        HTML5
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        SASS
+                        CSS3 (responsive, animate)
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        JS
+                        SASS / SCSS
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        ReactJS
+                        Cutting Figma design / PSD to HTML
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        JQuery
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Cutting PSD/Figma design to HTML
+                        JS (DOM) / JQuery
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         GitHub
@@ -694,8 +714,16 @@ export default function Resume() {
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Fetch API
                     </Text>
-                    <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
-                        {"UI Frame work".toUpperCase()}
+                    <Text
+                        fontSize="16px"
+                        className="qs-smb"
+                        mb="10px"
+                        mt="15px"
+                    >
+                        {"UI Framework".toUpperCase()}
+                    </Text>
+                    <Text fontSize="16px" className="qs-r" mb="8px">
+                        ReactJS
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Bootstrap
@@ -745,7 +773,12 @@ export default function Resume() {
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Accessibility
                     </Text>
-                    <Text fontSize="16px" className="qs-smb" mb="10px" mt="15px">
+                    <Text
+                        fontSize="16px"
+                        className="qs-smb"
+                        mb="10px"
+                        mt="15px"
+                    >
                         {"Design tools".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
@@ -801,6 +834,7 @@ export default function Resume() {
                     </Text>
                 </GridItem>
             </Grid>
+            <Footer mt={{base: "-2rem", lg: "-4rem"}} position="relative" top={{base: "5rem", md: "6.5rem", lg: "8rem"}}/>
         </BgColorLayout>
     );
 }
