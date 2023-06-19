@@ -47,7 +47,7 @@ export default function CinnemaFoodStall({}) {
             <Box id="cinemaContent">
                 <BreadcrumbComp
                     projectName="Cinema Food Stalls Project"
-                    path={PATH.cinema}
+                    path={PATH.uxui.cinema}
                 />
                 <img src={bg1} style={{ width: "100%" }}></img>
                 <img src={bg2} style={{ width: "100%" }}></img>

@@ -17,7 +17,7 @@ const data = [
         img: `${cinema}`,
         span: "6",
         start: "1",
-        path: `${PATH.cinema}`
+        path: `${PATH.uxui.cinema}`
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const data = [
         img: `${auraMobile}`,
         span: "6",
         start: "7",
-        path: `${PATH.auraIOS}`
+        path: `${PATH.uxui.auraIOS}`
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const data = [
         img: `${auraDesk}`,
         span: "6",
         start: "1",
-        path: `${PATH.auraWeb}`
+        path: `${PATH.uxui.auraWeb}`
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ const data = [
         img: `${cogibanay}`,
         span: "6",
         start: "7",
-        path: `${PATH.cogibannay}`
+        path: `${PATH.uxui.cogibannay}`
     },
 ];
 export {data}

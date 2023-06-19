@@ -52,7 +52,7 @@ export default function AuraWeb({}) {
             <Box id="content">
                 <BreadcrumbComp
                     projectName="Aura Project (Web responsive version)"
-                    path={PATH.auraWeb}
+                    path={PATH.uxui.auraWeb}
                 />
                 <img src={bg1} style={{ width: "100%" }}></img>
                 <img

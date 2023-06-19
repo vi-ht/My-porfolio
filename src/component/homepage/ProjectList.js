@@ -28,7 +28,7 @@ export default function ProjectList() {
                 Personal project
             </Text>
             <div className="line"></div>
-            <Grid templateColumns="repeat(12,1fr)" w="full" mt="3rem" gap={6}>
+            <Grid templateColumns="repeat(12,1fr)" w="full" mt="3rem" gap={8}>
                 {data.map((item, i) => (
                     <ProjectCard
                         key={i}
