@@ -11,7 +11,7 @@ import Footer from "../../layout/Footer";
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
 export default function HomePage() {
-  useTitle(`UX/UI | Thanh Vi's portfolio`);
+  useTitle(`UX/UI projects | Thanh Vi's portfolio`);
   return (
     <Box w='100%'>
       <IntroContent />

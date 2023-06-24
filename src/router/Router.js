@@ -39,28 +39,28 @@ export default function Router() {
                     index: true,
                     element: <HomePage />,
                 },
-                { path: "coding", element: <CodingPage /> },
+                { path: "coding-projects", element: <CodingPage /> },
                 { path: "about-me", element: <AboutMePage /> },
-                { path: "resume", element: <Resume /> },
+                { path: "my-resume", element: <Resume /> },
 
                 {
-                    path: "ux-ui/",
+                    path: "ux-ui-projects/",
                     //element: <></>,
                     children: [
                         {
-                            path: "cinema-food-stall",
+                            path: "cinema-food-stall-project",
                             element: <CinnemaFoodStall />,
                         },
                         {
-                            path: "aura-ios",
+                            path: "aura-project-ios-version",
                             element: <AuraMobile />,
                         },
                         {
-                            path: "co-gi-ban-nay",
+                            path: "co-gi-ban-nay-project",
                             element: <Cogibannay />,
                         },
                         {
-                            path: "aura-web",
+                            path: "aura-project-responsive-web-design-version",
                             element: <AuraWeb />,
                         },
                     ],

@@ -1,13 +1,13 @@
 export const PATH = {
     home: "/",
     uxui: {
-        index: "ux-ui/",
-        cinema: "ux-ui/cinema-food-stall",
-        auraIOS: "ux-ui/aura-ios",
-        cogibannay: "ux-ui/co-gi-ban-nay",
-        auraWeb: "ux-ui/aura-web",
+        index: "ux-ui-projects/",
+        cinema: "ux-ui-projects/cinema-food-stall-project",
+        auraIOS: "ux-ui-projects/aura-project-ios-version",
+        cogibannay: "ux-ui-projects/co-gi-ban-nay-project",
+        auraWeb: "ux-ui-project/aura-project-responsive-web-design-version",
     },
-    coding: "/coding",
+    coding: "/coding-projects",
     about: "/about-me",
-    resume: "/resume",
+    resume: "/my-resume",
 };

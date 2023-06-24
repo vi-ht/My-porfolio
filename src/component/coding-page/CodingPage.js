@@ -19,7 +19,7 @@ import { Box } from "@chakra-ui/react";
 //------------------------------------------
 
 export default function CodingPage() {
-    useTitle(`Coding | Thanh Vi's portfolio`);
+    useTitle(`Coding projects | Thanh Vi's portfolio`);
     return (
         <Box width="full">
             <IntroContent />

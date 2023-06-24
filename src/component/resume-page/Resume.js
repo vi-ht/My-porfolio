@@ -3,6 +3,7 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/animate.css";
 //import custom hook
+import { useTitle } from "./../../customHook/useTitle";
 import { useAnim } from "./../../customHook/useAnim";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
@@ -36,6 +37,7 @@ export default function Resume() {
     //     "project-left",
     //     "project-right"
     // );
+    useTitle(`Resume | Thanh Vi's portfolio`);
     return (
         <BgColorLayout bgColor="white">
             <Grid
