@@ -84,7 +84,7 @@ export default function Resume() {
                             Portfolio
                         </Text>
                         <NavLink to={PATH.home}>
-                            <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Text fontSize="16px" className="qs-r" mb="2px">
                                 <Link
                                     color="#FB797F"
                                     fontWeight="bold"
@@ -96,6 +96,10 @@ export default function Resume() {
                                 </Link>
                             </Text>
                         </NavLink>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            Always welcome you to stop by and see all my
+                            personal projects!{" "}
+                        </Text>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Address
                         </Text>
@@ -146,7 +150,7 @@ export default function Resume() {
                         ></div>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Web Design for Everybody: Basics of Web Development
-                            & Coding
+                            & Coding Specilization
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
@@ -209,7 +213,7 @@ export default function Resume() {
                             </Link>
                         </Text>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
-                            Google UX design
+                            Google UX Design Professional Certificate
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
@@ -288,12 +292,49 @@ export default function Resume() {
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Link
+                                href="https://coursera.org/share/a8e1705114e2055b0508c6cd5c811a66"
+                                isExternal
+                                color="black"
+                                fontSize="16px"
+                            >
+                                {" "}
+                                Design a User Experience for Social Good &
+                                Prepare for Jobs{"   "}
+                                <ExternalLinkIcon mx="2px" />
+                            </Link>
+                        </Text>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
-                            Meta Front-End Developer
+                            Meta Front-End Developer Professional Certificate
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <Link
-                                href="https://drive.google.com/file/d/1pWrmkSRRytzqMdwu12CVV23p8uOyLAwc/view?usp=sharinghttps://coursera.org/share/a8e1705114e2055b0508c6cd5c811a66"
+                                href="https://coursera.org/share/88c989ff749498324f42ac8efe5e785b"
+                                isExternal
+                                color="black"
+                                fontSize="16px"
+                            >
+                                {" "}
+                                Introduction to Front-End Development{"   "}
+                                <ExternalLinkIcon mx="2px" />
+                            </Link>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Link
+                                href="https://coursera.org/share/7c1405cbb41b3bf5c2a4c5c2e477c6c1"
+                                isExternal
+                                color="black"
+                                fontSize="16px"
+                            >
+                                {" "}
+                                Version Control{"   "}
+                                <ExternalLinkIcon mx="2px" />
+                            </Link>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Link
+                                href="https://coursera.org/share/a8e1705114e2055b0508c6cd5c811a66"
                                 isExternal
                                 color="black"
                                 fontSize="16px"
@@ -315,9 +356,36 @@ export default function Resume() {
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text>
+                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                            Search Engine Optimization (SEO) Specialization
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Link
+                                href="https://coursera.org/share/9a1a9c4f44cd4a30832e424e543497f9"
+                                isExternal
+                                color="black"
+                                fontSize="16px"
+                            >
+                                {" "}
+                                Introduction to Google SEO{"   "}
+                                <ExternalLinkIcon mx="2px" />
+                            </Link>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <Link
+                                href="#"
+                                isExternal
+                                color="black"
+                                fontSize="16px"
+                            >
+                                {" "}
+                                Google SEO Fundamentals{"   "}
+                                <ExternalLinkIcon mx="2px" />
+                            </Link>
+                        </Text>
                     </Box>
                 </GridItem>
-                <GridItem colSpan={{ base: 16, md: 8, lg: 6 }}>
+                <GridItem colSpan={{ base: 16, md: 8, lg: 5 }}>
                     <Box>
                         <Text
                             fontSize="25px"
@@ -495,9 +563,10 @@ export default function Resume() {
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
-                                Coding UI for front-end side.{" "}
+                                Coding UI for front-end side. (HTML/CSS/JS,
+                                ReactJS, Material-UI).{" "}
                             </ListItem>
-                            <ListItem mt={1}>Fetch API.</ListItem>
+                            <ListItem mt={1}>Fetch API using Axios.</ListItem>
                             <ListItem mt={1}>
                                 Collect and analyze client requirements.
                             </ListItem>
@@ -513,7 +582,7 @@ export default function Resume() {
                     </Box>
                 </GridItem>
                 <GridItem
-                    colSpan={{ base: 16, lg: 4 }}
+                    colSpan={{ base: 16, lg: 5 }}
                     display={{ base: "grid", md: "none", lg: "grid" }}
                 >
                     <Box>
@@ -540,22 +609,22 @@ export default function Resume() {
                             HTML5
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            CSS3 (responsive, animate)
+                            CSS3 (grid / flexbox / responsive / animate)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            SASS / SCSS
+                            CSS preprocessor: SASS / SCSS
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Cutting Figma design / PSD to HTML
+                            Convert PSD/Figma design to pixel-perfect UI
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            JS (DOM) / JQuery
+                            JavaScript / ES6+ JavaScript / DOM
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            GitHub
+                            Working with REST/RESTful API for fetching data
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Fetch API
+                            Understanding of basic SEO principles.
                         </Text>
                         <Text
                             fontSize="16px"
@@ -566,7 +635,10 @@ export default function Resume() {
                             {"UI Framework".toUpperCase()}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            ReactJS
+                            JQuery
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            ReactJS / Redux
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Bootstrap
@@ -576,6 +648,21 @@ export default function Resume() {
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Chakra UI
+                        </Text>
+                        <Text
+                            fontSize="16px"
+                            className="qs-smb"
+                            mb="10px"
+                            mt="15px"
+                        >
+                            {"VERSION CONTROL SYSTEM".toUpperCase()}
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            Git workflow (Centralized / Feature branching /
+                            Forking)
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            Tools: Git / GitHub
                         </Text>
                         <Text fontSize="25px" className="qs-b" mt="30px">
                             DESIGN SKILLS
@@ -697,22 +784,22 @@ export default function Resume() {
                         HTML5
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        CSS3 (responsive, animate)
+                        CSS3 (grid / flexbox / responsive / animate)
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        SASS / SCSS
+                        CSS preprocessor: SASS / SCSS
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Cutting Figma design / PSD to HTML
+                        Convert PSD/Figma design to pixel-perfect UI
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        JS (DOM) / JQuery
+                        JavaScript / ES6+ JavaScript / DOM
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        GitHub
+                        Working with REST/RESTful API for fetching data
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Fetch API
+                        Understanding of basic SEO principles.
                     </Text>
                     <Text
                         fontSize="16px"
@@ -723,7 +810,10 @@ export default function Resume() {
                         {"UI Framework".toUpperCase()}
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        ReactJS
+                        JQuery
+                    </Text>
+                    <Text fontSize="16px" className="qs-r" mb="8px">
+                        ReactJS / Redux
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Bootstrap
@@ -733,6 +823,20 @@ export default function Resume() {
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Chakra UI
+                    </Text>
+                    <Text
+                        fontSize="16px"
+                        className="qs-smb"
+                        mb="10px"
+                        mt="15px"
+                    >
+                        {"VERSION CONTROL SYSTEM".toUpperCase()}
+                    </Text>
+                    <Text fontSize="16px" className="qs-r" mb="8px">
+                        Git workflow (Centralized / Feature branching / Forking)
+                    </Text>
+                    <Text fontSize="16px" className="qs-r" mb="8px">
+                        Tools: Git / GitHub
                     </Text>
                 </GridItem>
                 <GridItem colSpan={{ base: 5 }}>
@@ -834,7 +938,11 @@ export default function Resume() {
                     </Text>
                 </GridItem>
             </Grid>
-            <Footer mt={{base: "-2rem", lg: "-4rem"}} position="relative" top={{base: "5rem", md: "6.5rem", lg: "8rem"}}/>
+            <Footer
+                mt={{ base: "-2rem", lg: "-4rem" }}
+                position="relative"
+                top={{ base: "5rem", md: "6.5rem", lg: "8rem" }}
+            />
         </BgColorLayout>
     );
 }
