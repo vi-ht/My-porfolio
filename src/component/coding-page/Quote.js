@@ -7,10 +7,7 @@ import Thesis from "../../asset/image/thesis.png";
 import { Text, Center, Flex } from "@chakra-ui/react";
 export default function Quote() {
     return (
-        <Center
-            w="full"
-            position="relative"
-        >
+        <Center w="full" position="relative">
             <Center
                 w={{
                     base: "90%", //0px
@@ -53,18 +50,31 @@ export default function Quote() {
                         }}
                         textAlign="center"
                         position="relative"
-                        
                         className="qs-smb"
                     >
                         <span className="quote-content"></span>
-                        "Team work with a good team and having an opportunity to
-                        work directly with a client to create a real project has
+                        "Teamwork with a good team and having an opportunity to
+                        work directly with clients to create a real project has
                         given me a lot of valuable experience during my 4 years
-                        at FPT university."{" "}
+                        at FPT University."{" "}
                     </Text>
                 </Flex>
             </Center>
-            <img src={Thesis} style={{width: "100%", height: "100vh", objectFit: "cover", objectPosition: "0% 100%", position: "absolute", zIndex: "-1", top: "0"}}></img>
+            <div className="paralax thesis">
+                {/* <img
+                src={Thesis}
+                style={{
+                    width: "100%",
+                    height: "100vh",
+                    objectFit: "cover",
+                    objectPosition: "0% 100%",
+                    position: "absolute",
+                    zIndex: "-1",
+                    top: "0",
+                }}
+                alt="graduate thesis"
+            ></img> */}
+            </div>
         </Center>
     );
 }

@@ -38,6 +38,7 @@ export default function MainContent() {
                 display="flex"
                 flexDirection="column"
                 id="personal-content"
+                opacity={0}
                 transform="translate(0px,30px)"
             >
                 <img
@@ -75,8 +76,9 @@ export default function MainContent() {
                     textAlign="center"
                 >
                     These are web design templates I found from the Figma
-                    community of UX/UI designers, and I used them to build a
-                    real website for the purpose of filling out my portfolio.
+                    community of other UI/UX designers or self-designed by me,
+                    and I used them to build a real website for the purpose of
+                    filling out my portfolio.
                 </Text>
             </Center>
         </BgImageLayout>

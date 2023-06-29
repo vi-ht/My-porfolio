@@ -30,7 +30,8 @@ export default function InternoProject() {
         "interno-left",
         "interno-right",
         "project-left",
-        "project-right"
+        "project-right",
+        130
     );
     return (
         <BgColorLayout bgColor="#ffeddc" id="interno-container">
@@ -140,6 +141,7 @@ export default function InternoProject() {
                                 <a
                                     href="https://vi-ht.github.io/Interno/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Go to Interno website
                                 </a>

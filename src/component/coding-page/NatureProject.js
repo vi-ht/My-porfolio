@@ -24,7 +24,8 @@ export default function NatureProject() {
         "nature-left",
         "nature-right",
         "project-left",
-        "project-right"
+        "project-right",
+        130
     );
     const color = "#198754";
     return (

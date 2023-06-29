@@ -30,7 +30,8 @@ export default function MonitoProject() {
         "monito-left",
         "monito-right",
         "project-left",
-        "project-right"
+        "project-right",
+        200
     );
     return (
         <BgColorLayout bgColor="rgba(255,228,130,0.25)" id="monito-container">

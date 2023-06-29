@@ -28,7 +28,8 @@ export default function PorfolioProject() {
         "portfolio-left",
         "portfolio-right",
         "project-left",
-        "project-right"
+        "project-right",
+        200
     );
     return (
         <BgColorLayout bgColor="rgba(255,215,218,0.5)" id="portfolio-container">

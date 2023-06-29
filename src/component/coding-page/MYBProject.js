@@ -27,7 +27,8 @@ export default function MYBProject() {
         "myb-left",
         "myb-right",
         "project-left",
-        "project-right"
+        "project-right",
+        130
     );
     const color = "#5243c2";
     return (

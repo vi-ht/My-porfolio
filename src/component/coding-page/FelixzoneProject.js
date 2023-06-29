@@ -30,7 +30,8 @@ export default function FelixzoneProject() {
         "felix-left",
         "felix-right",
         "project-left",
-        "project-right"
+        "project-right",
+        200
     );
     return (
         <BgColorLayout bgColor="rgba(255,215,218,0.5)" id="felix-container">
@@ -131,7 +132,8 @@ export default function FelixzoneProject() {
                                 Technology:
                             </Text>
                             <UnorderedList>
-                                <ListItem>ReactJS, Material UI</ListItem>
+                                <ListItem>ReactJS, Material UI, Redux</ListItem>
+                                <ListItem>HTML, CSS, JS</ListItem>
                             </UnorderedList>
                             <Button
                                 leftIcon={<LinkIcon />}

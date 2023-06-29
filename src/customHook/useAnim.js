@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-const useAnim = (parent, childLeft, childRight, animLeft, animRight) => {
+const useAnim = (parent, childLeft, childRight, animLeft, animRight,border) => {
     useEffect(() => {
         const pos = document.getElementById(parent).offsetTop;
         const func = () => {
             if (
-                window.scrollY > pos - 200 &&
+                window.scrollY > pos - border &&
                 !document
                     .getElementById(childLeft)
                     .classList.contains(animLeft) &&
