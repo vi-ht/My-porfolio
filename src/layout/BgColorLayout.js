@@ -8,11 +8,11 @@ export default function BgColorLayout({
     bgColor,
     children,
     page,
-    mainPage,
+    mainpage,
     id,
 }) {
     return (
-        <Center w="full" bg={bgColor} bgSize="100%" mainPage id={id ? id : ""}>
+        <Center w="full" bg={bgColor} bgSize="100%" mainpage id={id ? id : ""}>
             <Center
                 w={{
                     base: "90%", //0px
@@ -25,8 +25,8 @@ export default function BgColorLayout({
             >
                 <Flex
                     w="full"
-                    alignItems={mainPage ? "flex-start" : "center"}
-                    justify={mainPage ? "flex-start" : "center"}
+                    alignItems={mainpage ? "flex-start" : "center"}
+                    justify={mainpage ? "flex-start" : "center"}
                     direction="column"
                     mt={
                         !page

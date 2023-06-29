@@ -37,6 +37,7 @@ export default function MYBProject() {
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 1 }}
                     transform="translate(-30px,0)"
+                    opacity={0}
                     id="myb-left"
                 >
                     <img
@@ -49,6 +50,7 @@ export default function MYBProject() {
                     colSpan={{ base: 12, lg: 5 }}
                     colStart={{ base: 1, lg: 8 }}
                     transform="translate(30px,0)"
+                    opacity={0}
                     id="myb-right"
                 >
                     <Text fontSize="25px" className="qs-b">

@@ -4,26 +4,20 @@ import "./../../css/Color.css";
 import "./../../css/animate.css";
 //import custom hook
 import { useTitle } from "./../../customHook/useTitle";
-import { useAnim } from "./../../customHook/useAnim";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 import Footer from "../../layout/Footer";
-//import image
-import Felix from "../../asset/image/Felix-mockups.png";
 //import chakra UI component
 import {
     Grid,
     GridItem,
     Box,
     Text,
-    Center,
     ListItem,
     UnorderedList,
-    Button,
     Link,
 } from "@chakra-ui/react";
 //import chakra icon
-import { LinkIcon } from "@chakra-ui/icons";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 //import React-router-dom
 import { NavLink } from "react-router-dom";

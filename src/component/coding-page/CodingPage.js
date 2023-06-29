@@ -2,7 +2,6 @@
 import "./../../css/font.css";
 import "./../../css/Color.css";
 //import hook
-import { useEffect, useLayoutEffect } from "react";
 import { useTitle } from "./../../customHook/useTitle";
 //import component
 import IntroContent from "./IntroContent";
@@ -27,7 +26,6 @@ export default function CodingPage() {
             <Quote />
             <FelixzoneProject />
             <MainContent />
-
             <PorfolioProject />
             <MonitoProject />
             <MYBProject />

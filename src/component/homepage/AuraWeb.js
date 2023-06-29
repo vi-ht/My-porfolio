@@ -28,7 +28,7 @@ import bg13 from "./../../asset/image/AuraWebPart13.png";
 import { PATH } from "../../router/Path";
 
 //-----------------------------------------------------------
-export default function AuraWeb({}) {
+export default function AuraWeb() {
     useTitle(`Aura Project (Web responsive version) | Thanh Vi's portfolio`);
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
@@ -38,7 +38,7 @@ export default function AuraWeb({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("content").style.display = "block";
-        }, 2500);
+        }, 2000);
         //
         return () => {
             clearTimeout(timeout);

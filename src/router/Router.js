@@ -60,7 +60,7 @@ export default function Router() {
                             element: <Cogibannay />,
                         },
                         {
-                            path: "aura-project-responsive-web-design-version",
+                            path: "aura-project-web-design-version",
                             element: <AuraWeb />,
                         },
                     ],

@@ -22,7 +22,6 @@ import bg7 from "./../../asset/image/AuraProjectPart7.png";
 import bg8 from "./../../asset/image/AuraProjectPart8.png";
 import bg9 from "./../../asset/image/AuraProjectPart9.png";
 import bg10 from "./../../asset/image/AuraProjectPart10.png";
-import {} from "@chakra-ui/react";
 //import React-router-dom
 import { PATH } from "../../router/Path";
 
@@ -37,7 +36,7 @@ export default function AuraMobile({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("content").style.display = "block";
-        }, 2500);
+        }, 2000);
         //
         return () => {
             clearTimeout(timeout);

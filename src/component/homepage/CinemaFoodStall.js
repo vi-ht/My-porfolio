@@ -33,7 +33,7 @@ export default function CinnemaFoodStall({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading1").style.display = "none";
             document.getElementById("cinemaContent").style.display = "block";
-        }, 2500);
+        }, 2000);
         //
         return () => {
             clearTimeout(timeout);

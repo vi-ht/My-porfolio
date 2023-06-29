@@ -1,12 +1,10 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
-//import component
 //import image
-import bg from "../../asset/image/pink-bg.png";
 import Thesis from "../../asset/image/thesis.png";
 //import chakra UI component
-import { Grid, GridItem, Box, Text, Center, Flex, Container } from "@chakra-ui/react";
+import { Text, Center, Flex } from "@chakra-ui/react";
 export default function Quote() {
     return (
         <Center

@@ -5,7 +5,6 @@
     animation-delay: 0s;
     animation-timing-function: "ease-in";
     animation-fill-mode: forwards;
-    
 }
 
 @keyframes intro-anim {
@@ -19,16 +18,18 @@
     animation-name: intro-anim-main;
     animation-delay: 0.2s;
     animation-timing-function: "ease-in";
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }
 
 @keyframes intro-anim-main {
     0% {
         transform: translate(0, 0px);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0, -30px);
+        opacity: 1;
     }
 }
 
@@ -37,7 +38,7 @@
     animation-duration: 0.7s;
     animation-name: abme-left;
     animation-delay: 0s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-timing-function: "ease-in";
 }
 
@@ -45,27 +46,31 @@
     animation-duration: 0.7s;
     animation-name: abme-right;
     animation-delay: 0s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-timing-function: "ease-in";
 }
 
 @keyframes abme-left {
     0% {
         transform: translate(-30px, 0);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }
 
 @keyframes abme-right {
     0% {
         transform: translate(30px, 0);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }
 
@@ -100,7 +105,7 @@
     animation-name: anim-left;
     animation-delay: 0s;
     animation-timing-function: "ease-in";
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }
 
 .project-right {
@@ -108,25 +113,29 @@
     animation-name: anim-right;
     animation-delay: 0s;
     animation-timing-function: "ease-in";
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
 }
 
 @keyframes anim-left {
     0% {
         transform: translate(-30px, 0);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }
 
 @keyframes anim-right {
     0% {
         transform: translate(30px, 0);
+        opacity: 0;
     }
 
     100% {
         transform: translate(0, 0);
+        opacity: 1;
     }
 }

@@ -34,15 +34,12 @@ export default function BreadcrumbComp({projectName, path}) {
                         </BreadcrumbItem>
 
                         <BreadcrumbItem>
-                            <Link to={path}>
                                 <BreadcrumbLink
-                                    href="#"
                                     color="#FB797F"
                                     className="qs-smb"
                                 >
                                     {projectName}
                                 </BreadcrumbLink>
-                            </Link>
                         </BreadcrumbItem>
                     </Breadcrumb>
                 </Box>

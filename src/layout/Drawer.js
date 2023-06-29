@@ -6,16 +6,12 @@ import { IconButton, Stack, Center } from "@chakra-ui/react";
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
-    DrawerCloseButton,
 } from "@chakra-ui/react";
-import { Button } from "@chakra-ui/react";
 // import chakra icon
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
 // import react-router-dom
 import { PATH } from "./../router/Path.js";
 import { NavLink } from "react-router-dom";

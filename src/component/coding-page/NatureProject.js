@@ -6,18 +6,14 @@ import BgColorLayout from "../../layout/BgColorLayout";
 //import custom hook
 import { useAnim } from "./../../customHook/useAnim";
 //import image
-import Monito from "../../asset/image/Monito-mockups.png";
 import Climate from "../../asset/image/Climate-mockups.png";
 //import chakra UI component
 import { Grid, GridItem, Box, Text, Center } from "@chakra-ui/react";
 import {
-    List,
     ListItem,
-    ListIcon,
-    OrderedList,
     UnorderedList,
 } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import { Button} from "@chakra-ui/react";
 import { LinkIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
@@ -38,6 +34,7 @@ export default function NatureProject() {
                     colSpan={{ base: 12, lg: 5 }}
                     colStart={1}
                     transform="translate(-30px,0)"
+                    opacity={0}
                     id="nature-left"
                 >
                     <Center w="full" h="full">
@@ -130,6 +127,7 @@ export default function NatureProject() {
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 6 }}
                     transform="translate(30px,0)"
+                    opacity={0}
                     id="nature-right"
                 >
                     <img

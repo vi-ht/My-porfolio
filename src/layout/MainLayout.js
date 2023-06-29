@@ -3,7 +3,7 @@ import { Container } from "@chakra-ui/react";
 import { useEffect } from "react";
 import Header from "./Header";
 import MobileHeader from "./MobileHeader";
-import { Box, Flex, Center } from "@chakra-ui/react";
+import {  Center } from "@chakra-ui/react";
 import { Outlet, useLocation } from "react-router-dom";
 export default function MainLayout() {
     const location = useLocation();

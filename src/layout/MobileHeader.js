@@ -1,11 +1,11 @@
 // import hook
-import { useLayoutEffect, useEffect } from "react";
+import {  useEffect } from "react";
 // import CSS
 import "./../css/font.css";
 import "./../css/Color.css";
 import "./../css/layout.css";
 // import chakraUI components
-import { HStack, Text, Box, Flex, Spacer, Center } from "@chakra-ui/react";
+import { Text, Box, Flex, Spacer, Center } from "@chakra-ui/react";
 // import component
 import MobileDrawer from "./Drawer";
 import { PATH } from "./../router/Path.js";

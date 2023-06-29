@@ -39,6 +39,7 @@ export default function MonitoProject() {
                     colSpan={{ base: 12, lg: 5 }}
                     colStart={1}
                     transform="translate(-30px,0)"
+                    opacity={0}
                     id="monito-left"
                 >
                     <Center w="full" h="full">
@@ -135,6 +136,7 @@ export default function MonitoProject() {
                     colSpan={{ base: 12, lg: 7 }}
                     colStart={{ base: 1, lg: 6 }}
                     transform="translate(30px,0)"
+                    opacity={0}
                     id="monito-right"
                 >
                     <img

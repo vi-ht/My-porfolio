@@ -13,23 +13,18 @@ import { useToast } from "@chakra-ui/react";
 import { Icon } from "@iconify/react";
 import { Link } from "@chakra-ui/react";
 import {
-    ExternalLinkIcon,
     CopyIcon,
     CheckCircleIcon,
-    ArrowDownIcon,
 } from "@chakra-ui/icons";
-import { Tooltip, Box, HStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import { CloseButton } from "@chakra-ui/react";
 import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    PopoverHeader,
     PopoverBody,
-    PopoverFooter,
     PopoverArrow,
     PopoverCloseButton,
-    PopoverAnchor,
 } from "@chakra-ui/react";
 //----------------------------------------------------------
 const CustomIcon = ({ link, iconName, tooltip }) => {

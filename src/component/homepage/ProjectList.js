@@ -13,7 +13,7 @@ import { PATH } from "../../router/Path";
 import {data} from "./Data";
 export default function ProjectList() {
     return (
-        <BgColorLayout bgColor="white" mainPage id="uxui-project">
+        <BgColorLayout bgColor="white" mainpage id="uxui-project">
             <Text
                 fontSize={{
                     base: "25px", //0px

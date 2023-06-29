@@ -83,7 +83,7 @@ export default function IntroContent() {
         };
     }, []);
     return (
-        <BgImageLayout bg={bgImage} pos="70% 100%" mainPage>
+        <BgImageLayout bg={bgImage} pos="70% 100%" mainpage>
             <Box w="full" h="full" position="relative">
                 <Box
                     position="absolute"
