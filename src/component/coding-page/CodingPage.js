@@ -14,6 +14,7 @@ import FelixzoneProject from "./FelixzoneProject";
 import PorfolioProject from "./PorfolioProject";
 import MYBProject from "./MYBProject";
 import NatureProject from "./NatureProject";
+import InternoProject from "./InternoProject";
 //import chakra UI component
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
@@ -26,11 +27,13 @@ export default function CodingPage() {
             <Quote />
             <FelixzoneProject />
             <MainContent />
+
             <PorfolioProject />
             <MonitoProject />
             <MYBProject />
             <NatureProject />
-            <Footer mt={10}/>
+            <InternoProject />
+            <Footer mt={10} />
         </Box>
     );
 }

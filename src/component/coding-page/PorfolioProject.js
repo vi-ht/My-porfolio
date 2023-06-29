@@ -17,7 +17,7 @@ import {
     UnorderedList,
     Center,
     Text,
-    Button
+    Button,
 } from "@chakra-ui/react";
 // import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
@@ -60,7 +60,9 @@ export default function PorfolioProject() {
                                 (Responsive web - SPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
-                            This is a portfolio website designed and coded by me for the purpose of showcasing all my UI/UX and coding projects.
+                                This is a portfolio website designed and coded
+                                by me for the purpose of showcasing all my UI/UX
+                                and coding projects.
                             </Text>
                             <Text
                                 fontSize="16px"
@@ -74,7 +76,13 @@ export default function PorfolioProject() {
                                 <ListItem>
                                     Design and create website's mockups.
                                 </ListItem>
-                                <ListItem>Code for responsiveness.</ListItem>
+                                <ListItem>
+                                    Convert design template to responsive web UI.
+                                </ListItem>
+                                <ListItem>
+                                    Create effects and animations to increase
+                                    the liveliness of the website.
+                                </ListItem>
                             </UnorderedList>
                             <Text
                                 fontSize="16px"

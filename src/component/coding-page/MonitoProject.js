@@ -69,7 +69,7 @@ export default function MonitoProject() {
                             </Text>
                             <UnorderedList>
                                 <ListItem>Analyze design templates.</ListItem>
-                                <ListItem>Code for responsiveness.</ListItem>
+                                <ListItem>Convert design template to responsive web UI.</ListItem>
                             </UnorderedList>
                             <Text
                                 fontSize="16px"

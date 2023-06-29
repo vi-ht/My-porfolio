@@ -72,9 +72,10 @@ export default function MYBProject() {
                     </Text>
                     <UnorderedList>
                         <ListItem>
-                            Analyze design templates and code for
-                            responsiveness.
+                            Analyze design templates.
                         </ListItem>
+                        <ListItem>Convert design template to web UI.</ListItem>
+                        <ListItem>Create effects and animations to increase the liveliness of the website.</ListItem>
                     </UnorderedList>
                     <Text
                         fontSize="16px"

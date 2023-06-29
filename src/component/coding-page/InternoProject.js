@@ -1,68 +1,87 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+import "./../../css/animate.css";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import custom hook
 import { useAnim } from "./../../customHook/useAnim";
 //import image
-import Monito from "../../asset/image/Monito-mockups.png";
-import Climate from "../../asset/image/Climate-mockups.png";
+import Interno from "../../asset/image/interno-mockup.png";
 //import chakra UI component
-import { Grid, GridItem, Box, Text, Center } from "@chakra-ui/react";
 import {
-    List,
+    Grid,
+    GridItem,
+    Box,
+    Text,
+    Center,
     ListItem,
-    ListIcon,
-    OrderedList,
     UnorderedList,
+    Button,
+    Link,
 } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+//import chakra UI icon
 import { LinkIcon } from "@chakra-ui/icons";
-import { Link } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
-export default function NatureProject() {
+export default function InternoProject() {
     useAnim(
-        "nature-container",
-        "nature-left",
-        "nature-right",
+        "interno-container",
+        "interno-left",
+        "interno-right",
         "project-left",
         "project-right"
     );
-    const color = "#198754";
     return (
-        <BgColorLayout bgColor="rgba(108,154,104,0.18)" id="nature-container">
+        <BgColorLayout bgColor="#ffeddc" id="interno-container">
             <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4}>
                 <GridItem
-                    colSpan={{ base: 12, lg: 5 }}
-                    colStart={1}
+                    colSpan={{ base: 12, lg: 7 }}
+                    colStart={{ base: 1, lg: 1 }}  
                     transform="translate(-30px,0)"
-                    id="nature-left"
+                    id="interno-left"
+                >
+                    <img
+                        src={Interno}
+                        alt="Monito Mockups"
+                        style={{ width: "100%" }}
+                    ></img>
+                </GridItem>
+                <GridItem
+                    colSpan={{ base: 12, lg: 5 }}
+                    colStart={{ base: 1, lg: 8 }}
+                    transform="translate(30px,0)"
+                    id="interno-right"
                 >
                     <Center w="full" h="full">
                         <Box>
-                            <Text fontSize="25px" className="qs-b">
-                                NATURE - LANDING PAGE
+                            <Text
+                                fontSize="25px"
+                                className="qs-b"
+                                mt={{ base: 0, lg: "20px" }}
+                            >
+                                INTERNO
                             </Text>
                             <Text fontSize="16px" className="qs-b" mb="8px">
                                 (Responsive web - MPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
-                                Nature is a website about nature conservation
-                                and sustainable lifestyle
+                                Interno is a website for presenting interior
+                                design with a delightful and captivating
+                                experience.
                             </Text>
                             <Text
                                 fontSize="16px"
                                 className="qs-smb"
-                                color={color}
+                                color="#292F36"
                                 mt="5px"
                                 mb="5px"
                             >
                                 My responsibility:
                             </Text>
                             <UnorderedList>
-                            <ListItem>Convert design template to responsive web UI.</ListItem>
+                                <ListItem>Analyze design templates.</ListItem>
+                                <ListItem>Convert design template to responsive web UI.</ListItem>
                                 <ListItem>Create effects and animations to increase the liveliness of the website.</ListItem>
                             </UnorderedList>
                             <Text
@@ -70,37 +89,37 @@ export default function NatureProject() {
                                 className="qs-smb"
                                 mt="5px"
                                 mb="5px"
-                                color={color}
+                                color="#292F36"
                             >
                                 Technology:
                             </Text>
                             <UnorderedList>
                                 <ListItem>HTML, CSS, JS</ListItem>
-                                <ListItem>Bootstrap</ListItem>
+                                <ListItem>SCSS</ListItem>
+                                <ListItem>JQuery</ListItem>
                             </UnorderedList>
                             <Text
                                 fontSize="16px"
                                 className="qs-smb"
                                 mt="5px"
                                 mb="5px"
-                                color={color}
+                                color="#292F36"
                             >
-                                Monito design template:
+                                Interno design template:
                             </Text>
                             <UnorderedList>
                                 <ListItem>
                                     I got this design template from Figma
                                     community.
                                     <Link
-                                        href="https://www.figma.com/community/file/1159949335448845032/Free-Nature-landing-page-template"
+                                        href="https://www.figma.com/community/file/1192821197758069323"
                                         isExternal
                                         color="black"
                                         fontWeight="bold"
                                         fontSize="16px"
                                     >
                                         {" "}
-                                        Nature landing-page design template
-                                        {"   "}
+                                        Interno design template{"   "}
                                         <ExternalLinkIcon mx="2px" />
                                     </Link>
                                 </ListItem>
@@ -114,29 +133,17 @@ export default function NatureProject() {
                                     background: "black",
                                 }}
                                 className="bg-main-color white-color"
-                                bg={color}
+                                bg="#292F36"
                             >
                                 <a
-                                    href="https://vi-ht.github.io/Custom-Bootstrap/"
+                                    href="https://vi-ht.github.io/Interno/"
                                     target="_blank"
                                 >
-                                    Go to Nature Landing-page
+                                    Go to Interno website
                                 </a>
                             </Button>
                         </Box>
                     </Center>
-                </GridItem>
-                <GridItem
-                    colSpan={{ base: 12, lg: 7 }}
-                    colStart={{ base: 1, lg: 6 }}
-                    transform="translate(30px,0)"
-                    id="nature-right"
-                >
-                    <img
-                        src={Climate}
-                        alt="Nature Mockups"
-                        style={{ width: "100%" }}
-                    ></img>
                 </GridItem>
             </Grid>
         </BgColorLayout>
