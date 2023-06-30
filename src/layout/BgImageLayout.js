@@ -39,6 +39,7 @@ export default function BgImageLayout({ children, bg, objectPos, mainpage, id })
                     zIndex: "-1",
                     top: "0",
                 }}
+                alt="background"
             ></img>
         </Center>
     );
