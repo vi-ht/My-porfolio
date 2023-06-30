@@ -8,7 +8,6 @@ import ProjectCard from "./ProjectCard";
 import BgColorLayout from "../../layout/BgColorLayout";
 // import chakra components
 import { Text, Grid } from "@chakra-ui/react";
-import { PATH } from "../../router/Path";
 //import data
 import {data} from "./Data";
 export default function ProjectList() {

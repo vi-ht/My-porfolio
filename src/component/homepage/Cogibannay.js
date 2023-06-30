@@ -21,8 +21,6 @@ import {
 } from "@chakra-ui/react";
 //import chakra UI icon
 import { LinkIcon } from "@chakra-ui/icons";
-//import react-router-dom
-import { Link } from "@chakra-ui/react";
 //import path
 import { PATH } from "../../router/Path";
 //-------------------------------------------------
