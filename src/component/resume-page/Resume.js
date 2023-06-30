@@ -527,7 +527,7 @@ export default function Resume() {
                                 Prepare data for AI training.
                             </ListItem>
                             <ListItem mt={1}>
-                                Learn and using Python to check validate for
+                                Learn and use Python to check validate for
                                 training data.
                             </ListItem>
                             <ListItem mt={1}>
@@ -544,7 +544,7 @@ export default function Resume() {
                             <span className="qs-r">| Graduation Thesis</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            (January 22 - August 22)
+                            (December 21 - September 22)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             <span className="qs-m">Position: </span> Front-end
@@ -614,7 +614,7 @@ export default function Resume() {
                             Convert PSD/Figma design to pixel-perfect UI
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            JavaScript / ES6+ JavaScript / DOM
+                            JavaScript / ES6 JavaScript / DOM
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Working with REST/RESTful API for fetching data
@@ -634,7 +634,10 @@ export default function Resume() {
                             JQuery
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            ReactJS / Redux
+                            ReactJS
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            Redux / Redux Thunk
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             Bootstrap
@@ -789,7 +792,7 @@ export default function Resume() {
                         Convert PSD/Figma design to pixel-perfect UI
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        JavaScript / ES6+ JavaScript / DOM
+                        JavaScript / ES6 JavaScript / DOM
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Working with REST/RESTful API for fetching data
@@ -809,7 +812,10 @@ export default function Resume() {
                         JQuery
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        ReactJS / Redux
+                        ReactJS
+                    </Text>
+                    <Text fontSize="16px" className="qs-r" mb="8px">
+                        Redux / Redux Thunk
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
                         Bootstrap
