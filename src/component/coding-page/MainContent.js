@@ -9,7 +9,7 @@ import BgImageLayout from "../../layout/BgImageLayout";
 // import chakra components
 import { Text, Center } from "@chakra-ui/react";
 //import image
-import bg from "../../asset/image/main-content-bg.png";
+import bg from "../../asset/image/mainContentBg.png";
 import icon from "../../asset/icon/twemoji_woman-technologist.png";
 //-----------------------------------------------"70% 100%"
 export default function MainContent() {
