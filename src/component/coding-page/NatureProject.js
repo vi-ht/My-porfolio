@@ -117,6 +117,7 @@ export default function NatureProject() {
                                 <a
                                     href="https://vi-ht.github.io/Custom-Bootstrap/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Go to Nature Landing-page
                                 </a>

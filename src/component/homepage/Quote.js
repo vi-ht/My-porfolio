@@ -2,9 +2,6 @@
 import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/paralax.css";
-//import component
-//import image
-import bg from "../../asset/image/uiux.png";
 //import chakra UI component
 import { Text, Center, Flex } from "@chakra-ui/react";
 export default function Quote() {

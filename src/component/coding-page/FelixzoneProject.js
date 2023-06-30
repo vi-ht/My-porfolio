@@ -119,8 +119,8 @@ export default function FelixzoneProject() {
                                     Collect and analyze client requirements
                                 </ListItem>
                                 <ListItem>
-                                    Using Figma to design UI in the final stages of the
-                                    project.
+                                    Using Figma to design UI in the final stages
+                                    of the project.
                                 </ListItem>
                             </UnorderedList>
                             <Text
@@ -149,6 +149,7 @@ export default function FelixzoneProject() {
                                 <a
                                     href="https://felixzone.asia/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Go to Felixzone web site
                                 </a>

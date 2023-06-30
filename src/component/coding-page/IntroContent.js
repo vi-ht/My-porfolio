@@ -6,7 +6,7 @@ import "./../../css/animate.css";
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
 import star from "../../asset/icon/twemoji_dizzy.png";
-import bg from "../../asset/image/CodingBg.png";
+import bg from "../../asset/image/codingbg.png";
 // import chakra components
 import { Text, Center } from "@chakra-ui/react";
 //---------------------------------------------------

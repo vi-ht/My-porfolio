@@ -134,6 +134,7 @@ export default function MYBProject() {
                             href="https://vi-ht.github.io/MYB-Website/"
                             target="_blank"
                             style={{ fontSize: "14px" }}
+                            rel="noreferrer"
                         >
                             Go to MYB website
                         </a>

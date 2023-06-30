@@ -126,6 +126,7 @@ export default function MonitoProject() {
                                 <a
                                     href="https://vi-ht.github.io/Monito-website/"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     Go to Monito website
                                 </a>

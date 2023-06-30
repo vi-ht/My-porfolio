@@ -1,28 +1,28 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/layout.css";
-import "./../../css/animate.css"
+import "./../../css/animate.css";
 // import chakra components
-import {
-    Text,
-    Box,
-    Container,
-    Flex,
-    Center,
-    VStack,
-    GridItem,
-} from "@chakra-ui/react";
+import { Text, GridItem } from "@chakra-ui/react";
 //import React-router-dom
 import { Link } from "react-router-dom";
-import { PATH } from "../../router/Path";
 //-----------------------------------------------------------
-export default function ProjectCard({ span, start, name, type, des, img, path }) {
+export default function ProjectCard({
+    span,
+    start,
+    name,
+    type,
+    des,
+    img,
+    path,
+}) {
     return (
         <GridItem colSpan={span} mb={5} className="card-container">
             <Link to={path}>
                 <img
                     src={img}
                     style={{ width: "100%", marginBottom: "1rem" }}
+                    alt={name+"project"}
                 ></img>
                 <Text
                     textAlign="left"

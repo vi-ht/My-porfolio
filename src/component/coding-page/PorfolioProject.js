@@ -124,6 +124,7 @@ export default function PorfolioProject() {
                                 <a
                                     href="https://www.figma.com/proto/4i2smvXZHPUp1hSyO1bU3G/MY-PORTFOLIO?type=design&node-id=4-63&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A24"
                                     target="_blank"
+                                    rel="noreferrer"
                                 >
                                     View mockups on Figma
                                 </a>

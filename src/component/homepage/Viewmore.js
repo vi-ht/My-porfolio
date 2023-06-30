@@ -3,17 +3,13 @@ import "./../../css/font.css";
 import "./../../css/layout.css";
 //import components
 import ProjectCard from "./ProjectCard";
-import BgColorLayout from "../../layout/BgColorLayout";
 // import chakra components
 import { Text, Grid, GridItem } from "@chakra-ui/react";
-import { PATH } from "../../router/Path";
 //import data
 import { data } from "./Data";
 
 export default function ViewMore({ id }) {
     return (
-        // <BgColorLayout bgColor="rgba(255,215,218,0.5)">
-
         <Grid
             templateColumns="repeat(12,1fr)"
             w="full"
@@ -41,7 +37,7 @@ export default function ViewMore({ id }) {
                 (item, i) =>
                     item.id !== id && (
                         <ProjectCard
-                            key={i}
+                            key={i+item.name}
                             span={{ base: 12, lg: 4 }}
                             start={item.start}
                             name={item.name}
@@ -49,6 +45,7 @@ export default function ViewMore({ id }) {
                             type={item.type}
                             img={item.img}
                             path={item.path}
+                            viewMore = {true}
                         />
                     )
             )}

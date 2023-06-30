@@ -1,8 +1,6 @@
 .paralax {
 
     /* The image used */
-    background-image: url(../asset/image/uiux.png);
-    background-color: blanchedalmond;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -18,6 +16,6 @@
     background-position: 0% 100%;
 }
 .uiux{
-    background-image: url(uiux.png);
+    background-image: url(../asset/image/uiux.png);
     background-position: 100% 43%; 
 }

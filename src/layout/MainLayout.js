@@ -3,16 +3,12 @@ import { Container } from "@chakra-ui/react";
 import { useEffect } from "react";
 import Header from "./Header";
 import MobileHeader from "./MobileHeader";
-import {  Center } from "@chakra-ui/react";
-import { Outlet, useLocation } from "react-router-dom";
+import { Center } from "@chakra-ui/react";
+import { Outlet } from "react-router-dom";
 export default function MainLayout() {
-    const location = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
     });
-    useEffect(()=>{
-     console.log("location",location.pathname)
-    },[location])
     return (
         <Container
             maxW="100vw"

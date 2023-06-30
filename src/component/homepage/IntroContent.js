@@ -8,10 +8,9 @@ import { useEffect } from "react";
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
 import wavehand from "../../asset/icon/twemojiwavinghand.png";
-import scroll from "../../asset/icon/openmojiscroll.png";
 import bgImage from "../../asset/icon/bg.png";
 // import chakra components
-import { Text, Flex, Box } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 const TextTemplate = ({ children, container }) => (
     <Text
         fontSize={{

@@ -1,8 +1,6 @@
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
-//import image
-import Thesis from "../../asset/image/thesis.png";
 //import chakra UI component
 import { Text, Center, Flex } from "@chakra-ui/react";
 export default function Quote() {
