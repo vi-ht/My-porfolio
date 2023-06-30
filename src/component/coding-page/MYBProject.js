@@ -16,6 +16,7 @@ import {
     GridItem,
     Text,
     Link,
+    Center
 } from "@chakra-ui/react";
 //import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
@@ -41,11 +42,13 @@ export default function MYBProject() {
                     opacity={0}
                     id="myb-left"
                 >
-                    <img
-                        src={MYB}
-                        alt="MYB Mockups"
-                        style={{ width: "100%" }}
-                    ></img>
+                    <Center height={{ base: "auto", lg: "100%" }}>
+                        <img
+                            src={MYB}
+                            alt="MYB Mockups"
+                            style={{ width: "100%" }}
+                        ></img>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colSpan={{ base: 12, lg: 5 }}
@@ -74,11 +77,12 @@ export default function MYBProject() {
                         My responsibility:
                     </Text>
                     <UnorderedList>
-                        <ListItem>
-                            Analyze design templates.
-                        </ListItem>
+                        <ListItem>Analyze design templates.</ListItem>
                         <ListItem>Convert design template to web UI.</ListItem>
-                        <ListItem>Create effects and animations to increase the liveliness of the website.</ListItem>
+                        <ListItem>
+                            Create effects and animations to increase the
+                            liveliness of the website.
+                        </ListItem>
                     </UnorderedList>
                     <Text
                         fontSize="16px"

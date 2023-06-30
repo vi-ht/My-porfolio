@@ -41,11 +41,13 @@ export default function PorfolioProject() {
                     opacity={0}
                     id="portfolio-left"
                 >
-                    <img
-                        src={Porfolio}
-                        alt="Porfolio Mockups"
-                        style={{ width: "100%" }}
-                    ></img>
+                    <Center height={{ base: "auto", lg: "100%" }}>
+                        <img
+                            src={Porfolio}
+                            alt="Porfolio Mockups"
+                            style={{ width: "100%" }}
+                        ></img>
+                    </Center>
                 </GridItem>
                 <GridItem
                     colSpan={{ base: 12, lg: 5 }}
@@ -80,7 +82,8 @@ export default function PorfolioProject() {
                                     Design and create website's mockups.
                                 </ListItem>
                                 <ListItem>
-                                    Convert design template to responsive web UI.
+                                    Convert design template to responsive web
+                                    UI.
                                 </ListItem>
                                 <ListItem>
                                     Create effects and animations to increase
