@@ -1,26 +1,31 @@
 @font-face {
     font-family: qs-regular;
     src: url(./../asset/Font/Quicksand-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: qs-bold;
     src: url(./../asset/Font/Quicksand-Bold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: qs-medium;
     src: url(./../asset/Font/Quicksand-Medium.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: qs-semiBold;
     src: url(./../asset/Font/Quicksand-SemiBold.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: qs-light;
     src: url(./../asset/Font/Quicksand-Light.ttf);
+    font-display: swap;
 }
 
 * {
