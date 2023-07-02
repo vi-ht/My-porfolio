@@ -17,7 +17,7 @@ export default function ProjectCard({
     path,
 }) {
     return (
-        <GridItem colSpan={span} mb={5} className="card-container">
+        <GridItem colSpan={span} mb={5} className="card-container" w="100%">
             <Link to={path}>
                 <img
                     src={img}

@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useDisclosure } from "@chakra-ui/react";
 // import chakra component
-import { IconButton, Stack, Center } from "@chakra-ui/react";
+import { IconButton, Stack, Center, Text } from "@chakra-ui/react";
 import {
     Drawer,
     DrawerBody,
@@ -52,13 +52,29 @@ export default function MobileDrawer() {
                 position="relative"
                 left="15px"
             />
-            <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+            <Drawer placement={placement} onClose={onClose} isOpen={isOpen} w={{base: "100%"}}>
                 <DrawerOverlay />
                 <DrawerContent
-                    borderTopLeftRadius={20}
-                    borderBottomLeftRadius={20}
+                    borderTopLeftRadius={{base: "none", sm: 20}}
+                    borderBottomLeftRadius={{base: "none", sm: 20}}
                 >
-                    <DrawerHeader display="flex" justifyContent="end">
+                    <DrawerHeader display="flex" justifyContent="space-between">
+                    <Link to={PATH.home}>
+                        <Text
+                            fontSize="2xl"
+                            fontWeight={700}
+                            pt={1}
+                            className="qs-b main-color"
+                            sx={{
+                                transition: "0.5s"
+                            }}
+                            _hover={{
+                                color: "black"
+                            }}
+                        >
+                            Thanh Vi
+                        </Text>
+                    </Link>
                         <IconButton
                             aria-label="Search database"
                             icon={<CloseIcon />}

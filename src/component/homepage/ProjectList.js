@@ -9,7 +9,7 @@ import BgColorLayout from "../../layout/BgColorLayout";
 // import chakra components
 import { Text, Grid } from "@chakra-ui/react";
 //import data
-import {data} from "./Data";
+import { data } from "./Data";
 export default function ProjectList() {
     return (
         <BgColorLayout bgColor="white" mainpage id="uxui-project">
@@ -27,12 +27,17 @@ export default function ProjectList() {
                 Personal project
             </Text>
             <div className="line"></div>
-            <Grid templateColumns="repeat(12,1fr)" w="full" mt="3rem" gap={8}>
+            <Grid
+                templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
+                w="full"
+                mt="3rem"
+                gap={8}
+            >
                 {data.map((item, i) => (
                     <ProjectCard
                         key={i}
                         id={item.id}
-                        span={{ base: 12, lg: 6 }}
+                        span={{ base: 2, md: 6 }}
                         start={item.start}
                         name={item.name}
                         des={item.des}

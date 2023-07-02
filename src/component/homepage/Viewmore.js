@@ -38,7 +38,7 @@ export default function ViewMore({ id }) {
                     item.id !== id && (
                         <ProjectCard
                             key={i+item.name}
-                            span={{ base: 12, lg: 4 }}
+                            span={{ base: 12, md: 6, lg: 4 }}
                             start={item.start}
                             name={item.name}
                             des={item.des}

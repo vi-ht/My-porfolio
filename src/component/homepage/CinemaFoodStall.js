@@ -11,14 +11,14 @@ import BreadcrumbComp from "./Breadcrumb";
 // import chakra components
 import { Box, Center, CircularProgress } from "@chakra-ui/react";
 //import image
-import bg1 from "./../../asset/image/Cinema-part1.png";
-import bg2 from "./../../asset/image/Cinema-part2.png";
-import bg3 from "./../../asset/image/Cinema-part3.png";
-import bg4 from "./../../asset/image/Cinema-part4.png";
-import bg5 from "./../../asset/image/Cinema-part5.png";
-import bg6 from "./../../asset/image/Cinema-part6.png";
-import bg7 from "./../../asset/image/Cinema-part7.png";
-import bg8 from "./../../asset/image/Cinema-part8.png";
+import bg1 from "./../../asset/image/Cinema-part1.webp";
+import bg2 from "./../../asset/image/Cinema-part2.webp";
+import bg3 from "./../../asset/image/Cinema-part3.webp";
+import bg4 from "./../../asset/image/Cinema-part4.webp";
+import bg5 from "./../../asset/image/Cinema-part5.webp";
+import bg6 from "./../../asset/image/Cinema-part6.webp";
+import bg7 from "./../../asset/image/Cinema-part7.webp";
+import bg8 from "./../../asset/image/Cinema-part8.webp";
 //import React-router-dom
 import { PATH } from "../../router/Path";
 //-----------------------------------------------------------
@@ -33,7 +33,7 @@ export default function CinnemaFoodStall({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading1").style.display = "none";
             document.getElementById("cinemaContent").style.display = "block";
-        }, 2000);
+        }, 1000);
         //
         return () => {
             clearTimeout(timeout);

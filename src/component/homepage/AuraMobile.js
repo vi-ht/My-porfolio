@@ -12,16 +12,16 @@ import BreadcrumbComp from "./Breadcrumb";
 // import chakra components
 import { Box, Center, CircularProgress } from "@chakra-ui/react";
 //import image
-import bg1 from "./../../asset/image/AuraProjectPart1.png";
-import bg2 from "./../../asset/image/AuraProjectPart2.png";
-import bg3 from "./../../asset/image/AuraProjectPart3.png";
-import bg4 from "./../../asset/image/AuraProjectPart4.png";
-import bg5 from "./../../asset/image/AuraProjectPart5.png";
-import bg6 from "./../../asset/image/AuraProjectPart6.png";
-import bg7 from "./../../asset/image/AuraProjectPart7.png";
-import bg8 from "./../../asset/image/AuraProjectPart8.png";
-import bg9 from "./../../asset/image/AuraProjectPart9.png";
-import bg10 from "./../../asset/image/AuraProjectPart10.png";
+import bg1 from "./../../asset/image/AuraProjectPart1.webp";
+import bg2 from "./../../asset/image/AuraProjectPart2.webp";
+import bg3 from "./../../asset/image/AuraProjectPart3.webp";
+import bg4 from "./../../asset/image/AuraProjectPart4.webp";
+import bg5 from "./../../asset/image/AuraProjectPart5.webp";
+import bg6 from "./../../asset/image/AuraProjectPart6.webp";
+import bg7 from "./../../asset/image/AuraProjectPart7.webp";
+import bg8 from "./../../asset/image/AuraProjectPart8.webp";
+import bg9 from "./../../asset/image/AuraProjectPart9.webp";
+import bg10 from "./../../asset/image/AuraProjectPart10.webp";
 //import React-router-dom
 import { PATH } from "../../router/Path";
 
@@ -36,7 +36,7 @@ export default function AuraMobile({}) {
         const timeout = setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("content").style.display = "block";
-        }, 2000);
+        }, 1000);
         //
         return () => {
             clearTimeout(timeout);

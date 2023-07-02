@@ -19,7 +19,7 @@ export default function MainLayout() {
         >
             <Header />
             <MobileHeader />
-            <Center w="full">
+            <Center maxW="full">
                 <Outlet />
             </Center>
         </Container>

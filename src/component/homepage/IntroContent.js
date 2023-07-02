@@ -14,12 +14,12 @@ import { Text, Box } from "@chakra-ui/react";
 const TextTemplate = ({ children, container }) => (
     <Text
         fontSize={{
-            base: "20px", //0px
+            base: "18px", //0px
             lg: "20px", // 992px
         }}
         className={container ? "container" : "qs-m"}
         lineHeight={{
-            base: "40px", //0px
+            base: "30px", //0px
             lg: "40px", // 992px
         }}
         mt={{
@@ -92,12 +92,15 @@ export default function IntroContent() {
                 >
                     <Text
                         fontSize={{
-                            base: "55px", //0px
+                            base: "50px", //0px
                             sm: "60px", // 480px
                             md: "70px", // 768px
                             lg: "90px", // 992px
                             xl: "100px", // 1280px
                             "2xl": "100px", //1536px
+                        }}
+                        lineHeight={{
+                            base: "60px", sm: "70px", md: "80px", lg: "120px"//0px
                         }}
                         className="qs-smb"
                         id="typing"

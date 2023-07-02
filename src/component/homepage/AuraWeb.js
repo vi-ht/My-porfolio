@@ -11,19 +11,19 @@ import ViewMore from "./Viewmore";
 // import chakra components
 import { Box, GridItem, Center, CircularProgress } from "@chakra-ui/react";
 //import image
-import bg1 from "./../../asset/image/AuraWebPart1.png";
-import bg2 from "./../../asset/image/AuraWebPart2.png";
-import bg3 from "./../../asset/image/AuraWebPart3.png";
-import bg4 from "./../../asset/image/AuraWebPart4.png";
-import bg5 from "./../../asset/image/AuraWebPart5.png";
-import bg6 from "./../../asset/image/AuraWebPart6.png";
-import bg7 from "./../../asset/image/AuraWebPart7.png";
-import bg8 from "./../../asset/image/AuraWebPart8.png";
-import bg9 from "./../../asset/image/AuraWebPart9.png";
-import bg10 from "./../../asset/image/AuraWebPart10.png";
-import bg11 from "./../../asset/image/AuraWebPart11.png";
-import bg12 from "./../../asset/image/AuraWebPart12.png";
-import bg13 from "./../../asset/image/AuraWebPart13.png";
+import bg1 from "./../../asset/image/AuraWebPart1.webp";
+import bg2 from "./../../asset/image/AuraWebPart2.webp";
+import bg3 from "./../../asset/image/AuraWebPart3.webp";
+import bg4 from "./../../asset/image/AuraWebPart4.webp";
+import bg5 from "./../../asset/image/AuraWebPart5.webp";
+import bg6 from "./../../asset/image/AuraWebPart6.webp";
+import bg7 from "./../../asset/image/AuraWebPart7.webp";
+import bg8 from "./../../asset/image/AuraWebPart8.webp";
+import bg9 from "./../../asset/image/AuraWebPart9.webp";
+import bg10 from "./../../asset/image/AuraWebPart10.webp";
+import bg11 from "./../../asset/image/AuraWebPart11.webp";
+import bg12 from "./../../asset/image/AuraWebPart12.webp";
+import bg13 from "./../../asset/image/AuraWebPart13.webp";
 //import React-router-dom
 import { PATH } from "../../router/Path";
 
@@ -38,7 +38,7 @@ export default function AuraWeb() {
         const timeout = setTimeout(() => {
             document.getElementById("loading").style.display = "none";
             document.getElementById("content").style.display = "block";
-        }, 2000);
+        }, 1000);
         //
         return () => {
             clearTimeout(timeout);
