@@ -63,6 +63,14 @@ export default function Router() {
                             path: "aura-project-web-design-version",
                             element: <AuraWeb />,
                         },
+                        {
+                            path: "portfolio-v1",
+                            element: <PortfolioV1 />,
+                        },
+                        {
+                            path: "portfolio-v2",
+                            element: <PortfolioV2 />,
+                        },
                     ],
                 },
             ],
@@ -88,4 +96,10 @@ const CodingPage = Loadable(
 );
 const AboutMePage = Loadable(
     lazy(() => import("../component/aboutme-page/AboutMePage"))
+);
+const PortfolioV1 = Loadable(
+    lazy(() => import("../component/homepage/portfolioV1.js"))
+);
+const PortfolioV2 = Loadable(
+    lazy(() => import("../component/homepage/PortfolioV2"))
 );

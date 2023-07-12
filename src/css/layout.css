@@ -28,9 +28,9 @@
 }
 .card-line{
     width: 150px;
-    height: 2px;
+    height: 3px;
     background-color: gray;
-    margin-top: 15px;
+    margin-top: 20px;
     border: 50%
 }
 
@@ -85,4 +85,5 @@
     height: 4px;
     background-color: #FB797F;
     border-radius: 15px;
+    margin-top: 5px;
 }

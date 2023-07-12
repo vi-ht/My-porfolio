@@ -21,7 +21,7 @@ export default function ProjectCard({
             <Link to={path}>
                 <img
                     src={img}
-                    style={{ width: "100%", marginBottom: "1rem" }}
+                    style={{ width: "100%", marginBottom: "1.7rem" }}
                     alt={name+"project"}
                 ></img>
                 <Text
@@ -33,8 +33,8 @@ export default function ProjectCard({
                 </Text>
                 <Text
                     fontSize={{ base: "20px", md: "30px" }}
-                    mt="3px"
-                    mb="3px"
+                    mt="5px"
+                    mb="10px"
                     className="qs-b"
                 >
                     {name}

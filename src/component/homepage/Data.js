@@ -6,6 +6,8 @@ import cinema from "../../asset/image/CinnemaFoodStall.png";
 import auraMobile from "../../asset/image/Aura-mobile-thumbnail.png";
 import cogibanay from "../../asset/image/Cogibannay.png";
 import auraDesk from "./../../asset/image/Aura.png";
+import portfoliov2 from "./../../asset/image/Portfolio-V2.webp";
+import portfoliov1 from "./../../asset/image/Portfolio-V1.webp";
 //import react-router
 import { PATH } from "../../router/Path";
 const data = [
@@ -48,6 +50,26 @@ const data = [
         span: "6",
         start: "7",
         path: `${PATH.uxui.cogibannay}`
+    },
+    {
+        id: 5,
+        type: "WEB RESPONSIVE DESIGN",
+        name: "MY PORTFOLIO - CURRENT VERSION",
+        des: `This is a portfolio website designed and coded by me for the purpose of showcasing all my UI/UX and coding projects.`,
+        img: `${portfoliov1}`,
+        span: "6",
+        start: "7",
+        path: `${PATH.uxui.portfolioV1}`
+    },
+    {
+        id: 6,
+        type: "WEB DESIGN",
+        name: "MY PORTFOLIO - NEW VERSION",
+        des: `This is the new version of my current portfolio that I recently redesigned based on the old version to refresh and make for a more modern website.`,
+        img: `${portfoliov2}`,
+        span: "6",
+        start: "7",
+        path: `${PATH.uxui.portfolioV2}`
     },
 ];
 export {data}

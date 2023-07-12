@@ -100,7 +100,7 @@ export default function IntroContent() {
                             "2xl": "100px", //1536px
                         }}
                         lineHeight={{
-                            base: "60px", sm: "70px", md: "80px", lg: "120px"//0px
+                            base: "60px", sm: "70px", md: "80px", lg: "130px"//0px
                         }}
                         className="qs-smb"
                         id="typing"
