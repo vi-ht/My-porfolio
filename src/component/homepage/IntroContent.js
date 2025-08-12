@@ -9,8 +9,103 @@ import BgImageLayout from "../../layout/BgImageLayout";
 //import image
 import wavehand from "../../asset/icon/twemojiwavinghand.png";
 import bgImage from "../../asset/icon/bg.png";
+import square1st from "../../asset/image/homepage-illustrate/square-1st.png";
+import polygon1st from "../../asset/image/homepage-illustrate/polygon-1st.png";
+import polygon2nd from "../../asset/image/homepage-illustrate/polygon-2nd.png";
+import polygon3th from "../../asset/image/homepage-illustrate/polygon-3th.png";
+import Rectangle1st from "../../asset/image/homepage-illustrate/rectangle-1st.png";
+import Rectangle2nd from "../../asset/image/homepage-illustrate/rectangle-2nd.png";
+import ellipse1st from "../../asset/image/homepage-illustrate/ellipse-1st.png";
+import ellipse2nd from "../../asset/image/homepage-illustrate/ellipse-2nd.png";
+import ellipse3th from "../../asset/image/homepage-illustrate/ellipse-3th.png";
 // import chakra components
 import { Text, Box } from "@chakra-ui/react";
+
+
+const AnimateObjectList = () => {
+    const ObjectItem = ({ top, left, right, bottom, src, className, alt }) => (
+        <Box
+            position="absolute"
+            top={top}
+            left={left}
+            right={right}
+            bottom={bottom}
+            transform={{ base: "scale(0.6)", xl: "scale(0.6)", '2xl': "scale(0.8)", "3xl": "scale(1)" }}>
+            <img
+                src={src}
+                className={className}
+                alt={alt}
+            ></img>
+        </Box>
+    )
+    return (
+        <Box width="100vw" height="100vh" position={"absolute"} overflow={"hidden"}>
+            {/* <Box position="absolute" top="52%" left="43%" transform={{ base: "scale(0.8)", "3xl": "scale(1)" }}>
+                <img
+                    src={square1st}
+                    className="illustrate-image-1"
+                    alt="1st illustrate object"
+                ></img>
+            </Box> */}
+            <ObjectItem
+                top="52%"
+                left="43%"
+                src={square1st}
+                className="illustrate-image-1"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="26%"
+                left="15%"
+                src={polygon1st}
+                className="illustrate-image-2"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="-15.4%" left="39%"
+                src={Rectangle1st}
+                className="illustrate-image-3"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="28%" left="64%"
+                src={ellipse1st}
+                className="illustrate-image-1"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                bottom="-29%" right="-7%"
+                src={ellipse2nd}
+                className="illustrate-image-2"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="10%" right="-6%"
+                src={polygon2nd}
+                className="illustrate-image-3"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="1.5%" right="10%"
+                src={polygon3th}
+                className="illustrate-image-1"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                bottom="10%" left="-10%"
+                src={Rectangle2nd}
+                className="illustrate-image-2"
+                alt="1st illustrate object"
+            />
+            <ObjectItem
+                top="-10%" left="-8%"
+                src={ellipse3th}
+                className="illustrate-image-3"
+                alt="1st illustrate object"
+            />
+        </Box >
+    )
+}
 const TextTemplate = ({ children, container }) => (
     <Text
         fontSize={{
@@ -50,12 +145,12 @@ export default function IntroContent() {
                 }
                 pos++;
                 if (pos === text.length) {
-                    variable = setTimeout(()=>{
-                        let texttoclear= text===text1?text2:text1;
+                    variable = setTimeout(() => {
+                        let texttoclear = text === text1 ? text2 : text1;
                         clear(texttoclear)
                     }, 1000);
                 } else {
-                    variable = setTimeout(()=>{typing(text)}, 250);
+                    variable = setTimeout(() => { typing(text) }, 250);
                 }
             }
         }
@@ -65,13 +160,13 @@ export default function IntroContent() {
             element.innerText =
                 currentText.substring(0, currentText.length - 2) + "|";
             if (currentText !== "|") {
-                variable = setTimeout(()=>{
+                variable = setTimeout(() => {
                     clear(text)
                 }, 200);
             } else {
                 element.innerText = "";
                 pos = 0;
-                variable = setTimeout(()=>{
+                variable = setTimeout(() => {
                     typing(text)
                 }, 500);
             }
@@ -82,8 +177,10 @@ export default function IntroContent() {
         };
     }, []);
     return (
-        <BgImageLayout bg={bgImage} pos="70% 100%" mainpage>
+        <BgImageLayout bg={bgImage} pos="70% 100%" mainpage animateChildren={<AnimateObjectList />}>
+
             <Box w="full" h="full" position="relative">
+
                 <Box
                     position="absolute"
                     bottom="3rem"
@@ -132,7 +229,7 @@ export default function IntroContent() {
                     </TextTemplate>
                     <TextTemplate container>
                         <span className="vi qs-m">
-                            Scroll down to see my work.{" "}
+                            Scroll down to see more about me.{" "}
                         </span>
                         {/* <img src={scroll} alt="scroll" className="scroll" /> */}
                     </TextTemplate>

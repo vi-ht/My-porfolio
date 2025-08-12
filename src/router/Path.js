@@ -12,4 +12,5 @@ export const PATH = {
     coding: "/coding-projects",
     about: "/about-me",
     resume: "/my-resume",
+    certificate: "/certificate"
 };

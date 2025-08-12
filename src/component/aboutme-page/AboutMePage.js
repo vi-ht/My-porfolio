@@ -10,7 +10,8 @@ import { useTitle } from "./../../customHook/useTitle";
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import wavehand from "../../asset/icon/twemojiwavinghand.png";
-import Avatar from "../../asset/image/my-image.png";
+// import Avatar from "../../asset/image/my-image.png";
+import test from "../../asset/image/test.webp";
 //import chakra UI component
 import {
     Grid,
@@ -154,8 +155,9 @@ export default function AboutMePage() {
             <Grid
                 w="100%"
                 templateColumns="repeat(12, 1fr)"
-                gap={{ base: 4, lg: 10 }}
+                gap={{ base: 4, lg: "60px" }}
                 mt={{ base: 8, sm: 6, lg: 0 }}
+                mb={10}
             >
                 <GridItem
                     transform="translate(-30px,0)"
@@ -165,13 +167,14 @@ export default function AboutMePage() {
                     w="full"
                     mb={{ base: 2, sm: 4, md: 5, lg: 0 }}
                 >
-                    <Center w="full" h="full">
+                    <Center w="full" h="full" py={"50px"}>
                         <Box
                             w="full"
-                            h={{ base: "100%", xl: "96%", "2xl": "85%" }}
+                            h={{ base: "100%", xl: "96%", "2xl": "100%" }}
+
                         >
                             <img
-                                src={Avatar}
+                                src={test}
                                 alt="Thanh Vi's image"
                                 style={{
                                     width: "100%",

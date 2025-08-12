@@ -17,7 +17,7 @@ export default function Noti() {
         onOpen,
     } = useDisclosure({ defaultIsOpen: true });
 
-    return isVisible ? (
+    return isVisible && (
         <Alert
             position="fixed"
             bottom={0}
@@ -49,7 +49,5 @@ export default function Noti() {
                 onClick={onClose}
             />
         </Alert>
-    ) : (
-        <Button onClick={onOpen}>Show Alert</Button>
-    );
+    )
 }

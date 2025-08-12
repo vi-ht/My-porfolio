@@ -2,11 +2,13 @@
 import "./../css/layout.css";
 import "./../css/font.css";
 // import chakra components
-import { Flex, Center } from "@chakra-ui/react";
+import { Flex, Center, Box } from "@chakra-ui/react";
 
-export default function BgImageLayout({ children, bg, objectPos, mainpage, id }) {
+
+
+export default function BgImageLayout({ children, bg, objectPos, mainpage, id, animateChildren }) {
     return (
-        <Center w="full" h="100vh" position="relative" id={id?id:""}>
+        <Center w="full" h="100vh" position="relative" id={id ? id : ""} overflow={"hidden"}>
             <Center
                 w={{
                     base: "90%", //0px
@@ -28,7 +30,7 @@ export default function BgImageLayout({ children, bg, objectPos, mainpage, id })
                     {children}
                 </Flex>
             </Center>
-            <img
+            {/* <img
                 src={bg}
                 style={{
                     width: "100%",
@@ -40,7 +42,9 @@ export default function BgImageLayout({ children, bg, objectPos, mainpage, id })
                     top: "0",
                 }}
                 alt="background"
-            ></img>
+            ></img> */}
+            {animateChildren}
+
         </Center>
     );
 }

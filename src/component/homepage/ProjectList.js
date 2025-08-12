@@ -31,7 +31,8 @@ export default function ProjectList() {
                 templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
                 w="full"
                 mt="3rem"
-                gap={8}
+                gapX={10}
+                gap={10}
             >
                 {data.map((item, i) => (
                     <ProjectCard

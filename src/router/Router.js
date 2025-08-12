@@ -42,7 +42,7 @@ export default function Router() {
                 { path: "coding-projects", element: <CodingPage /> },
                 { path: "about-me", element: <AboutMePage /> },
                 { path: "my-resume", element: <Resume /> },
-
+                { path: "certificate", element: <Certificate /> },
                 {
                     path: "ux-ui-projects/",
                     //element: <></>,
@@ -83,6 +83,7 @@ const CinnemaFoodStall = Loadable(
     lazy(() => import("../component/homepage/CinemaFoodStall"))
 );
 const Resume = Loadable(lazy(() => import("../component/resume-page/Resume")));
+const Certificate = Loadable(lazy(() => import("../component/certificate-page/certificate")));
 const AuraMobile = Loadable(
     lazy(() => import("../component/homepage/AuraMobile"))
 );
