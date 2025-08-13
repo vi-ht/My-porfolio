@@ -23,8 +23,8 @@
 }
 
 .certificate {
-    background-image: url(../asset/image/cert-edu.webp);
-    background-position: 100% 45%;
+    background-image: url(../asset/image/cert-quote.webp);
+    background-position: 60% 0%;
 }
 
 .language {
@@ -34,5 +34,5 @@
 
 .aboutme {
     background-image: url(../asset/image/about-quote.webp);
-    background-position: 100% 0%;
+    background-position: 0% 0%;
 }

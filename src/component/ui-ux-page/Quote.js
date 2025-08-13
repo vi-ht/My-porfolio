@@ -32,12 +32,12 @@ export default function Quote() {
                             md: "22px", // 768px
                             lg: "25px", // 992px
                             xl: "25px", // 1280px
-                            "2xl": "25px", //1536px
+                            "2xl": "30px", //1536px
                         }}
                         lineHeight={{
                             base: "35px", //0px
                             md: "40px", // 768px
-                            xl: "45px", // 1280px
+                            xl: "60px", // 1280px
                         }}
                         w={{
                             base: "290px", //0px
@@ -49,7 +49,7 @@ export default function Quote() {
                         }}
                         textAlign="center"
                         position="relative"
-                        className="qs-smb"
+                        className="edu-smb"
                     >
                         <span className="quote-content"></span>
                         "UI/UX self-learning process has many difficulties and

@@ -2,7 +2,7 @@
 import "./../../css/font.css";
 import "./../../css/layout.css";
 //import components
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ui-ux-page/ProjectCard";
 // import chakra components
 import { Text, Grid, GridItem } from "@chakra-ui/react";
 //import data
@@ -29,7 +29,7 @@ export default function ViewMore({ id }) {
                     }}
                     className="qs-b"
                 >
-                    UX/UI projects 
+                    UX/UI projects
                 </Text>
                 <div className="line"></div>
             </GridItem>
@@ -37,7 +37,7 @@ export default function ViewMore({ id }) {
                 (item, i) =>
                     item.id !== id && (
                         <ProjectCard
-                            key={i+item.name}
+                            key={i + item.name}
                             span={{ base: 12, md: 6, lg: 4 }}
                             start={item.start}
                             name={item.name}
@@ -45,7 +45,7 @@ export default function ViewMore({ id }) {
                             type={item.type}
                             img={item.img}
                             path={item.path}
-                            viewMore = {true}
+                            viewMore={true}
                         />
                     )
             )}

@@ -7,8 +7,8 @@ import { useTitle } from "./../../customHook/useTitle";
 // import IntroContent from "./IntroContent";
 import Footer from "../../layout/Footer";
 import Quote from "./sub-section/edu-quote";
-import EduIntro from "./sub-section/edu-intro";
-import LanguageIntro from "./sub-section/language-intro";
+import LanguageCert from "./sub-section/lang-cert";
+import OnlineCourseList from "./sub-section/online-course-list";
 import LanguageQuote from "./sub-section/language-quote";
 // import MonitoProject from "./MonitoProject";
 // import MainContent from "./MainContent";
@@ -18,26 +18,18 @@ import LanguageQuote from "./sub-section/language-quote";
 // import NatureProject from "./NatureProject";
 // import InternoProject from "./InternoProject";
 //import chakra UI component
+import ProjectList from "./sub-section/ProjectList";
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
-
 export default function CodingPage() {
   useTitle(`Coding projects | Thanh Vi's portfolio`);
   return (
     <Box width="full">
-      {/* <EduIntro /> */}
       <Quote />
-      <LanguageIntro />
+      <ProjectList />
       <LanguageQuote />
-      {/* <IntroContent />
-      
-      <FelixzoneProject />
-      <MainContent />
-      <PorfolioProject />
-      <MonitoProject />
-      <MYBProject />
-      <NatureProject />
-      <InternoProject /> */}
+      <LanguageCert />
+      <OnlineCourseList />
       <Footer mt={10} />
     </Box>
   );

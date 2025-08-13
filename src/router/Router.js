@@ -45,8 +45,12 @@ export default function Router() {
                 { path: "certificate", element: <Certificate /> },
                 {
                     path: "ux-ui-projects/",
-                    //element: <></>,
+                    // element: <UIUXPage />,
                     children: [
+                        {
+                            index: true,
+                            element: <UIUXPage />,
+                        },
                         {
                             path: "cinema-food-stall-project",
                             element: <CinnemaFoodStall />,
@@ -92,6 +96,7 @@ const Cogibannay = Loadable(
 );
 const AuraWeb = Loadable(lazy(() => import("../component/homepage/AuraWeb")));
 const HomePage = Loadable(lazy(() => import("../component/homepage/HomePage")));
+const UIUXPage = Loadable(lazy(() => import("../component/ui-ux-page/index")));
 const CodingPage = Loadable(
     lazy(() => import("../component/coding-page/CodingPage"))
 );

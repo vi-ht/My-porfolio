@@ -31,12 +31,12 @@ export default function Quote() {
                             md: "22px", // 768px
                             lg: "25px", // 992px
                             xl: "25px", // 1280px
-                            "2xl": "25px", //1536px
+                            "2xl": "30px", //1536px
                         }}
                         lineHeight={{
                             base: "35px", //0px
                             md: "40px", // 768px
-                            xl: "45px", // 1280px
+                            xl: "60px", // 1280px
                         }}
                         w={{
                             base: "290px", //0px
@@ -48,13 +48,13 @@ export default function Quote() {
                         }}
                         textAlign="center"
                         position="relative"
-                        className="qs-smb"
+                        className="edu-smb"
                     >
                         <span className="quote-content"></span>
-                        "Teamwork with a good team and having an opportunity to
-                        work directly with clients to create a real project has
-                        given me a lot of valuable experience during my 4 years
-                        at FPT University."{" "}
+                        "UI/UX self-learning process has many difficulties and
+                        obstacles for a newbie like me, but I know that
+                        persistence and responsibility for the initial goal are
+                        the prerequisite factor for pursuing a big dream."{" "}
                     </Text>
                 </Flex>
             </Center>

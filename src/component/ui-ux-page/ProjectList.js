@@ -9,7 +9,7 @@ import BgColorLayout from "../../layout/BgColorLayout";
 // import chakra components
 import { Text, Grid } from "@chakra-ui/react";
 //import data
-import { data } from "./Data";
+import { data } from "../homepage/Data";
 export default function ProjectList() {
     return (
         <BgColorLayout bgColor="white" mainpage id="uxui-project">
@@ -24,7 +24,7 @@ export default function ProjectList() {
                 }}
                 className="qs-b"
             >
-                Personal project
+                UIUX project
             </Text>
             <div className="line"></div>
             <Grid

@@ -8,12 +8,23 @@ import cogibanay from "../../asset/image/Cogibannay.png";
 import auraDesk from "./../../asset/image/Aura.png";
 import portfoliov2 from "./../../asset/image/Portfolio-V2.webp";
 import portfoliov1 from "./../../asset/image/Portfolio-V1.webp";
+import sportzone from "./../../asset/image/sport-zone-thumbnail.webp";
 //import react-router
 import { PATH } from "../../router/Path";
 const data = [
     {
+        id: 0,
+        type: "MOBILE APP DESIGN",
+        name: "SPORT ZONE",
+        des: `Sportzone is a platform that allows users to book sports venues and find playing partners quickly and conveniently.`,
+        img: `${sportzone}`,
+        span: "6",
+        start: "1",
+        path: `${PATH.uxui.cinema}`
+    },
+    {
         id: 1,
-        type: "MOBILE APP DESIGN (Androi)",
+        type: "MOBILE APP DESIGN",
         name: "CINEMA FOOD STALLS",
         des: `This is case study of "Cinema food stalls" - a snack-ordering app for a movie theater chains. It's also a practical exercises of "Google UX design" course.`,
         img: `${cinema}`,
@@ -23,9 +34,9 @@ const data = [
     },
     {
         id: 2,
-        type: "MOBILE APP DESIGN (IOS)",
+        type: "MOBILE APP DESIGN",
         name: "AURA - THE AURA OF BEAUTY",
-        des: `This is case study of "Aura (IOS version)" - a makeup tutorial-sharing platform and makeup artist booking. It's also a practical exercise of "Google UX design" course.`,
+        des: `This is case study of "Aura" - a makeup tutorial-sharing platform and makeup artist booking. It's also a practical exercise of "Google UX design" course.`,
         img: `${auraMobile}`,
         span: "6",
         start: "7",
@@ -72,4 +83,4 @@ const data = [
         path: `${PATH.uxui.portfolioV2}`
     },
 ];
-export {data}
+export { data }

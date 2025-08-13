@@ -52,3 +52,24 @@
     font-family: qs-light;
 }
 
+/* ----- */
+
+@font-face {
+    font-family: edu-bold;
+    src: url(./../asset/Font/EduNSWACTCursive-Bold.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: edu-semibold;
+    src: url(./../asset/Font/EduNSWACTCursive-SemiBold.ttf);
+    font-display: swap;
+}
+
+.edu-b {
+    font-family: edu-bold;
+}
+
+.edu-smb {
+    font-family: edu-semibold;
+}

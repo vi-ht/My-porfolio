@@ -31,9 +31,9 @@ export default function Resume() {
     //     "project-left",
     //     "project-right"
     // );
-    useTitle(`Resume | Thanh Vi's portfolio`);
+    // useTitle(`Resume | Thanh Vi's portfolio`);
     return (
-        <BgColorLayout bgColor="white">
+        <BgColorLayout bgColor="#ffebed">
             <Grid
                 w="full"
                 templateColumns="repeat(16, 1fr)"
@@ -940,11 +940,6 @@ export default function Resume() {
                     </Text>
                 </GridItem>
             </Grid>
-            <Footer
-                mt={{ base: "-2rem", lg: "-4rem" }}
-                position="relative"
-                top={{ base: "5rem", md: "6.5rem", lg: "8rem" }}
-            />
         </BgColorLayout>
     );
 }
