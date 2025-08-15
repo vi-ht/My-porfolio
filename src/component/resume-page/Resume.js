@@ -40,7 +40,7 @@ export default function Resume() {
                 gap={{ base: 0, md: 8, lg: 10 }}
                 mt={{ base: 8, md: 0, lg: 5 }}
             >
-                <GridItem colSpan={{ base: 16, md: 8, lg: 6 }}>
+                <GridItem colSpan={{ base: 16, md: 8, lg: 4 }}>
                     <Box>
                         <Text
                             fontSize="25px"
@@ -144,7 +144,21 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                        <NavLink to={PATH.certificate}>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                <Link
+                                    isExternal
+                                    color="#FB797F"
+                                    fontWeight="bold"
+                                    fontSize="16px"
+                                >
+                                    {" "}
+                                    View my certificates {"   "}
+                                    <ExternalLinkIcon mx="2px" />
+                                </Link>
+                            </Text>
+                        </NavLink>
+                        {/* <Text fontSize="16px" className="qs-smb" mb="8px">
                             Web Design for Everybody: Basics of Web Development
                             & Coding Specilization
                         </Text>
@@ -378,10 +392,10 @@ export default function Resume() {
                                 Google SEO Fundamentals{"   "}
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
-                        </Text>
+                        </Text> */}
                     </Box>
                 </GridItem>
-                <GridItem colSpan={{ base: 16, md: 8, lg: 5 }}>
+                <GridItem colSpan={{ base: 16, md: 8, lg: 8 }}>
                     <Box>
                         <Text
                             fontSize="25px"
@@ -578,7 +592,7 @@ export default function Resume() {
                     </Box>
                 </GridItem>
                 <GridItem
-                    colSpan={{ base: 16, lg: 5 }}
+                    colSpan={{ base: 16, lg: 4 }}
                     display={{ base: "grid", md: "none", lg: "grid" }}
                 >
                     <Box>

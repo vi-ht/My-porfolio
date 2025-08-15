@@ -28,7 +28,7 @@ export default function Cogibannay() {
     useTitle(`MoMo talent project | Thanh Vi's portfolio`);
     return (
         <Box>
-            <Box width="full" mt={20}>
+            <Box width="full" mt={"100px"}>
                 <BreadcrumbComp
                     projectName="MoMo talent project"
                     path={PATH.cogibannay}
@@ -56,7 +56,7 @@ export default function Cogibannay() {
                         // }}
                         mb={0}
                     >
-                        <Grid w="full" templateColumns="repeat(1, 1fr)" gap={0}>
+                        <Grid w="full" templateColumns="repeat(1, 1fr)" gap={0} pb="20px">
                             <GridItem colStart={1}>
                                 <Box>
                                     <Text fontSize="25px" className="qs-b">
@@ -113,7 +113,10 @@ export default function Cogibannay() {
                                         people get in the final round/ more than
                                         900 participants).
                                     </Text>
-                                    <Button
+                                    <Text fontSize="16px" className="qs-smb" mt={2}>
+                                        * If you see a blank page below this text, please wait a moment for the embedded documents below to finish loading.
+                                    </Text>
+                                    {/* <Button
                                         leftIcon={<LinkIcon />}
                                         variant="solid"
                                         mt="15px"
@@ -132,10 +135,17 @@ export default function Cogibannay() {
                                         >
                                             View project
                                         </a>
-                                    </Button>
+                                    </Button> */}
                                 </Box>
                             </GridItem>
                         </Grid>
+                        <iframe
+                            style={{
+                                border: "1px solid rgba(0, 0, 0, 0.1)",
+                                width: "100%",
+                                height: "90vh",
+                            }}
+                            src="https://embed.figma.com/slides/toXpvXvr432HzZS4su53vN/Untitled?node-id=1-88&embed-host=share" allowfullscreen></iframe>
                         <iframe
                             style={{
                                 border: "1px solid rgba(0, 0, 0, 0.1)",
