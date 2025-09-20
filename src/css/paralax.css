@@ -27,6 +27,13 @@
     background-position: 20% 0%;
 }
 
+@media screen and (max-width: 600px) {
+    .certificate {
+        background-image: url(../asset/image/cert-edu.webp);
+        background-position: 20% 0%;
+    }
+}
+
 .language {
     background-image: url(../asset/image/language.webp);
     background-position: 100% 50%;

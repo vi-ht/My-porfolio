@@ -2,7 +2,7 @@
 import "./../css/layout.css";
 import "./../css/font.css";
 // import chakra components
-import { Flex, Center, Box } from "@chakra-ui/react";
+import { Flex, Center, } from "@chakra-ui/react";
 
 
 

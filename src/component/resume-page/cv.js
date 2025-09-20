@@ -47,21 +47,24 @@ export default function CVPage() {
 
       </Center>
       <Center pb={"50px"}>
-        <NavLink to={PATH.resume}>
-          <Button
-            rightIcon={<DownloadIcon />}
-            variant="solid"
-            fontSize="16px"
-            _hover={{
-              background: "black",
-            }}
-            className="bg-main-color white-color qs-b"
-            bg="#FB797F"
-          >
+        <Button
+          rightIcon={<DownloadIcon />}
+          variant="solid"
+          fontSize="16px"
+          _hover={{
+            background: "black",
+          }}
+          className="bg-main-color white-color qs-b"
+          bg="#FB797F"
+        >
+          <a href="./myw3schoolsimage.jpg" download="vi">Download my CV</a>
 
-            Download my CV
-          </Button>
-        </NavLink>
+        </Button>
+
+        <a href="/static/media/my-image.052d200edb3809c84abf.webp" download="w3logo">
+          <img src="/static/media/my-image.052d200edb3809c84abf.webp" alt="W3Schools" />
+        </a>
+
       </Center>
 
     </BgColorLayout >
