@@ -26,7 +26,7 @@ import bg10 from "./../../asset/image/AuraProjectPart10.webp";
 import { PATH } from "../../router/Path";
 
 //-----------------------------------------------------------
-export default function AuraMobile({}) {
+export default function AuraMobile() {
     useTitle(`Aura Project (IOS version) | Thanh Vi's portfolio`);
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
@@ -49,7 +49,7 @@ export default function AuraMobile({}) {
                 <CircularProgress isIndeterminate color="#FB797F" />
             </Center>
             <Box id="content">
-                <BreadcrumbComp projectName="Aura Project (IOS version)" path={PATH.auraIOS}/>
+                <BreadcrumbComp projectName="Aura Project (IOS version)" path={PATH.auraIOS} />
                 <img
                     src={bg1}
                     style={{ width: "100%", marginBottom: "1rem" }}

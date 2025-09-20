@@ -48,30 +48,14 @@ export default function Quote() {
                         }}
                         textAlign="center"
                         position="relative"
-                        className="edu-smb"
+                        className="qs-b"
                     >
                         <span className="quote-content"></span>
-                        "UI/UX self-learning process has many difficulties and
-                        obstacles for a newbie like me, but I know that
-                        persistence and responsibility for the initial goal are
-                        the prerequisite factor for pursuing a big dream."{" "}
+                        "Each certificate is not just a piece of paper, but a milestone that reflects my journey of learning, growth, and the effort I put into improving myself."{" "}
                     </Text>
                 </Flex>
             </Center>
             <div className="paralax certificate">
-                {/* <img
-                src={Thesis}
-                style={{
-                    width: "100%",
-                    height: "100vh",
-                    objectFit: "cover",
-                    objectPosition: "0% 100%",
-                    position: "absolute",
-                    zIndex: "-1",
-                    top: "0",
-                }}
-                alt="graduate thesis"
-            ></img> */}
             </div>
         </Center>
     );

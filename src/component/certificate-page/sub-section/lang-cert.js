@@ -13,7 +13,7 @@ import { Text, Center } from "@chakra-ui/react";
 export default function LanguageCert() {
   return (
     <BgColorLayout bgColor="white" mainpage id="uxui-project">
-      <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)" mb="60px">
+      <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)" mb="60px" w="100%">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_807_342)">
             <path d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60Z" fill="#DD2E44" />
@@ -63,9 +63,7 @@ export default function LanguageCert() {
           }}
           textAlign="center"
         >
-          This is my graduation thesis at FPT University, I and a
-          group of friends worked together to build a website for the
-          Felixzone company.
+          This section presents my language certificates, which include both English and Chinese.
         </Text>
       </Center>
       <img

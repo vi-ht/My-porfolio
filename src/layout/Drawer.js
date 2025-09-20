@@ -52,29 +52,29 @@ export default function MobileDrawer() {
                 position="relative"
                 left="15px"
             />
-            <Drawer placement={placement} onClose={onClose} isOpen={isOpen} w={{base: "100%"}}>
+            <Drawer placement={placement} onClose={onClose} isOpen={isOpen} w={{ base: "100%" }}>
                 <DrawerOverlay />
                 <DrawerContent
-                    borderTopLeftRadius={{base: "none", sm: 20}}
-                    borderBottomLeftRadius={{base: "none", sm: 20}}
+                    borderTopLeftRadius={{ base: "none", sm: 20 }}
+                    borderBottomLeftRadius={{ base: "none", sm: 20 }}
                 >
                     <DrawerHeader display="flex" justifyContent="space-between">
-                    <Link to={PATH.home}>
-                        <Text
-                            fontSize="2xl"
-                            fontWeight={700}
-                            pt={1}
-                            className="qs-b main-color"
-                            sx={{
-                                transition: "0.5s"
-                            }}
-                            _hover={{
-                                color: "black"
-                            }}
-                        >
-                            Thanh Vi
-                        </Text>
-                    </Link>
+                        <Link to={PATH.home}>
+                            <Text
+                                fontSize="2xl"
+                                fontWeight={700}
+                                pt={1}
+                                className="qs-b main-color"
+                                sx={{
+                                    transition: "0.5s"
+                                }}
+                                _hover={{
+                                    color: "black"
+                                }}
+                            >
+                                Thanh Vi
+                            </Text>
+                        </Link>
                         <IconButton
                             aria-label="Search database"
                             icon={<CloseIcon />}
@@ -90,10 +90,10 @@ export default function MobileDrawer() {
                                 float="left"
                                 ml="1rem"
                             >
-                                <Link path={PATH.home}>UX/UI</Link>
+                                <Link path={PATH.home}>About Me</Link>
                                 <Link path={PATH.coding}>Coding</Link>
-                                <Link path={PATH.about}>About Me</Link>
-                                <Link path={PATH.resume}>My Resume</Link>
+                                <Link path={PATH.uxui.index}>UX/UI</Link>
+                                <Link path={PATH.certificate}>Certificate</Link>
                             </Stack>
                         </DrawerBody>
                     </Center>

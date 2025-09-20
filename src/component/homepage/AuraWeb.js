@@ -9,7 +9,7 @@ import BreadcrumbComp from "./Breadcrumb";
 import Footer from "../../layout/Footer";
 import ViewMore from "./Viewmore";
 // import chakra components
-import { Box, GridItem, Center, CircularProgress } from "@chakra-ui/react";
+import { Box, Center, CircularProgress } from "@chakra-ui/react";
 //import image
 import bg1 from "./../../asset/image/AuraWebPart1.webp";
 import bg2 from "./../../asset/image/AuraWebPart2.webp";
@@ -126,7 +126,7 @@ export default function AuraWeb() {
                 ></iframe>
                 <img
                     src={bg10}
-                    style={{ width: "100%"}}
+                    style={{ width: "100%" }}
                 ></img>
                 <iframe
                     style={{
@@ -139,7 +139,7 @@ export default function AuraWeb() {
                 ></iframe>
                 <img
                     src={bg13}
-                    style={{ width: "100%"}}
+                    style={{ width: "100%" }}
                 ></img>
                 <iframe
                     style={{

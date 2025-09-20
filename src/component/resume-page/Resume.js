@@ -3,10 +3,8 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/animate.css";
 //import custom hook
-import { useTitle } from "./../../customHook/useTitle";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
-import Footer from "../../layout/Footer";
 //import chakra UI component
 import {
     Grid,
@@ -33,9 +31,10 @@ export default function Resume() {
     // );
     // useTitle(`Resume | Thanh Vi's portfolio`);
     return (
-        <BgColorLayout bgColor="#ffebed">
+        <BgColorLayout bgColor="#ffebed" id="cv">
             <Grid
                 w="full"
+
                 templateColumns="repeat(16, 1fr)"
                 gap={{ base: 0, md: 8, lg: 10 }}
                 mt={{ base: 8, md: 0, lg: 5 }}
@@ -80,7 +79,7 @@ export default function Resume() {
                             Portfolio
                         </Text>
                         <NavLink to={PATH.home}>
-                            <Text fontSize="16px" className="qs-r" mb="2px">
+                            <Text fontSize="16px" className="qs-r" mb="8px">
                                 <Link
                                     color="#FB797F"
                                     fontWeight="bold"
@@ -92,18 +91,59 @@ export default function Resume() {
                                 </Link>
                             </Text>
                         </NavLink>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Always welcome you to stop by and see all my
-                            personal projects!{" "}
-                        </Text>
                         <Text fontSize="16px" className="qs-smb" mb="8px">
                             Address
                         </Text>
-                        <Text fontSize="16px" className="qs-r">
-                            745 Huynh Tan Phat Street{" "}
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            District 7, Ho Chi Minh City
+                        </Text>
+                        <Text
+                            fontSize="25px"
+                            className="qs-b"
+                            mt={{ base: "30px", md: 0, lg: "30px" }}
+                        >
+                            EDUCATION
+                        </Text>
+                        <div
+                            style={{
+                                width: "40px",
+                                height: "3px",
+                                backgroundColor: "#FB797F",
+                                borderRadius: "20px",
+                                margin: "10px 0 20px 0",
+                            }}
+                        ></div>
+                        <Text fontSize="16px" className="qs-b" mb="8px">
+                            FPT UNIVERSITY
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Phu Thuan Ward, District 7, Ho Chi Minh City
+                            (October 18 - November 22)
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px" color="#FB797F">
+                            <span className="qs-smb">Bachelor's degree</span>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Major:</span> Software
+                            engineering
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">GPA:</span> 8.1/10.0
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Certificate of merit:</span>{" "}
+                            4 times is awarded "Honorable Student Of Semester".
+                        </Text>
+                        <Text fontSize="16px" className="qs-b" mb="8px" mt="24px">
+                            FPT SCHOOL OF BUSINESS & TECHNOLOGY
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            (Now - December 26)
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px" color="#FB797F">
+                            <span className="qs-smb">Master's degree</span>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Major:</span> Master of Software Engineering - Al-oriented programming
                         </Text>
                         <Text fontSize="25px" className="qs-b" mt="30px">
                             LANGUAGE
@@ -117,47 +157,53 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
-                            English
+                        <Text fontSize="16px" className="qs-b" mb="8px">
+                            English <span className="qs-r">(Basic verbal communication skills; capable of reading and writing in a professional context.)</span>
                         </Text>
-                        <Text fontSize="16px" className="qs-r">
-                            TOEIC certificate (795/990)
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Pretty good at listening and reading
-                        </Text>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
-                            Chinese
+                        <Text fontSize="16px" className="qs-smb">
+                            TOEIC Listening & Reading  <span className="qs-smb" style={{ color: "#FB797F" }}>795/990</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Pretty good in communication
+                            * Issued May 23 - Expired May 22
                         </Text>
-                        <Text fontSize="25px" className="qs-b" mt="30px">
-                            CERTIFICATE
+                        <Text fontSize="16px" className="qs-b" mb="8px" mt="20px">
+                            Chinese <span className="qs-r">(Able to read and write fluently; conversational speaking skills.)</span>
                         </Text>
-                        <div
-                            style={{
-                                width: "40px",
-                                height: "3px",
-                                backgroundColor: "#FB797F",
-                                borderRadius: "20px",
-                                margin: "10px 0 20px 0",
-                            }}
-                        ></div>
-                        <NavLink to={PATH.certificate}>
-                            <Text fontSize="16px" className="qs-r" mb="8px">
-                                <Link
-                                    isExternal
-                                    color="#FB797F"
-                                    fontWeight="bold"
-                                    fontSize="16px"
-                                >
-                                    {" "}
-                                    View my certificates {"   "}
-                                    <ExternalLinkIcon mx="2px" />
-                                </Link>
+                        <Text fontSize="16px" className="qs-smb">
+                            HSK4 - HSKK Intermediate
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            * Issued June 25 - Expired June 27
+                        </Text>
+                        <Box display={{ base: "none", md: "block" }}>
+                            <Text fontSize="25px" className="qs-b" mt="30px">
+                                CERTIFICATE
                             </Text>
-                        </NavLink>
+                            <div
+                                style={{
+                                    width: "40px",
+                                    height: "3px",
+                                    backgroundColor: "#FB797F",
+                                    borderRadius: "20px",
+                                    margin: "10px 0 20px 0",
+                                }}
+                            ></div>
+                            <NavLink to={PATH.certificate}>
+                                <Text fontSize="16px" className="qs-r" mb="8px">
+                                    <Link
+                                        isExternal
+                                        color="#FB797F"
+                                        fontWeight="bold"
+                                        fontSize="16px"
+                                    >
+                                        {" "}
+                                        View my certificates {"   "}
+                                        <ExternalLinkIcon mx="2px" />
+                                    </Link>
+                                </Text>
+                            </NavLink>
+                        </Box>
+
                         {/* <Text fontSize="16px" className="qs-smb" mb="8px">
                             Web Design for Everybody: Basics of Web Development
                             & Coding Specilization
@@ -393,103 +439,35 @@ export default function Resume() {
                                 <ExternalLinkIcon mx="2px" />
                             </Link>
                         </Text> */}
+                        <Box display={{ base: "none", md: "block", lg: "none" }}>
+                            <Text fontSize="25px" className="qs-b" mt="30px">
+                                INTERESTS
+                            </Text>
+                            <div
+                                style={{
+                                    width: "40px",
+                                    height: "3px",
+                                    backgroundColor: "#FB797F",
+                                    borderRadius: "20px",
+                                    margin: "10px 0 20px 0",
+                                }}
+                            ></div>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                Enjoy discovering new cultures and making friends through language learning.
+                            </Text>
+                            <Text fontSize="16px" className="qs-r" mb="8px">
+                                Listening to music & reading books to recharge creativity.
+                            </Text>
+                        </Box>
                     </Box>
                 </GridItem>
-                <GridItem colSpan={{ base: 16, md: 8, lg: 8 }}>
-                    <Box>
+                <GridItem colSpan={{ base: 16, md: 8, lg: 6 }}>
+                    <Box >
                         <Text
                             fontSize="25px"
                             className="qs-b"
-                            mt={{ base: "30px", md: 0, lg: "-30px" }}
+                            mt={{ base: "30px", lg: "-30px" }}
                         >
-                            EDUCATION
-                        </Text>
-                        <div
-                            style={{
-                                width: "40px",
-                                height: "3px",
-                                backgroundColor: "#FB797F",
-                                borderRadius: "20px",
-                                margin: "10px 0 20px 0",
-                            }}
-                        ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="8px">
-                            FPT UNIVERSITY
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            (October 18 - November 22)
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Major:</span> Software
-                            engineering
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">GPA:</span> 8.1/10.0
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Certificate of merit:</span>{" "}
-                            4 times is awarded "Honorable Student Of Semester".
-                        </Text>
-                        <Text
-                            fontSize="16px"
-                            className="qs-smb"
-                            mb="8px"
-                            mt="30px"
-                        >
-                            GOOGLE UX DESIGN{" "}
-                            <span className="qs-r">
-                                | Online course on Coursera
-                            </span>
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            (October 22 - May 23)
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Completed 7 courses and passed 3 UX/UI design
-                            project (Mobile, Web responsive).
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <Link
-                                isExternal
-                                color="black"
-                                fontSize="16px"
-                                href="https://coursera.org/share/4b51eb39296614846a01b2f892552a14"
-                            >
-                                {" "}
-                                Google UX Design certificate{"   "}
-                                <ExternalLinkIcon mx="2px" />
-                            </Link>
-                        </Text>
-                        <NavLink to={PATH.home}>
-                            <Text fontSize="16px" className="qs-r" mb="8px">
-                                <Link
-                                    isExternal
-                                    color="#FB797F"
-                                    fontWeight="bold"
-                                    fontSize="16px"
-                                >
-                                    {" "}
-                                    View my UI/UX projects{"   "}
-                                    <ExternalLinkIcon mx="2px" />
-                                </Link>
-                            </Text>
-                        </NavLink>
-                        <Text
-                            fontSize="16px"
-                            className="qs-smb"
-                            mb="8px"
-                            mt="33px"
-                        >
-                            {"Introduction to Web Accessibility (WCAG)".toUpperCase()}{" "}
-                            <span className="qs-r">| Online course in Edx</span>
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            (April 23 - May 23)
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Complete this course with a score of 90/100%.
-                        </Text>
-                        <Text fontSize="30px" className="qs-b" mt="35px">
                             EXPERIENCE
                         </Text>
                         <div
@@ -518,81 +496,115 @@ export default function Resume() {
 
                         <Text
                             fontSize="16px"
-                            className="qs-smb"
+                            className="qs-b"
                             mb="8px"
                             mt="15px"
                         >
                             FPT SOFTWARE{" "}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            (May 21 - September 21)
+                            <span className="qs-m">Ho Chi Minh City</span> | (May 21 - September 21)
+                        </Text>
+
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Intern</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Grade: </span> 10.0/10.0
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> Intern
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Description: </span>
+                            <span className="qs-m">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
-                                Prepare data for AI training.
+                                Prepared and validated datasets for Al training, boosting model accuracy.
                             </ListItem>
                             <ListItem mt={1}>
-                                Learn and use Python to check validate for
-                                training data.
+                                Gained experience in preparing and validating Al training data using Python.
                             </ListItem>
                             <ListItem mt={1}>
-                                Practice team-work skills.
+                                Practiced teamwork through group-based project tasks and collaboration.
                             </ListItem>
                         </UnorderedList>
                         <Text
                             fontSize="16px"
-                            className="qs-smb"
+                            className="qs-b"
                             mb="8px"
                             mt="30px"
                         >
-                            FELIXZONE COMPANY{" "}
-                            <span className="qs-r">| Graduation Thesis</span>
+                            FELIXZONE{" "}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
                             (December 21 - September 22)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> Front-end
-                            web developer
+                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Project: </span>{" "}
-                            felixzone.asia
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Description: </span>
+                            <span className="qs-m">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
-                                Coding UI for front-end side. (HTML/CSS/JS,
-                                ReactJS, Material-UI).{" "}
+                                Built responsive web applications with modern JavaScript frameworks.
                             </ListItem>
-                            <ListItem mt={1}>Fetch API using Axios.</ListItem>
+                            <ListItem mt={1}>Integrated RESTful APls to improve data flow and user experience.</ListItem>
                             <ListItem mt={1}>
-                                Collect and analyze client requirements.
+                                Drafted SRS documentation and contributed to Ul/UX design by brainstorming and prototyping workflows with Figma
                             </ListItem>
+                        </UnorderedList>
+                        <Text
+                            fontSize="16px"
+                            className="qs-b"
+                            mb="8px"
+                            mt="30px"
+                        >
+                            MINDX{" "}
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            (July 23 - December 23)
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Teaching Assistant Web Development (HTML, CSS, JS, ReactJS)</span>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Main tasks and contributions: </span>
+                        </Text>
+                        <UnorderedList>
                             <ListItem mt={1}>
-                                Writing SRS (software requirements
-                                specification).
+                                Assisted in teaching HTML, CSS, JavaScript, and ReactS.
                             </ListItem>
+                            <ListItem mt={1}>Guided students with debugging, Reviewed assignments, provided detailed feedback, and designed exercises to strengthen learning outcomes.</ListItem>
                             <ListItem mt={1}>
-                                Using Figma to design UI in the final stages of
-                                the project.
+                                Facilitated group projects to enhance collaboration and learning.
+                            </ListItem>
+                        </UnorderedList>
+                        <Text
+                            fontSize="16px"
+                            className="qs-b"
+                            mb="8px"
+                            mt="30px"
+                        >
+                            FACTORAZY{" "}
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            (September 23 - June 25)
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
+                        </Text>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            <span className="qs-m">Main tasks and contributions: </span>
+                        </Text>
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Delivered a fundraising project on time, turning Figma designs into responsive sites with NextJS & TailwindCsS, collaborated with backend team to align API.
+                            </ListItem>
+                            <ListItem mt={1}>Improved efficiency by suggesting design alternatives to reduce coding effort and enhancing code maintainability with reusable components.</ListItem>
+                            <ListItem mt={1}>
+                                Contributed to the company's next fundraising round.
                             </ListItem>
                         </UnorderedList>
                     </Box>
                 </GridItem>
                 <GridItem
-                    colSpan={{ base: 16, lg: 4 }}
+                    colSpan={{ base: 16, lg: 6 }}
                     display={{ base: "grid", md: "none", lg: "grid" }}
                 >
                     <Box>
@@ -612,71 +624,59 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="10px">
-                            {"Technical".toUpperCase()}
+                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                            Frontend:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            HTML5
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                HTML5, CSS3, JavaScript (ES6+)
+                            </ListItem>
+                            <ListItem mt={1}>TypeScript, ReactJS, NextJS, Redux / Recoil</ListItem>
+                            <ListItem mt={1}>
+                                Responsive & Mobile-first Design
+                            </ListItem>
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            UI Frameworks & styling:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            CSS3 (grid / flexbox / responsive / animate)
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                TailwindCSS, Bootstrap, Sass/SCSS, Styled Components
+                            </ListItem>
+                            <ListItem mt={1}>Material Ul, Ant Design, ChakraUl, Shadcn.</ListItem>
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            Backend Integration:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            CSS preprocessor: SASS / SCSS
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                RESTFul APIs, Axios, Fetch API
+                            </ListItem>
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            Tools:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Convert PSD/Figma design to pixel-perfect UI
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Git/GitHub
+                            </ListItem>
+                            <ListItem mt={1}>NPM/Yarn</ListItem>
+                            <ListItem mt={1}>
+                                Chrome DevTools, Lighthouse, Postman, Redux Toolkit.
+                            </ListItem>
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            SEO & Performance:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            JavaScript / ES6 JavaScript / DOM
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Working with REST/RESTful API for fetching data
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Understanding of basic SEO principles.
-                        </Text>
-                        <Text
-                            fontSize="16px"
-                            className="qs-smb"
-                            mb="10px"
-                            mt="15px"
-                        >
-                            {"UI Framework".toUpperCase()}
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            JQuery
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            ReactJS
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Redux / Redux Thunk
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Bootstrap
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Material UI
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Chakra UI
-                        </Text>
-                        <Text
-                            fontSize="16px"
-                            className="qs-smb"
-                            mb="10px"
-                            mt="15px"
-                        >
-                            {"VERSION CONTROL SYSTEM".toUpperCase()}
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Git workflow (Centralized / Feature branching /
-                            Forking)
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Tools: Git / GitHub
-                        </Text>
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Understanding SEO principles.
+                            </ListItem>
+                            <ListItem mt={1}>Core Web Vitals optimization.</ListItem>
+                            <ListItem mt={1}>
+                                Tools: Google Search Console, PageSpeed Insights.
+                            </ListItem>
+                        </UnorderedList>
                         <Text fontSize="25px" className="qs-b" mt="30px">
                             DESIGN SKILLS
                         </Text>
@@ -689,44 +689,32 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-smb" mb="10px">
-                            {"UX/UI".toUpperCase()}
+                        <Text fontSize="16px" className="qs-smb" mb="8px">
+                            Ul/UX Design:
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Responsive Design
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Responsive & Mobile-first Design
+                            </ListItem>
+                            <ListItem mt={1}>Accessibility awareness (ally)</ListItem>
+                            <ListItem mt={1}>
+                                Design systems, wireframes, mockups, interactive prototypes (web & mobile)
+                            </ListItem>
+                            <ListItem mt={1}>
+                                User flows, sitemaps, and journey mapping
+                            </ListItem>
+
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            Design Tools
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Information Architecture / Sitemap
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Storyboarding
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Wireframing
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Prototyping
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Accessibility UX
-                        </Text>
-                        <Text
-                            fontSize="16px"
-                            className="qs-smb"
-                            mb="10px"
-                            mt="15px"
-                        >
-                            {"Design tools".toUpperCase()}
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Figma / FigJam
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Adobe XD
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Photoshop (basic for cutting PSD to HTML)
-                        </Text>
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Figma, Adobe XD, Sketch
+                            </ListItem>
+                            <ListItem mt={1}>FigJam, Miro</ListItem>
+                            <ListItem mt={1}>Canva</ListItem>
+                        </UnorderedList>
                         <Text fontSize="25px" className="qs-b" mt="30px">
                             SOFT SKILLS
                         </Text>
@@ -740,44 +728,78 @@ export default function Resume() {
                             }}
                         ></div>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Teamwork
+                            Team collaboration
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Responsibility
+                            Fast learner
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Communication
+                            Problem-solving
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Optimism
+                            Attention to detail
+                        </Text>
+                        <Text fontSize="25px" className="qs-b" mt="30px">
+                            INTERESTS
+                        </Text>
+                        <div
+                            style={{
+                                width: "40px",
+                                height: "3px",
+                                backgroundColor: "#FB797F",
+                                borderRadius: "20px",
+                                margin: "10px 0 20px 0",
+                            }}
+                        ></div>
+                        <Text fontSize="16px" className="qs-r" mb="8px">
+                            Enjoy discovering new cultures and making friends through language learning.
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            Patience
+                            Listening to music & reading books to recharge creativity.
                         </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Aesthetics UX
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Active listening
-                        </Text>
-                        <Text fontSize="16px" className="qs-r" mb="8px">
-                            Presentation
-                        </Text>
+                        <Box display={{ base: "block", md: "none" }}>
+                            <Text fontSize="25px" className="qs-b" mt="30px">
+                                CERTIFICATE
+                            </Text>
+                            <div
+                                style={{
+                                    width: "40px",
+                                    height: "3px",
+                                    backgroundColor: "#FB797F",
+                                    borderRadius: "20px",
+                                    margin: "10px 0 20px 0",
+                                }}
+                            ></div>
+                            <NavLink to={PATH.certificate}>
+                                <Text fontSize="16px" className="qs-r" mb="8px">
+                                    <Link
+                                        isExternal
+                                        color="#FB797F"
+                                        fontWeight="bold"
+                                        fontSize="16px"
+                                    >
+                                        {" "}
+                                        View my certificates {"   "}
+                                        <ExternalLinkIcon mx="2px" />
+                                    </Link>
+                                </Text>
+                            </NavLink>
+                        </Box>
                     </Box>
                 </GridItem>
             </Grid>
             <Grid
                 w="full"
-                templateColumns="repeat(14, 1fr)"
+                templateColumns="repeat(12, 1fr)"
                 gap={10}
                 mt="35px"
                 display={{ base: "none", md: "grid", lg: "none" }}
             >
-                <GridItem colSpan={{ base: 5 }}>
+                <GridItem colSpan={{ base: 6 }}>
                     <Text
                         fontSize="25px"
                         className="qs-b"
-                        mt={{ base: 0, lg: "-30px" }}
+                        mt={{ base: "30px", lg: "-30px" }}
                     >
                         TECHNICAL SKILLS
                     </Text>
@@ -790,77 +812,62 @@ export default function Resume() {
                             margin: "10px 0 20px 0",
                         }}
                     ></div>
-                    <Text fontSize="16px" className="qs-smb" mb="10px">
-                        {"Technical".toUpperCase()}
+                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                        Frontend:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        HTML5
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            HTML5, CSS3, JavaScript (ES6+)
+                        </ListItem>
+                        <ListItem mt={1}>TypeScript, ReactJS, NextJS, Redux / Recoil</ListItem>
+                        <ListItem mt={1}>
+                            Responsive & Mobile-first Design
+                        </ListItem>
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        UI Frameworks & styling:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        CSS3 (grid / flexbox / responsive / animate)
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            TailwindCSS, Bootstrap, Sass/SCSS, Styled Components
+                        </ListItem>
+                        <ListItem mt={1}>Material Ul, Ant Design, ChakraUl, Shadcn.</ListItem>
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        Backend Integration:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        CSS preprocessor: SASS / SCSS
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            RESTFul APIs, Axios, Fetch API
+                        </ListItem>
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        Tools:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Convert PSD/Figma design to pixel-perfect UI
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            Git/GitHub
+                        </ListItem>
+                        <ListItem mt={1}>NPM/Yarn</ListItem>
+                        <ListItem mt={1}>
+                            Chrome DevTools, Lighthouse, Postman, Redux Toolkit.
+                        </ListItem>
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        SEO & Performance:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        JavaScript / ES6 JavaScript / DOM
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Working with REST/RESTful API for fetching data
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Understanding of basic SEO principles.
-                    </Text>
-                    <Text
-                        fontSize="16px"
-                        className="qs-smb"
-                        mb="10px"
-                        mt="15px"
-                    >
-                        {"UI Framework".toUpperCase()}
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        JQuery
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        ReactJS
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Redux / Redux Thunk
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Bootstrap
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Material UI
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Chakra UI
-                    </Text>
-                    <Text
-                        fontSize="16px"
-                        className="qs-smb"
-                        mb="10px"
-                        mt="15px"
-                    >
-                        {"VERSION CONTROL SYSTEM".toUpperCase()}
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Git workflow (Centralized / Feature branching / Forking)
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Tools: Git / GitHub
-                    </Text>
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            Understanding SEO principles.
+                        </ListItem>
+                        <ListItem mt={1}>Core Web Vitals optimization.</ListItem>
+                        <ListItem mt={1}>
+                            Tools: Google Search Console, PageSpeed Insights.
+                        </ListItem>
+                    </UnorderedList>
                 </GridItem>
-                <GridItem colSpan={{ base: 5 }}>
-                    <Text
-                        fontSize="25px"
-                        className="qs-b"
-                        mt={{ base: 0, lg: "30px" }}
-                    >
+                <GridItem colSpan={{ base: 6 }}>
+                    <Text fontSize="25px" className="qs-b" mt="30px">
                         DESIGN SKILLS
                     </Text>
                     <div
@@ -872,51 +879,33 @@ export default function Resume() {
                             margin: "10px 0 20px 0",
                         }}
                     ></div>
-                    <Text fontSize="16px" className="qs-smb" mb="10px">
-                        {"UX/UI".toUpperCase()}
+                    <Text fontSize="16px" className="qs-smb" mb="8px">
+                        Ul/UX Design:
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Responsive Design
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            Responsive & Mobile-first Design
+                        </ListItem>
+                        <ListItem mt={1}>Accessibility awareness (ally)</ListItem>
+                        <ListItem mt={1}>
+                            Design systems, wireframes, mockups, interactive prototypes (web & mobile)
+                        </ListItem>
+                        <ListItem mt={1}>
+                            User flows, sitemaps, and journey mapping
+                        </ListItem>
+
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        Design Tools
                     </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Information Architecture / Sitemap
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Storyboarding
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Wireframing
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Prototyping
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Accessibility
-                    </Text>
-                    <Text
-                        fontSize="16px"
-                        className="qs-smb"
-                        mb="10px"
-                        mt="15px"
-                    >
-                        {"Design tools".toUpperCase()}
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Figma / FigJam
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Adobe XD
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Photoshop (basic for cutting PSD to HTML)
-                    </Text>
-                </GridItem>
-                <GridItem colSpan={{ base: 4 }}>
-                    <Text
-                        fontSize="25px"
-                        className="qs-b"
-                        mt={{ base: 0, lg: "30px" }}
-                    >
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            Figma, Adobe XD, Sketch
+                        </ListItem>
+                        <ListItem mt={1}>FigJam, Miro</ListItem>
+                        <ListItem mt={1}>Canva</ListItem>
+                    </UnorderedList>
+                    <Text fontSize="25px" className="qs-b" mt="30px">
                         SOFT SKILLS
                     </Text>
                     <div
@@ -929,28 +918,16 @@ export default function Resume() {
                         }}
                     ></div>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Teamwork
+                        Team collaboration
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Responsibility
+                        Fast learner
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Communication
+                        Problem-solving
                     </Text>
                     <Text fontSize="16px" className="qs-r" mb="8px">
-                        Optimism
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Patience
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Aesthetics UX
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Active listening
-                    </Text>
-                    <Text fontSize="16px" className="qs-r" mb="8px">
-                        Presentation
+                        Attention to detail
                     </Text>
                 </GridItem>
             </Grid>

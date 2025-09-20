@@ -30,7 +30,7 @@ export default function BgImageLayout({ children, bg, objectPos, mainpage, id, a
                     {children}
                 </Flex>
             </Center>
-            {/* <img
+            {bg && <img
                 src={bg}
                 style={{
                     width: "100%",
@@ -42,7 +42,7 @@ export default function BgImageLayout({ children, bg, objectPos, mainpage, id, a
                     top: "0",
                 }}
                 alt="background"
-            ></img> */}
+            ></img>}
             {animateChildren}
 
         </Center>

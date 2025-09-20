@@ -57,13 +57,10 @@ export default function LanguageQuote() {
             }}
             textAlign="center"
             position="relative"
-            className="edu-smb"
+            className="qs-b"
           >
             <span className="quote-content"></span>
-            "Teamwork with a good team and having an opportunity to
-            work directly with clients to create a real project has
-            given me a lot of valuable experience during my 4 years
-            at FPT University."{" "}
+            "Language certificates are more than achievements to me—they reflect my love for learning languages, exploring different cultures, and gaining new perspectives on life and people through each unique language."{" "}
           </Text>
         </Flex>
       </Center>

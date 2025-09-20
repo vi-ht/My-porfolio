@@ -22,7 +22,17 @@ import ellipse3th from "../../asset/image/homepage-illustrate/ellipse-3th.png";
 import { Text, Box } from "@chakra-ui/react";
 
 
-const AnimateObjectList = () => {
+/**
+ * AnimateObjectList is a component that renders a list of animated objects.
+ * The component receives no props and returns a Box component with the animated objects.
+ * The animated objects are rendered as absolute positioned img elements with a transform that scales the image based on the screen size.
+ * The images are rendered with the following styles:
+ * - at base screen size, the images are scaled to 0.6
+ * - at sm screen size, the images are scaled to 0.6
+ * - at 2xl screen size, the images are scaled to 0.8
+ * - at 3xl screen size, the images are scaled to 1
+ */
+export const AnimateObjectList = () => {
     const ObjectItem = ({ top, left, right, bottom, src, className, alt }) => (
         <Box
             position="absolute"
@@ -30,7 +40,7 @@ const AnimateObjectList = () => {
             left={left}
             right={right}
             bottom={bottom}
-            transform={{ base: "scale(0.6)", xl: "scale(0.6)", '2xl': "scale(0.8)", "3xl": "scale(1)" }}>
+            transform={{ base: "scale(0.43)", sm: "scale(0.55)", xl: "scale(0.6)", '2xl': "scale(0.75)", "3xl": "scale(1)" }}>
             <img
                 src={src}
                 className={className}
@@ -39,24 +49,17 @@ const AnimateObjectList = () => {
         </Box>
     )
     return (
-        <Box width="100vw" height="100vh" position={"absolute"} overflow={"hidden"}>
-            {/* <Box position="absolute" top="52%" left="43%" transform={{ base: "scale(0.8)", "3xl": "scale(1)" }}>
-                <img
-                    src={square1st}
-                    className="illustrate-image-1"
-                    alt="1st illustrate object"
-                ></img>
-            </Box> */}
+        <Box width="100vw" height="100vh" position={"absolute"} overflow={"hidden"} display={{ base: "none", ssm: "block" }}>
             <ObjectItem
-                top="52%"
-                left="43%"
+                top={"52%"}
+                left={"43%"}
                 src={square1st}
                 className="illustrate-image-1"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                top="26%"
-                left="15%"
+                top={{ base: "40%", md: "26%" }}
+                left={{ base: "-15%", md: "15%" }}
                 src={polygon1st}
                 className="illustrate-image-2"
                 alt="1st illustrate object"
@@ -68,37 +71,39 @@ const AnimateObjectList = () => {
                 alt="1st illustrate object"
             />
             <ObjectItem
-                top="28%" left="64%"
+                top={{ base: "55%", md: "28%" }} left={{ base: "70%", md: "64%" }}
                 src={ellipse1st}
                 className="illustrate-image-1"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                bottom="-29%" right="-7%"
+                bottom={{ base: "-40%", md: "-29%" }} right={{ base: "-90%", md: "-7%" }}
                 src={ellipse2nd}
                 className="illustrate-image-2"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                top="10%" right="-6%"
+                top="10%" right={{ base: "-25%", md: "-6%" }}
                 src={polygon2nd}
                 className="illustrate-image-3"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                top="1.5%" right="10%"
+                top={{
+                    base: "-10%", md: "1.5%"
+                }} right="10%"
                 src={polygon3th}
                 className="illustrate-image-1"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                bottom="10%" left="-10%"
+                bottom={{ base: "-17%", md: "10%" }} left={{ base: "-25%", md: "-10%" }}
                 src={Rectangle2nd}
                 className="illustrate-image-2"
                 alt="1st illustrate object"
             />
             <ObjectItem
-                top="-10%" left="-8%"
+                top={{ base: "5%", md: "-10%" }} left={{ base: "-15%", md: "-8%" }}
                 src={ellipse3th}
                 className="illustrate-image-3"
                 alt="1st illustrate object"
@@ -109,7 +114,7 @@ const AnimateObjectList = () => {
 const TextTemplate = ({ children, container }) => (
     <Text
         fontSize={{
-            base: "18px", //0px
+            base: "16px", //0px
             lg: "20px", // 992px
         }}
         className={container ? "container" : "qs-m"}
@@ -177,10 +182,8 @@ export default function IntroContent() {
         };
     }, []);
     return (
-        <BgImageLayout bg={bgImage} pos="70% 100%" mainpage animateChildren={<AnimateObjectList />}>
-
+        <BgImageLayout pos="70% 100%" mainpage animateChildren={<AnimateObjectList />}>
             <Box w="full" h="full" position="relative">
-
                 <Box
                     position="absolute"
                     bottom="3rem"
@@ -189,8 +192,8 @@ export default function IntroContent() {
                 >
                     <Text
                         fontSize={{
-                            base: "50px", //0px
-                            sm: "60px", // 480px
+                            base: "40px", //0px
+                            sm: "50px", // 480px
                             md: "70px", // 768px
                             lg: "90px", // 992px
                             xl: "100px", // 1280px
@@ -227,14 +230,14 @@ export default function IntroContent() {
                         and
                         <span className="highlight qs-b"> UX/UI Design</span>.
                     </TextTemplate>
-                    <TextTemplate container>
-                        <span className="vi qs-m">
+                    <TextTemplate container >
+                        <span className="vi qs-m ">
                             Scroll down to see more about me.{" "}
                         </span>
                         {/* <img src={scroll} alt="scroll" className="scroll" /> */}
                     </TextTemplate>
                 </Box>
             </Box>
-        </BgImageLayout>
+        </BgImageLayout =>
     );
 }

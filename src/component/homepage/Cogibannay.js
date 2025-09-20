@@ -155,6 +155,20 @@ export default function Cogibannay() {
                             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAVJEZoB3Fp97ar82ohb5sd%2FC%25C3%25B3-g%25C3%25AC-b%25C3%25A1n-n%25E1%25BA%25A5y---WIREFLOW%3Ftype%3Ddesign%26node-id%3D12%253A529%26t%3D6j2jPImpsEjcOLpR-1"
                             allowfullscreen
                         ></iframe>
+                        <iframe
+                            style={{
+                                border: "1px solid rgba(0, 0, 0, 0.1)",
+                                width: "100%",
+                                height: "100vh",
+                            }}
+                            src="https://embed.figma.com/design/AVJEZoB3Fp97ar82ohb5sd/C%C3%B3-g%C3%AC-b%C3%A1n-n%E1%BA%A5y---WIREFLOW?node-id=72-277&embed-host=share" allowfullscreen></iframe>
+                        <iframe
+                            style={{
+                                border: "1px solid rgba(0, 0, 0, 0.1)",
+                                width: "100%",
+                                height: "100vh",
+                            }}
+                            src="https://embed.figma.com/proto/AVJEZoB3Fp97ar82ohb5sd/C%C3%B3-g%C3%AC-b%C3%A1n-n%E1%BA%A5y---WIREFLOW?node-id=117-1216&scaling=scale-down&page-id=72%3A277&starting-point-node-id=131%3A1673&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
                     </Flex>
                 </Center>
             </Center>

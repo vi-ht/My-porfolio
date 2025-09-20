@@ -8,10 +8,22 @@ import { useEffect } from "react";
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
 import bgImage from "../../asset/icon/bg.png";
+
 // import chakra components
+import { Text, Box } from "@chakra-ui/react";
 import { AnimateObjectList } from "../homepage/IntroContent";
 
-import { Text, Box } from "@chakra-ui/react";
+
+/**
+ * AnimateObjectList is a component that renders a list of animated objects.
+ * The component receives no props and returns a Box component with the animated objects.
+ * The animated objects are rendered as absolute positioned img elements with a transform that scales the image based on the screen size.
+ * The images are rendered with the following styles:
+ * - at base screen size, the images are scaled to 0.6
+ * - at sm screen size, the images are scaled to 0.6
+ * - at 2xl screen size, the images are scaled to 0.8
+ * - at 3xl screen size, the images are scaled to 1
+ */
 
 const TextTemplate = ({ children, container }) => (
   <Text
@@ -22,21 +34,20 @@ const TextTemplate = ({ children, container }) => (
     className={container ? "container" : "qs-m"}
     lineHeight={{
       base: "30px", //0px
-      lg: "38px", // 992px
+      lg: "40px", // 992px
     }}
     mt={{
       base: "0.8rem", //0px
       lg: "0", // 992px
     }}
-    maxWidth={"900px"}
   >
     {children}
   </Text>
 );
-export default function UIUXIntroContent() {
+export default function IntroCertificate() {
   useEffect(() => {
-    let text1 = "How are u doing?";
-    let text2 = "Hope u are well :>";
+    let text1 = "We meet again :D";
+    let text2 = "Let's explore <3 ";
     let pos = 0;
     let variable = "";
     function typing(text) {
@@ -86,9 +97,7 @@ export default function UIUXIntroContent() {
   }, []);
   return (
     <BgImageLayout pos="70% 100%" mainpage animateChildren={<AnimateObjectList />}>
-
       <Box w="full" h="full" position="relative">
-
         <Box
           position="absolute"
           bottom="3rem"
@@ -98,7 +107,7 @@ export default function UIUXIntroContent() {
           <Text
             fontSize={{
               base: "40px", //0px
-              sm: "60px", // 480px
+              sm: "50px", // 480px
               md: "70px", // 768px
               lg: "90px", // 992px
               xl: "100px", // 1280px
@@ -110,25 +119,29 @@ export default function UIUXIntroContent() {
             className="qs-smb"
             id="typing"
           ></Text>
-          <TextTemplate container>
-            <span className="qs-b" mt={1}>
-              This page is about my UX/UI projects!{" "}
-            </span>
-          </TextTemplate>
+
           <TextTemplate>
+
+            This page showcases a complete collection of my certificates, ranging from {" "}
             <span className="highlight qs-b">
-              I'm just a newbie in the field of UI-UX
-            </span> {" "}
-            , the projects below are accumulated by me through the process of continuous self-learning, so I hope to receive gentle evaluation from you.
+              academic achievements
+            </span>
+            {" "}to{" "}
+            <span className="highlight qs-b">
+              language proficiency
+            </span>
+            {" "}and{" "}
+            <span className="highlight qs-b">
+              online course completion.
+            </span>
           </TextTemplate>
           <TextTemplate container>
             <span className="vi qs-m">
-              Let's scroll down to explore.{" "}
+              Let's scroll down to see.{" "}
             </span>
-            {/* <img src={scroll} alt="scroll" className="scroll" /> */}
           </TextTemplate>
         </Box>
       </Box>
-    </BgImageLayout >
+    </BgImageLayout>
   );
 }

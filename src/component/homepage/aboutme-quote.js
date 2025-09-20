@@ -53,10 +53,7 @@ export default function AboutMeQuote() {
             className="qs-b"
           >
             <span className="quote-content"></span>
-            "UI/UX self-learning process has many difficulties and
-            obstacles for a newbie like me, but I know that
-            persistence and responsibility for the initial goal are
-            the prerequisite factor for pursuing a big dream."{" "}
+            "Frontend development has fascinated me since the first time I took on a frontend developer role during teamwork activities in college. I soon realized that I really enjoy turning website design ideas into interactive and responsive websites, where technology meets users’ needs."{" "}
           </Text>
         </Flex>
       </Center>

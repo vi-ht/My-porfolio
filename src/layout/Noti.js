@@ -4,7 +4,6 @@ import {
     AlertTitle,
     AlertDescription,
     CloseButton,
-    Button,
     Box,
 } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
@@ -14,7 +13,6 @@ export default function Noti() {
     const {
         isOpen: isVisible,
         onClose,
-        onOpen,
     } = useDisclosure({ defaultIsOpen: true });
 
     return isVisible && (

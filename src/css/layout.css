@@ -26,7 +26,8 @@
 .container {
     position: relative;
 }
-.card-line{
+
+.card-line {
     width: 150px;
     height: 3px;
     background-color: gray;
@@ -54,10 +55,10 @@
 
 /* icon in Homepage.js */
 .wave-hand {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     position: absolute;
-    top: 5px;
+    top: 0px;
 }
 
 .scroll {
@@ -71,8 +72,27 @@
 .vi::after {
     content: url(./../asset/icon/openmoji_scroll1x.png);
     position: absolute;
-    top: -5px
+    top: -15px;
+    transform: translateX(-10px) scale(0.75);
 }
+
+@media screen and (min-width: 768px) {
+    .vi::after {
+        content: url(./../asset/icon/openmoji_scroll1x.png);
+        position: absolute;
+        top: -5px;
+        transform: scale(1);
+    }
+
+    .wave-hand {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+    }
+
+}
+
 /* .quote-content::after{
     content: "Read this: ";
 }
@@ -80,7 +100,7 @@
     content: ";
 } */
 /* ProjectList.js */
-.line{
+.line {
     width: 170px;
     height: 4px;
     background-color: #FB797F;

@@ -49,7 +49,7 @@ export default function Quote() {
                         }}
                         textAlign="center"
                         position="relative"
-                        className="edu-smb"
+                        className="qs-b"
                     >
                         <span className="quote-content"></span>
                         "UI/UX self-learning process has many difficulties and

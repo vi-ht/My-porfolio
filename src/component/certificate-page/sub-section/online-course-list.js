@@ -3,19 +3,18 @@ import "./../../../css/font.css";
 import "./../../../css/layout.css";
 import "./../../../css/animate.css";
 //import components
-import CertItem from "./cert-item";
+import CertLink from "./cert-link";
 //import layout
 import BgColorLayout from "../../../layout/BgColorLayout";
-import graduate from "../../../asset/image/edu-cert/graduate.webp"
 // import chakra components
 import { Text, Grid, Center } from "@chakra-ui/react";
 //import data
-import { onlinecertdata } from "./online-spec-data";
+import { technicalcertdata, languagecertdata, uiuxcertdata, othercertdata } from "./online-spec-data";
 export default function OnlineCourseList() {
   return (
     <BgColorLayout bgColor="white" mainpage id="uxui-project">
 
-      <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)" mb="60px">
+      <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)" mb="60px" w="100%">
         <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_807_336)">
             <path d="M56.6667 48.4933C55.9717 46.8883 55.1733 45.1467 53.3333 45.1467H51.6667C53.5067 45.1467 55 43.6483 55 41.8V13.3467C55.0009 12.9081 54.9154 12.4736 54.7483 12.068C54.5813 11.6624 54.336 11.2937 54.0264 10.983C53.7169 10.6722 53.3492 10.4255 52.9443 10.2568C52.5394 10.0881 52.1053 10.0009 51.6667 10H8.33333C6.49333 10 5 11.4983 5 13.3467V41.8C5 43.6483 6.49333 45.1467 8.33333 45.1467H6.66667C4.82667 45.1467 3.88833 46.82 3.33333 48.4933L0 56.6517C0 58.5017 1.49333 60 3.33333 60H56.6667C58.5067 60 60 58.5017 60 56.6533L56.6667 48.4933Z" fill="#CCD6DD" />
@@ -41,6 +40,7 @@ export default function OnlineCourseList() {
             "2xl": "35px", //1536px
           }}
           className="qs-smb"
+          mt="5px"
         >
           Online Course Specializations
         </Text>
@@ -60,11 +60,19 @@ export default function OnlineCourseList() {
           }}
           textAlign="center"
         >
-          This is my graduation thesis at FPT University, I and a
-          group of friends worked together to build a website for the
-          Felixzone company.
+          This section showcases my certificates from various online courses, with the majority obtained through Coursera.
         </Text>
       </Center>
+      <Text
+        fontSize={{
+          base: "20px", //0px
+          md: "25px", // 768px
+        }}
+        className="qs-smb"
+      >
+        Technical Certificates
+      </Text>
+      {/* <div className="line"></div> */}
       <Grid
         templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
         w="full"
@@ -72,15 +80,96 @@ export default function OnlineCourseList() {
         gapX={10}
         gap={10}
       >
-        {onlinecertdata.map((item, i) => (
-          <CertItem
+        {technicalcertdata.map((item, i) => (
+          <CertLink
             key={i}
             id={item.id}
             span={{ base: 2, md: 6 }}
-            start={item.start}
             name={item.name}
-            des={item.des}
-            type={item.type}
+            img={item.img}
+            path={item.path}
+          />
+        ))}
+      </Grid>
+      <Text
+        fontSize={{
+          base: "20px", //0px
+          md: "25px", // 768px
+        }}
+        className="qs-smb"
+        mt="70px"
+      >
+        UX/UI Certificates
+      </Text>
+      <Grid
+        templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
+        w="full"
+        mt="3rem"
+        gapX={10}
+        gap={10}
+      >
+        {uiuxcertdata.map((item, i) => (
+          <CertLink
+            key={i}
+            id={item.id}
+            span={{ base: 2, md: 6 }}
+            name={item.name}
+            img={item.img}
+            path={item.path}
+          />
+        ))}
+      </Grid>
+      <Text
+        fontSize={{
+          base: "20px", //0px
+          md: "25px", // 768px
+        }}
+        className="qs-smb"
+        mt="70px"
+      >
+        Language Certificates
+      </Text>
+      <Grid
+        templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
+        w="full"
+        mt="3rem"
+        gapX={10}
+        gap={10}
+      >
+        {languagecertdata.map((item, i) => (
+          <CertLink
+            key={i}
+            id={item.id}
+            span={{ base: 2, md: 6 }}
+            name={item.name}
+            img={item.img}
+            path={item.path}
+          />
+        ))}
+      </Grid>
+      <Text
+        fontSize={{
+          base: "20px", //0px
+          md: "25px", // 768px
+        }}
+        className="qs-smb"
+        mt="70px"
+      >
+        Other Certificates
+      </Text>
+      <Grid
+        templateColumns={{ base: "repeat(2,auto)", md: "repeat(12,auto)" }}
+        w="full"
+        mt="3rem"
+        gapX={10}
+        gap={10}
+      >
+        {othercertdata.map((item, i) => (
+          <CertLink
+            key={i}
+            id={item.id}
+            span={{ base: 2, md: 6 }}
+            name={item.name}
             img={item.img}
             path={item.path}
           />

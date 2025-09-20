@@ -20,11 +20,13 @@ import LanguageQuote from "./sub-section/language-quote";
 //import chakra UI component
 import ProjectList from "./sub-section/ProjectList";
 import { Box } from "@chakra-ui/react";
+import IntroCertificate from "./intro";
 //------------------------------------------
 export default function CodingPage() {
   useTitle(`Coding projects | Thanh Vi's portfolio`);
   return (
     <Box width="full">
+      <IntroCertificate />
       <Quote />
       <ProjectList />
       <LanguageQuote />

@@ -4,14 +4,13 @@ import "./../../css/Color.css";
 import "./../../css/aboutme-page.css";
 import "./../../css/animate.css";
 //import Hook
-import { useEffect } from "react";
 import { useTitle } from "./../../customHook/useTitle";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
 import wavehand from "../../asset/icon/twemojiwavinghand.png";
 // import Avatar from "../../asset/image/my-image.png";
-import test from "../../asset/image/test.webp";
+import avatar from "../../asset/image/my-image.webp";
 //import chakra UI component
 import {
     Grid,
@@ -36,13 +35,9 @@ import {
 // import Iconify icon
 import { Icon } from "@iconify/react";
 // import chakra icon
-import { CopyIcon } from "@chakra-ui/icons";
-import { CheckCircleIcon } from "@chakra-ui/icons";
-import { ArrowDownIcon } from "@chakra-ui/icons";
-import { LinkIcon } from "@chakra-ui/icons";
+
+import { ArrowDownIcon, CheckCircleIcon, CopyIcon } from "@chakra-ui/icons";
 //import React-router-dom
-import { NavLink } from "react-router-dom";
-import { PATH } from "./../../router/Path";
 //----------------------------------------------------------
 const TextTemplate = ({ children, container }) => (
     <Text
@@ -174,8 +169,8 @@ export default function AboutMePage() {
 
                         >
                             <img
-                                src={test}
-                                alt="Thanh Vi's image"
+                                src={avatar}
+                                alt="Thanh Vi's avatar"
                                 style={{
                                     width: "100%",
                                     height: "100%",
@@ -240,26 +235,22 @@ export default function AboutMePage() {
                                 ."
                             </TextTemplate>
                             <Text fontSize="16px" className="qs-r" mt="17px">
-                                I studied software engineering at FPT university
-                                (HCMC campus).
-                            </Text>
-                            <Text fontSize="16px" className="qs-r" mt="17px">
-                                Besides programming, I'm also interested in
-                                UX/UI design because it is related to web
-                                front-end programming - which I'm really
-                                passionate about. That’s the reason why I
-                                decided to learn about UX/UI design.
-                            </Text>
-                            <Text fontSize="16px" className="qs-r" mt="17px">
-                                The world grows every second so{" "}
+                                With hands-on experience in ReactJS, NextJS, and responsive design,  {" "}
                                 <span
-                                    className="highlight qs-b"
+                                    className="highlight qs-smb"
                                     style={{ color: "black" }}
                                 >
-                                    I'm always ready to learn new things
+                                    I focus on creating user-friendly, high-performance applications
                                 </span>
-                                .
+                                . Currently pursuing a Master’s in AI-oriented programming,{" "}
+                                <span
+                                    className="highlight qs-smb"
+                                    style={{ color: "black" }}
+                                >
+                                    I aim to grow into a senior frontend developer and bring innovation to real-world projects.
+                                </span>
                             </Text>
+
                             <Text fontSize="16px" className="qs-r" mt="17px">
                                 Thank you for spending the time to check out my
                                 portfolio!
@@ -278,25 +269,25 @@ export default function AboutMePage() {
                                 gap={3.5}
                                 mt="20px"
                             >
-                                <NavLink to={PATH.resume}>
-                                    <Button
-                                        leftIcon={<LinkIcon />}
-                                        variant="solid"
-                                        fontSize="16px"
-                                        _hover={{
-                                            background: "black",
-                                        }}
-                                        className="bg-main-color white-color"
-                                        bg="#FB797F"
+                                {/* <NavLink to="/#cv"> */}
+                                <Button
+                                    variant="solid"
+                                    fontSize="16px"
+                                    _hover={{
+                                        background: "black",
+                                    }}
+                                    className="bg-main-color white-color qs-b"
+                                    bg="#FB797F"
+                                >
+                                    <a
+                                        href="/#cv"
+                                    // target="_blank"
+                                    // rel="noreferrer"
                                     >
-                                        <a
-                                            href="https://vi-ht.github.io/Custom-Bootstrap/"
-                                            target="_blank"
-                                        >
-                                            View my CV
-                                        </a>
-                                    </Button>
-                                </NavLink>
+                                        View my CV
+                                    </a>
+                                </Button>
+                                {/* </NavLink> */}
                                 <Text
                                     fontSize="27px"
                                     className="qs-l"

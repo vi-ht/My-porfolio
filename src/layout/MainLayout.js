@@ -5,14 +5,7 @@ import Header from "./Header";
 import MobileHeader from "./MobileHeader";
 import { Center } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
-import Noti from "./Noti";
-import {
-    Alert,
-    AlertIcon,
-    AlertTitle,
-    AlertDescription,
-    Stack,
-} from "@chakra-ui/react";
+// import Noti from "./Noti";
 export default function MainLayout() {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -30,9 +23,7 @@ export default function MainLayout() {
             <Center w="full">
                 <Outlet />
             </Center>
-            <Noti/>
-
-            
+            {/* <Noti/> */}
         </Container>
     );
 }
