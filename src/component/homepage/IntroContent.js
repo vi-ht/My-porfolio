@@ -238,6 +238,6 @@ export default function IntroContent() {
                     </TextTemplate>
                 </Box>
             </Box>
-        </BgImageLayout =>
+        </BgImageLayout>
     );
 }
