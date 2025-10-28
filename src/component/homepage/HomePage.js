@@ -11,6 +11,8 @@ import Resume from "../resume-page/Resume";
 import { Box } from "@chakra-ui/react";
 import AboutMePage from "../aboutme-page/AboutMePage";
 import CVPage from "../resume-page/cv";
+import Quote from "./Quote";
+import StudyQuote from "./study-quote";
 //------------------------------------------
 export default function HomePage() {
   useTitle(`UX/UI projects | Thanh Vi's portfolio`);
@@ -19,8 +21,10 @@ export default function HomePage() {
       <IntroContent />
       <AboutMeQuote />
       <AboutMePage />
+      <Quote />
       <Resume />
       <CVPage />
+      <StudyQuote />
       <Footer mt={{ base: "-2rem", lg: "2.5rem" }} />
     </Box>
   );

@@ -19,8 +19,6 @@ import {
 
 import { DownloadIcon } from "@chakra-ui/icons";
 //import React-router-dom
-import { NavLink } from "react-router-dom";
-import { PATH } from "./../../router/Path";
 //----------------------------------------------------------
 
 
@@ -57,13 +55,12 @@ export default function CVPage() {
           className="bg-main-color white-color qs-b"
           bg="#FB797F"
         >
-          <a href="./myw3schoolsimage.jpg" download="vi">Download my CV</a>
-
+          <a href="/CV-HuynhThiThanhVi.pdf" download="CV-HuynhThiThanhVi">
+            Download my CV
+          </a>
         </Button>
 
-        <a href="/static/media/my-image.052d200edb3809c84abf.webp" download="w3logo">
-          <img src="/static/media/my-image.052d200edb3809c84abf.webp" alt="W3Schools" />
-        </a>
+
 
       </Center>
 

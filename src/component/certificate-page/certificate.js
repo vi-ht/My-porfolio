@@ -21,17 +21,21 @@ import LanguageQuote from "./sub-section/language-quote";
 import ProjectList from "./sub-section/ProjectList";
 import { Box } from "@chakra-ui/react";
 import IntroCertificate from "./intro";
+import CertQuote from "./cert-quote";
 //------------------------------------------
 export default function CodingPage() {
   useTitle(`Coding projects | Thanh Vi's portfolio`);
   return (
     <Box width="full">
       <IntroCertificate />
-      <Quote />
+
+      <CertQuote />
       <ProjectList />
       <LanguageQuote />
       <LanguageCert />
+      <Quote />
       <OnlineCourseList />
+
       <Footer mt={10} />
     </Box>
   );

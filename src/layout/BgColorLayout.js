@@ -10,9 +10,10 @@ export default function BgColorLayout({
     page,
     mainpage,
     id,
+    height
 }) {
     return (
-        <Center w="full" bg={bgColor} bgSize="100%" mainpage id={id ? id : ""}>
+        <Center w="full" bg={bgColor} bgSize="100%" mainpage id={id ? id : ""} h={height || "auto"}>
             <Center
                 w={{
                     base: "90%", //0px
@@ -31,32 +32,32 @@ export default function BgColorLayout({
                     mt={
                         !page
                             ? {
-                                  base: "65px", //0px
-                                  sm: "90px", // 480px
-                                  md: "100px", // 768px
-                                  lg: "130px", // 992px
-                              }
+                                base: "65px", //0px
+                                sm: "90px", // 480px
+                                md: "100px", // 768px
+                                lg: "130px", // 992px
+                            }
                             : {
-                                  base: "65px", //0px
-                                  sm: "90px", // 480px
-                                  md: "100px", // 768px
-                                  lg: "100px", // 992px
-                                  xl: "110px", // 1280px
-                                  "2xl": "80px",
-                              }
+                                base: "65px", //0px
+                                sm: "90px", // 480px
+                                md: "100px", // 768px
+                                lg: "100px", // 992px
+                                xl: "110px", // 1280px
+                                "2xl": "80px",
+                            }
                     }
                     mb={
                         !page
                             ? {
-                                  base: "65px", //0px
-                                  sm: "90px", // 480px
-                                  md: "100px", // 768px
-                                  lg: "130px", // 992px
-                              }
+                                base: "65px", //0px
+                                sm: "90px", // 480px
+                                md: "100px", // 768px
+                                lg: "130px", // 992px
+                            }
                             : {
-                                  base: "45px", //0px
-                                  lg: "65px", //0px
-                              }
+                                base: "45px", //0px
+                                lg: "65px", //0px
+                            }
                     }
                 >
                     {children}

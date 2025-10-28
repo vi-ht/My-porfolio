@@ -7,7 +7,6 @@ import { useEffect } from "react";
 //import layout
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
-import bgImage from "../../asset/icon/bg.png";
 // import chakra components
 import { AnimateObjectList } from "../homepage/IntroContent";
 
@@ -98,11 +97,11 @@ export default function UIUXIntroContent() {
           <Text
             fontSize={{
               base: "40px", //0px
-              sm: "60px", // 480px
-              md: "70px", // 768px
-              lg: "90px", // 992px
-              xl: "100px", // 1280px
-              "2xl": "100px", //1536px
+              sm: "50px", // 480px
+              md: "60px", // 768px
+              lg: "70px", // 992px
+              xl: "80px", // 1280px
+              "2xl": "90px", //1536px
             }}
             lineHeight={{
               base: "60px", sm: "70px", md: "80px", lg: "130px"//0px

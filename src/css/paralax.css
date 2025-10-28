@@ -43,3 +43,18 @@
     background-image: url(../asset/image/about-quote.webp);
     background-position: 0% 25%;
 }
+
+.study {
+    background-image: url(../asset/image/continue-learning.webp);
+    background-position: 0% 20%;
+}
+
+.project {
+    background-image: url(../asset/image/project_illustration.webp);
+    background-position: 0% 0%;
+}
+
+.cert {
+    background-image: url(../asset/image/cert-quote2.webp);
+    background-position: 0% 0%;
+}

@@ -9,9 +9,21 @@ import auraDesk from "./../../asset/image/Aura.png";
 import portfoliov2 from "./../../asset/image/Portfolio-V2.webp";
 import portfoliov1 from "./../../asset/image/Portfolio-V1.webp";
 import sportzone from "./../../asset/image/sport-zone-thumbnail.webp";
+import mid from "./../../asset/image/mid.webp";
 //import react-router
 import { PATH } from "../../router/Path";
 const data = [
+    {
+        id: 7,
+        type: "WEB RESPONSIVE DESIGN",
+        name: "MID ACHITECTS",
+        des: `MID Architects is a real-world freelance project I worked on, featuring a company website for an architecture firm.`,
+        img: `${mid}`,
+        span: "6",
+        start: "1",
+        path: `${PATH.uxui.cinema}`
+    }
+    ,
     {
         id: 0,
         type: "MOBILE APP DESIGN",

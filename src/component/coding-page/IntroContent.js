@@ -12,7 +12,7 @@ import { Text, Center } from "@chakra-ui/react";
 //---------------------------------------------------
 export default function IntroContent() {
     return (
-        <BgImageLayout bg={bg} pos="100% 80%">
+        <BgImageLayout bg={bg} pos="100% 0%">
             <Center display="flex" flexDirection="column" className="intro" transform="translate(0px,50px)">
                 <img
                     src={star}
@@ -30,7 +30,7 @@ export default function IntroContent() {
                     }}
                     className="qs-smb"
                 >
-                    Team Work Project
+                    Real-world projects
                 </Text>
                 <div className="line" style={{ margin: "1rem 0" }}></div>
                 <Text
@@ -48,9 +48,7 @@ export default function IntroContent() {
                     }}
                     textAlign="center"
                 >
-                    This is my graduation thesis at FPT University, I and a
-                    group of friends worked together to build a website for the
-                    Felixzone company.
+                    This portfolio showcases my real-world projects, including academic work, freelance tasks, and personal initiatives applied in practical settings.
                 </Text>
             </Center>
         </BgImageLayout>

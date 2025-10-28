@@ -7,23 +7,11 @@ import { useEffect } from "react";
 //import layout
 import BgImageLayout from "../../layout/BgImageLayout";
 //import image
-import bgImage from "../../asset/icon/bg.png";
 
 // import chakra components
 import { Text, Box } from "@chakra-ui/react";
 import { AnimateObjectList } from "../homepage/IntroContent";
 
-
-/**
- * AnimateObjectList is a component that renders a list of animated objects.
- * The component receives no props and returns a Box component with the animated objects.
- * The animated objects are rendered as absolute positioned img elements with a transform that scales the image based on the screen size.
- * The images are rendered with the following styles:
- * - at base screen size, the images are scaled to 0.6
- * - at sm screen size, the images are scaled to 0.6
- * - at 2xl screen size, the images are scaled to 0.8
- * - at 3xl screen size, the images are scaled to 1
- */
 
 const TextTemplate = ({ children, container }) => (
   <Text
@@ -108,10 +96,10 @@ export default function IntroCertificate() {
             fontSize={{
               base: "40px", //0px
               sm: "50px", // 480px
-              md: "70px", // 768px
-              lg: "90px", // 992px
-              xl: "100px", // 1280px
-              "2xl": "100px", //1536px
+              md: "60px", // 768px
+              lg: "70px", // 992px
+              xl: "80px", // 1280px
+              "2xl": "90px", //1536px
             }}
             lineHeight={{
               base: "60px", sm: "70px", md: "80px", lg: "130px"//0px
@@ -122,7 +110,7 @@ export default function IntroCertificate() {
 
           <TextTemplate>
 
-            This page showcases a complete collection of my certificates, ranging from {" "}
+            This page showcases a complete collection of my certificates, ranging from <br />
             <span className="highlight qs-b">
               academic achievements
             </span>

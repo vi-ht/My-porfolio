@@ -1,9 +1,9 @@
 //import css
-import "./../../../css/font.css";
-import "./../../../css/Color.css";
+import "./../../css/font.css";
+import "./../../css/Color.css";
 //import chakra UI component
 import { Text, Center, Flex } from "@chakra-ui/react";
-export default function LanguageQuote() {
+export default function StudyQuote() {
   return (
     <Center w="full" position="relative">
       <Center
@@ -26,26 +26,17 @@ export default function LanguageQuote() {
           <Text
             color="white"
             fontSize={{
-              // base: "20px", //0px
-              // sm: "22", // 480px
-              // md: "22px", // 768px
-              // lg: "25px", // 992px
-              // xl: "25px", // 1280px
-              // "2xl": "25px", //1536px
               base: "20px", //0px
               sm: "22", // 480px
               md: "22px", // 768px
               lg: "25px", // 992px
               xl: "25px", // 1280px
-              "2xl": "30px", //1536px
+              "2xl": "25px", //1536px
             }}
             lineHeight={{
-              // base: "35px", //0px
-              // md: "40px", // 768px
-              // xl: "45px", // 1280px
               base: "35px", //0px
               md: "40px", // 768px
-              xl: "60px", // 1280px
+              xl: "45px", // 1280px
             }}
             w={{
               base: "290px", //0px
@@ -57,27 +48,14 @@ export default function LanguageQuote() {
             }}
             textAlign="center"
             position="relative"
-            className="qs-b"
+            className="qs-smb"
           >
             <span className="quote-content"></span>
-            "Language certificates are more than achievements to me — they reflect my love for learning languages, exploring different cultures, and gaining new perspectives on life and people through each unique language."{" "}
+            “Pursuing my Master’s in AI-oriented programming reflects my commitment to continuous self-learning — constantly expanding my knowledge, refining my skills, and preparing myself for a future shaped by innovation.”{" "}
           </Text>
         </Flex>
       </Center>
-      <div className="paralax language">
-        {/* <img
-                src={Thesis}
-                style={{
-                    width: "100%",
-                    height: "100vh",
-                    objectFit: "cover",
-                    objectPosition: "0% 100%",
-                    position: "absolute",
-                    zIndex: "-1",
-                    top: "0",
-                }}
-                alt="graduate thesis"
-            ></img> */}
+      <div className="paralax study">
       </div>
     </Center>
   );

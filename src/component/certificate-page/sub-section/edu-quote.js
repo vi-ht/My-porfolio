@@ -51,7 +51,7 @@ export default function Quote() {
                         className="qs-b"
                     >
                         <span className="quote-content"></span>
-                        "Each certificate is not just a piece of paper, but a milestone that reflects my journey of learning, growth, and the effort I put into improving myself."{" "}
+                        “Every online course I take opens a new window of curiosity — a chance to explore, grow, and turn knowledge into creative action.”{" "}
                     </Text>
                 </Flex>
             </Center>

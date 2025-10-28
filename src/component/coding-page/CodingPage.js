@@ -3,10 +3,12 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 //import hook
 import { useTitle } from "./../../customHook/useTitle";
+import IUHProject from "./iuhPage";
+import MIDProject from "./mid-project";
 //import component
 import IntroContent from "./IntroContent";
 import Footer from "../../layout/Footer";
-import Quote from "./Quote";
+import FactorazyProject from "./FactorazyPage";
 import MonitoProject from "./MonitoProject";
 import MainContent from "./MainContent";
 import FelixzoneProject from "./FelixzoneProject";
@@ -14,6 +16,7 @@ import PorfolioProject from "./PorfolioProject";
 import MYBProject from "./MYBProject";
 import NatureProject from "./NatureProject";
 import InternoProject from "./InternoProject";
+import ProjectQuote from "./project-quote";
 //import chakra UI component
 import { Box } from "@chakra-ui/react";
 //------------------------------------------
@@ -23,8 +26,11 @@ export default function CodingPage() {
     return (
         <Box width="full">
             <IntroContent />
-            <Quote />
+            <ProjectQuote />
             <FelixzoneProject />
+            <FactorazyProject />
+            <MIDProject />
+            <IUHProject />
             <MainContent />
             <PorfolioProject />
             <MonitoProject />
