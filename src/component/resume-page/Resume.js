@@ -573,7 +573,7 @@ export default function Resume() {
                             <ListItem mt={1}>Guided students with debugging, reviewed assignments, provided detailed feedback, and designed exercises to strengthen learning outcomes.</ListItem>
 
                             <ListItem mt={1}>
-                                Organized and managed classes, including lesson planning, curriculum preparation, and classroom engagement activities.
+                                Organized and managed classes, lesson planning, curriculum preparation, and classroom engagement activities.
                             </ListItem>
                             <ListItem mt={1}>
                                 Received positive feedback from students; two of my classes won first place in final project presentations at MindX.
