@@ -32,7 +32,7 @@ const data = [
         img: `${sportzone}`,
         span: "6",
         start: "1",
-        path: `${PATH.uxui.mid}`
+        path: `${PATH.uxui.sportzone}`
     },
     {
         id: 1,
@@ -87,7 +87,7 @@ const data = [
     {
         id: 6,
         type: "WEB DESIGN",
-        name: "MY PORTFOLIO - NEW VERSION",
+        name: "MY PORTFOLIO - VERSION 2.0",
         des: `This is the new version of my current portfolio that I recently redesigned based on the old version to refresh and make for a more modern website.`,
         img: `${portfoliov2}`,
         span: "6",

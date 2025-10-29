@@ -2,6 +2,7 @@
 import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/animate.css";
+import { PATH } from "../../router/Path";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import custom hook
@@ -19,6 +20,9 @@ import {
     Text,
     Button,
 } from "@chakra-ui/react";
+
+import { Link } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 // import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
@@ -59,15 +63,15 @@ export default function PorfolioProject() {
                     <Center w="full" h="full">
                         <Box>
                             <Text fontSize="25px" className="qs-b">
-                                MY PORTFOLIO
+                                MY PORTFOLIO - VERSION 2.0
                             </Text>
                             <Text fontSize="16px" className="qs-b" mb="8px">
                                 (Responsive web - SPA)
                             </Text>
                             <Text fontSize="16px" className="qs-r">
-                                This is a portfolio website designed and coded
+                                This is a portfolio website - Version 2.0 designed and coded
                                 by me for the purpose of showcasing all my UI/UX
-                                and coding projects.
+                                and coding projects. {" "}<span className="qs-smb">My portfolio version 2 is being built.</span>
                             </Text>
                             <Text
                                 fontSize="16px"
@@ -111,7 +115,15 @@ export default function PorfolioProject() {
                                 Design tool:
                             </Text>
                             <UnorderedList>
-                                <ListItem>Figma</ListItem>
+                                <ListItem>Figma - {" "}<Link
+                                    href={`${PATH.uxui.portfolioV2}`}
+                                    isExternal
+                                    fontWeight="bold"
+                                    color="black"
+                                >
+                                    View design project{" "}
+                                    <ExternalLinkIcon mx="2px" />
+                                </Link></ListItem>
                             </UnorderedList>
                             <Button
                                 leftIcon={<LinkIcon />}
@@ -125,11 +137,11 @@ export default function PorfolioProject() {
                                 bg="#FB797F"
                             >
                                 <a
-                                    href="https://www.figma.com/proto/4i2smvXZHPUp1hSyO1bU3G/MY-PORTFOLIO?type=design&node-id=4-63&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=1%3A24"
+                                    href="https://thanhvi-portfolio-v2.onrender.com/"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    View mockups on Figma
+                                    View my Portfolio (Ver 2)
                                 </a>
                             </Button>
                         </Box>

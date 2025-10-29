@@ -79,6 +79,10 @@ export default function Router() {
                             path: "mid-architects",
                             element: <Mid />,
                         },
+                        {
+                            path: "sport-zone",
+                            element: <SportZone />,
+                        },
                     ],
                 },
             ],
@@ -99,6 +103,7 @@ const Cogibannay = Loadable(
     lazy(() => import("../component/homepage/Cogibannay"))
 );
 const Mid = Loadable(lazy(() => import("../component/homepage/mid-architect-uxui")));
+const SportZone = Loadable(lazy(() => import("../component/homepage/sport-zone.js")));
 const AuraWeb = Loadable(lazy(() => import("../component/homepage/AuraWeb")));
 const HomePage = Loadable(lazy(() => import("../component/homepage/HomePage")));
 const UIUXPage = Loadable(lazy(() => import("../component/ui-ux-page/index")));

@@ -8,7 +8,8 @@ export const PATH = {
         auraWeb: "/ux-ui-projects/aura-project-web-design-version",
         portfolioV1: "/ux-ui-projects/portfolio-v1",
         portfolioV2: "/ux-ui-projects/portfolio-v2",
-        mid: "/ux-ui-projects/mid-architects"
+        mid: "/ux-ui-projects/mid-architects",
+        sportzone: "/ux-ui-projects/sport-zone"
     },
     coding: "/coding-projects",
     about: "/about-me",

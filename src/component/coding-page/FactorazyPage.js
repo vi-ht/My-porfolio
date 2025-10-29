@@ -3,7 +3,6 @@ import "./../../css/font.css";
 import "./../../css/Color.css";
 import "./../../css/animate.css";
 //import custom hook
-import { useAnim } from "./../../customHook/useAnim";
 //import layout
 import BgColorLayout from "../../layout/BgColorLayout";
 //import image
@@ -24,11 +23,9 @@ import {
   ListItem,
   UnorderedList,
   Button,
-  Link,
 } from "@chakra-ui/react";
 //import chakra icon
 import { LinkIcon } from "@chakra-ui/icons";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 //----------------------------------------------------------
 
 const WebItem = ({ alt, src, link, text }) => (
@@ -76,7 +73,7 @@ export default function FactorazyProject() {
   //   200
   // );
   return (
-    <BgColorLayout bgColor="white" id="fac-container">
+    <BgColorLayout bgColor="#baffeb14" id="fac-container">
       <Grid w="full" templateColumns="repeat(12, 1fr)" gap={4} rowGap={"100px"}>
         <GridItem
           colSpan={{ base: 12, lg: 12 }}

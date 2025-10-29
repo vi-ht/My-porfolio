@@ -59,7 +59,7 @@ export default function Cogibannay() {
                         <Grid w="full" templateColumns="repeat(1, 1fr)" gap={0} pb="20px">
                             <GridItem colStart={1}>
                                 <Box>
-                                    <Text fontSize="25px" className="qs-b">
+                                    <Text fontSize="40px" className="qs-b">
                                         MOMO TALENT PROJECT
                                     </Text>
                                     <Text
@@ -69,7 +69,7 @@ export default function Cogibannay() {
                                     >
                                         (UX research)
                                     </Text>
-                                    <Text fontSize="16px" className="qs-r">
+                                    <Text fontSize="16px" className="qs-r" mt={4}>
                                         This is my first project related to
                                         UI/UX. I did this project to participate
                                         in the "MoMo talent" Contest to apply

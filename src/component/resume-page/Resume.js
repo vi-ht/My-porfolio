@@ -113,7 +113,7 @@ export default function Resume() {
                                 margin: "10px 0 20px 0",
                             }}
                         ></div>
-                        <Text fontSize="16px" className="qs-b" mb="8px">
+                        <Text fontSize="18px" className="qs-b" mb="8px">
                             FPT UNIVERSITY
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -123,17 +123,17 @@ export default function Resume() {
                             <span className="qs-smb">Bachelor's degree</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Major:</span> Software
+                            <span className="qs-smb">Major:</span> Software
                             engineering
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">GPA:</span> 8.1/10.0
+                            <span className="qs-smb">GPA:</span> 8.1/10.0
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Certificate of merit:</span>{" "}
+                            <span className="qs-smb">Certificate of merit:</span>{" "}
                             4 times is awarded "Honorable Student Of Semester".
                         </Text>
-                        <Text fontSize="16px" className="qs-b" mb="8px" mt="24px">
+                        <Text fontSize="18px" className="qs-b" mb="8px" mt="24px">
                             FPT SCHOOL OF BUSINESS & TECHNOLOGY
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
@@ -143,7 +143,7 @@ export default function Resume() {
                             <span className="qs-smb">Master's degree</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Major:</span> Master of Software Engineering - Al-oriented programming
+                            <span className="qs-smb">Major:</span> Master of Software Engineering - Al-oriented programming
                         </Text>
                         <Text fontSize="25px" className="qs-b" mt="30px">
                             LANGUAGE
@@ -495,7 +495,7 @@ export default function Resume() {
                         </NavLink>
 
                         <Text
-                            fontSize="16px"
+                            fontSize="18px"
                             className="qs-b"
                             mb="8px"
                             mt="15px"
@@ -507,10 +507,10 @@ export default function Resume() {
                         </Text>
 
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Intern</span>
+                            <span className="qs-smb">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Intern</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Main tasks and contributions: </span>
+                            <span className="qs-smb">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
@@ -524,7 +524,7 @@ export default function Resume() {
                             </ListItem>
                         </UnorderedList>
                         <Text
-                            fontSize="16px"
+                            fontSize="18px"
                             className="qs-b"
                             mb="8px"
                             mt="30px"
@@ -532,13 +532,13 @@ export default function Resume() {
                             FELIXZONE{" "}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            (December 21 - September 22)
+                            <span className="qs-m">Ho Chi Minh City</span> | (December 21 - September 22)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
+                            <span className="qs-smb">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Main tasks and contributions: </span>
+                            <span className="qs-smb">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
@@ -550,7 +550,7 @@ export default function Resume() {
                             </ListItem>
                         </UnorderedList>
                         <Text
-                            fontSize="16px"
+                            fontSize="18px"
                             className="qs-b"
                             mb="8px"
                             mt="30px"
@@ -558,25 +558,29 @@ export default function Resume() {
                             MINDX{" "}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            (July 23 - December 23)
+                            <span className="qs-m">Ho Chi Minh City</span> | (July 23 - December 23)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Teaching Assistant Web Development (HTML, CSS, JS, ReactJS)</span>
+                            <span className="qs-smb">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Teaching Assistant Web Development (HTML, CSS, JS, ReactJS)</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Main tasks and contributions: </span>
+                            <span className="qs-smb">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
                                 Assisted in teaching HTML, CSS, JavaScript, and ReactS.
                             </ListItem>
-                            <ListItem mt={1}>Guided students with debugging, Reviewed assignments, provided detailed feedback, and designed exercises to strengthen learning outcomes.</ListItem>
+                            <ListItem mt={1}>Guided students with debugging, reviewed assignments, provided detailed feedback, and designed exercises to strengthen learning outcomes.</ListItem>
+
                             <ListItem mt={1}>
-                                Facilitated group projects to enhance collaboration and learning.
+                                Organized and managed classes, including lesson planning, curriculum preparation, and classroom engagement activities.
+                            </ListItem>
+                            <ListItem mt={1}>
+                                Received positive feedback from students; two of my classes won first place in final project presentations at MindX.
                             </ListItem>
                         </UnorderedList>
                         <Text
-                            fontSize="16px"
+                            fontSize="18px"
                             className="qs-b"
                             mb="8px"
                             mt="30px"
@@ -584,13 +588,13 @@ export default function Resume() {
                             FACTORAZY{" "}
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            (September 23 - June 25)
+                            <span className="qs-m">Ho Chi Minh City</span> | (September 23 - June 25)
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
+                            <span className="qs-smb">Position: </span> <span className="qs-smb" style={{ color: "#FB797F" }}>Frontend web developer</span>
                         </Text>
                         <Text fontSize="16px" className="qs-r" mb="8px">
-                            <span className="qs-m">Main tasks and contributions: </span>
+                            <span className="qs-smb">Main tasks and contributions: </span>
                         </Text>
                         <UnorderedList>
                             <ListItem mt={1}>
@@ -631,7 +635,7 @@ export default function Resume() {
                             <ListItem mt={1}>
                                 HTML5, CSS3, JavaScript (ES6+)
                             </ListItem>
-                            <ListItem mt={1}>TypeScript, ReactJS, NextJS, Redux / Recoil</ListItem>
+                            <ListItem mt={1}>TypeScript, ReactJS, NextJS, Redux / Recoil, SWR</ListItem>
                             <ListItem mt={1}>
                                 Responsive & Mobile-first Design
                             </ListItem>
@@ -644,6 +648,17 @@ export default function Resume() {
                                 TailwindCSS, Bootstrap, Sass/SCSS, Styled Components
                             </ListItem>
                             <ListItem mt={1}>Material Ul, Ant Design, ChakraUl, Shadcn.</ListItem>
+                        </UnorderedList>
+                        <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                            Backend:
+                        </Text>
+                        <UnorderedList>
+                            <ListItem mt={1}>
+                                Python, Flask
+                            </ListItem>
+                            <ListItem mt={1}>
+                                Database: SQLite
+                            </ListItem>
                         </UnorderedList>
                         <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
                             Backend Integration:
@@ -832,6 +847,17 @@ export default function Resume() {
                             TailwindCSS, Bootstrap, Sass/SCSS, Styled Components
                         </ListItem>
                         <ListItem mt={1}>Material Ul, Ant Design, ChakraUl, Shadcn.</ListItem>
+                    </UnorderedList>
+                    <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
+                        Backend:
+                    </Text>
+                    <UnorderedList>
+                        <ListItem mt={1}>
+                            Python, Flask
+                        </ListItem>
+                        <ListItem mt={1}>
+                            Database: SQLite
+                        </ListItem>
                     </UnorderedList>
                     <Text fontSize="16px" className="qs-smb" mb="8px" mt={"15px"}>
                         Backend Integration:

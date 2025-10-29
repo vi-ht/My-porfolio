@@ -14,13 +14,10 @@ import {
     GridItem,
     Grid,
     Text,
-    UnorderedList,
-    ListItem,
-    Button,
     Flex,
 } from "@chakra-ui/react";
-//import chakra UI icon
-import { LinkIcon } from "@chakra-ui/icons";
+import { Link } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 //import path
 import { PATH } from "../../router/Path";
 //-------------------------------------------------
@@ -28,7 +25,7 @@ export default function PortfolioV1() {
     useTitle(`Thanh Vi's portfolio - New version | Thanh Vi's portfolio`);
     return (
         <Box>
-            <Box width="full" mt={20}>
+            <Box width="full" mt={"100px"}>
                 <BreadcrumbComp
                     projectName="Portfolio - New version"
                     path={PATH.uxui.portfolioV1}
@@ -59,8 +56,8 @@ export default function PortfolioV1() {
                         <Grid w="full" templateColumns="repeat(1, 1fr)" gap={0}>
                             <GridItem colStart={1}>
                                 <Box>
-                                    <Text fontSize="25px" className="qs-b">
-                                        MY PORTFOLIO - NEW VERSION
+                                    <Text fontSize="40px" className="qs-b">
+                                        MY PORTFOLIO - VERSION 2.0
                                     </Text>
                                     <Text
                                         fontSize="16px"
@@ -73,13 +70,26 @@ export default function PortfolioV1() {
                                     <Text
                                         fontSize="16px"
                                         className="qs-r"
-                                        mb="1.5rem"
-                                        mt="0.5rem"
+                                        mb="0.5rem"
+                                        mt={4}
                                     >
                                         This is the new version of my current
-                                        portfolio that I recently redesigned
+                                        portfolio that I recently redesigned on Figma
                                         based on the old version to refresh and
-                                        make for a more modern website.
+                                        make for a more modern website, below is the project prototype.
+                                    </Text>
+                                    <Text>My portfolio version 2 is being built, keep track here ! - {" "}
+                                        <Link
+                                            href="https://thanhvi-portfolio-v2.onrender.com/"
+                                            isExternal
+                                            fontWeight="bold"
+                                            color="#FB797F"
+                                        >
+                                            Thanh Vi's portfolio (Ver 2){" "}
+                                            <ExternalLinkIcon mx="2px" />
+                                        </Link></Text>
+                                    <Text fontSize="16px" className="qs-smb" mb={2} mt={4}>
+                                        * If you see a blank page below this text, please wait a moment for the embedded documents below to finish loading.
                                     </Text>
                                 </Box>
                             </GridItem>

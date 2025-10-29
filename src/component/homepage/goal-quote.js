@@ -53,7 +53,7 @@ export default function GoalQuote() {
             className="qs-b"
           >
             <span className="quote-content"></span>
-            “My long-term goal is to grow into a senior frontend developer who not only writes clean, impactful code but can also confidently use Chinese to collaborate, learn, and contribute in international tech environments.”{" "}
+            “My long-term goal is to grow into a senior frontend developer who not only writes clean, impactful code but can also confidently use Chinese & English to collaborate, learn, and contribute in international tech environments.”{" "}
           </Text>
         </Flex>
       </Center>
