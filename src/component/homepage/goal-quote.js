@@ -1,9 +1,11 @@
+
 //import css
 import "./../../css/font.css";
 import "./../../css/Color.css";
+import "./../../css/paralax.css";
 //import chakra UI component
 import { Text, Center, Flex } from "@chakra-ui/react";
-export default function ProjectQuote() {
+export default function GoalQuote() {
   return (
     <Center w="full" position="relative">
       <Center
@@ -51,11 +53,25 @@ export default function ProjectQuote() {
             className="qs-b"
           >
             <span className="quote-content"></span>
-            “For me, real-world projects are where passion meets practice — a place to turn theory into action, face real challenges, and keep growing as both a developer and designer through hands-on work and collaboration.”{" "}
+            “My long-term goal is to grow into a senior frontend developer who not only writes clean, impactful code but can also confidently use Chinese to collaborate, learn, and contribute in international tech environments.”{" "}
           </Text>
         </Flex>
       </Center>
-      <div className="paralax project">
+
+      <div className="paralax goal">
+        {/* <img
+                src={bg}
+                style={{
+                    width: "100%",
+                    height: "100vh",
+                    objectFit: "cover",
+                    objectPosition: "100% 43%",
+                    position: "absolute",
+                    zIndex: "-1",
+                    top: "0",
+                }}
+                alt="learnUIUX"
+            ></img> */}
       </div>
     </Center>
   );

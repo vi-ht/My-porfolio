@@ -29,7 +29,7 @@ export default function ViewMore({ id }) {
                     }}
                     className="qs-b"
                 >
-                    UX/UI projects
+                    Other UX/UI projects
                 </Text>
                 <div className="line"></div>
             </GridItem>

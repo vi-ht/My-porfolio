@@ -7,7 +7,8 @@ export const PATH = {
         cogibannay: "/ux-ui-projects/co-gi-ban-nay-project",
         auraWeb: "/ux-ui-projects/aura-project-web-design-version",
         portfolioV1: "/ux-ui-projects/portfolio-v1",
-        portfolioV2: "/ux-ui-projects/portfolio-v2"
+        portfolioV2: "/ux-ui-projects/portfolio-v2",
+        mid: "/ux-ui-projects/mid-architects"
     },
     coding: "/coding-projects",
     about: "/about-me",

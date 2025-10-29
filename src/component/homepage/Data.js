@@ -21,7 +21,7 @@ const data = [
         img: `${mid}`,
         span: "6",
         start: "1",
-        path: `${PATH.uxui.cinema}`
+        path: `${PATH.uxui.mid}`
     }
     ,
     {
@@ -32,7 +32,7 @@ const data = [
         img: `${sportzone}`,
         span: "6",
         start: "1",
-        path: `${PATH.uxui.cinema}`
+        path: `${PATH.uxui.mid}`
     },
     {
         id: 1,
@@ -74,16 +74,16 @@ const data = [
         start: "7",
         path: `${PATH.uxui.cogibannay}`
     },
-    {
-        id: 5,
-        type: "WEB RESPONSIVE DESIGN",
-        name: "MY PORTFOLIO - CURRENT VERSION",
-        des: `This is a portfolio website designed and coded by me for the purpose of showcasing all my UI/UX and coding projects.`,
-        img: `${portfoliov1}`,
-        span: "6",
-        start: "7",
-        path: `${PATH.uxui.portfolioV1}`
-    },
+    // {
+    //     id: 5,
+    //     type: "WEB RESPONSIVE DESIGN",
+    //     name: "MY PORTFOLIO - CURRENT VERSION",
+    //     des: `This is a portfolio website designed and coded by me for the purpose of showcasing all my UI/UX and coding projects.`,
+    //     img: `${portfoliov1}`,
+    //     span: "6",
+    //     start: "7",
+    //     path: `${PATH.uxui.portfolioV1}`
+    // },
     {
         id: 6,
         type: "WEB DESIGN",

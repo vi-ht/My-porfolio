@@ -24,7 +24,7 @@ import IntroCertificate from "./intro";
 import CertQuote from "./cert-quote";
 //------------------------------------------
 export default function CodingPage() {
-  useTitle(`Coding projects | Thanh Vi's portfolio`);
+  useTitle(`Certificate | Thanh Vi's portfolio`);
   return (
     <Box width="full">
       <IntroCertificate />

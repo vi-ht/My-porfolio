@@ -75,6 +75,10 @@ export default function Router() {
                             path: "portfolio-v2",
                             element: <PortfolioV2 />,
                         },
+                        {
+                            path: "mid-architects",
+                            element: <Mid />,
+                        },
                     ],
                 },
             ],
@@ -94,6 +98,7 @@ const AuraMobile = Loadable(
 const Cogibannay = Loadable(
     lazy(() => import("../component/homepage/Cogibannay"))
 );
+const Mid = Loadable(lazy(() => import("../component/homepage/mid-architect-uxui")));
 const AuraWeb = Loadable(lazy(() => import("../component/homepage/AuraWeb")));
 const HomePage = Loadable(lazy(() => import("../component/homepage/HomePage")));
 const UIUXPage = Loadable(lazy(() => import("../component/ui-ux-page/index")));

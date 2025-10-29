@@ -45,7 +45,7 @@ export default function PorfolioProject() {
                         <img
                             src={Porfolio}
                             alt="Porfolio Mockups"
-                            style={{ width: "100%" }}
+                            style={{ width: "90%" }}
                         ></img>
                     </Center>
                 </GridItem>

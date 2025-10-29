@@ -60,7 +60,7 @@ export default function OnlineCourseList() {
           }}
           textAlign="center"
         >
-          This section showcases my certificates from various online courses, with the majority obtained through Coursera.
+          This section showcases my certificates from various online courses, with the majority obtained through Coursera. <b>Click on the certificates to see verified certificates on Coursera</b>.
         </Text>
       </Center>
       <Text

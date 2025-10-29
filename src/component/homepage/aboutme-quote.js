@@ -33,12 +33,12 @@ export default function AboutMeQuote() {
               md: "22px", // 768px
               lg: "25px", // 992px
               xl: "25px", // 1280px
-              "2xl": "25px", //1536px
+              "2xl": "28px", //1536px
             }}
             lineHeight={{
               base: "35px", //0px
               md: "40px", // 768px
-              xl: "45px", // 1280px
+              xl: "52px", // 1280px
             }}
             w={{
               base: "290px", //0px
@@ -53,7 +53,7 @@ export default function AboutMeQuote() {
             className="qs-b"
           >
             <span className="quote-content"></span>
-            "Frontend development has fascinated me since the first time I took on a frontend developer role during teamwork activities in college. I soon realized that I really enjoy turning website design ideas into interactive and responsive websites, where technology meets users’ needs."{" "}
+            “Frontend development has fascinated me since I first took on a frontend role during college teamwork. I realized I truly enjoy turning design ideas into interactive, responsive websites where technology meets users’ needs.”{" "}
           </Text>
         </Flex>
       </Center>
